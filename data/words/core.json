@@ -1,0 +1,12 @@
+[
+  { "word": "ambitious", "phoneticUs": "/æmˈbɪʃəs/", "phoneticUk": "/æmˈbɪʃəs/", "meanings": [{ "pos": "adj.", "defCn": "有雄心的；野心勃勃的；宏大的", "examWeight": 5 }], "level": "core", "frequencyRank": 101, "derivatives": [{ "word": "ambition", "pos": "n.", "defCn": "雄心；野心" }] },
+  { "word": "commitment", "phoneticUs": "/kəˈmɪtmənt/", "phoneticUk": "/kəˈmɪtmənt/", "meanings": [{ "pos": "n.", "defCn": "承诺；投入；奉献", "examWeight": 5 }], "level": "core", "frequencyRank": 102, "collocations": [{ "phrase": "make a commitment", "meaning": "做出承诺" }] },
+  { "word": "democracy", "phoneticUs": "/dɪˈmɑːkrəsi/", "phoneticUk": "/dɪˈmɒkrəsi/", "meanings": [{ "pos": "n.", "defCn": "民主；民主制度；民主国家", "examWeight": 5 }], "level": "core", "frequencyRank": 103 },
+  { "word": "entrepreneur", "phoneticUs": "/ˌɑːntrəprəˈnɜːr/", "phoneticUk": "/ˌɒntrəprəˈnɜː/", "meanings": [{ "pos": "n.", "defCn": "企业家；创业者", "examWeight": 5 }], "level": "core", "frequencyRank": 104 },
+  { "word": "globalization", "phoneticUs": "/ˌɡloʊbəlaɪˈzeɪʃn/", "phoneticUk": "/ˌɡləʊbəlaɪˈzeɪʃn/", "meanings": [{ "pos": "n.", "defCn": "全球化", "examWeight": 5 }], "level": "core", "frequencyRank": 105 },
+  { "word": "inequality", "phoneticUs": "/ˌɪnɪˈkwɑːləti/", "phoneticUk": "/ˌɪnɪˈkwɒləti/", "meanings": [{ "pos": "n.", "defCn": "不平等；不均衡", "examWeight": 5 }], "level": "core", "frequencyRank": 106 },
+  { "word": "intellectual", "phoneticUs": "/ˌɪntəˈlektʃuəl/", "phoneticUk": "/ˌɪntəˈlektʃuəl/", "meanings": [{ "pos": "adj.", "defCn": "智力的；知识的；理智的", "examWeight": 5 }, { "pos": "n.", "defCn": "知识分子", "examWeight": 4 }], "level": "core", "frequencyRank": 107 },
+  { "word": "philosophy", "phoneticUs": "/fɪˈlɑːsəfi/", "phoneticUk": "/fɪˈlɒsəfi/", "meanings": [{ "pos": "n.", "defCn": "哲学；人生观；理念", "examWeight": 5 }], "level": "core", "frequencyRank": 108 },
+  { "word": "productivity", "phoneticUs": "/ˌprɑːdʌkˈtɪvəti/", "phoneticUk": "/ˌprɒdʌkˈtɪvəti/", "meanings": [{ "pos": "n.", "defCn": "生产力；生产率", "examWeight": 5 }], "level": "core", "frequencyRank": 109 },
+  { "word": "sustainable", "phoneticUs": "/səˈsteɪnəbl/", "phoneticUk": "/səˈsteɪnəbl/", "meanings": [{ "pos": "adj.", "defCn": "可持续的；可以忍受的", "examWeight": 5 }], "level": "core", "frequencyRank": 110 }
+]
