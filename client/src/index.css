@@ -3,37 +3,112 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #D1D5DB transparent;
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
   body {
     @apply bg-gray-50 text-gray-900 antialiased;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+
+  input, textarea, select {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    caret-color: #3B82F6;
+    font-size: 16px; /* 防 iOS 自动缩放 */
+  }
+
+  button, a, [role="button"] {
+    touch-action: manipulation;
+  }
+
+  /* 移动端横向滚动容器 */
+  .scroll-x {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .scroll-x::-webkit-scrollbar {
+    display: none;
   }
 }
 
 @layer components {
-  .wordbook-card {
-    @apply bg-white rounded-2xl p-6 shadow-sm border border-gray-100
-           hover:shadow-md hover:border-primary-200 transition-all duration-300
-           cursor-pointer;
+  .card {
+    @apply bg-white border border-gray-200 rounded-xl;
   }
+
   .btn-primary {
-    @apply bg-primary-600 text-white px-6 py-3 rounded-xl font-medium
-           hover:bg-primary-700 active:scale-95 transition-all duration-200;
+    @apply inline-flex items-center justify-center px-5 py-3
+           bg-brand-600 text-white font-medium rounded-lg
+           hover:bg-brand-700 active:scale-[0.98]
+           transition-all duration-150 cursor-pointer select-none
+           disabled:opacity-40 disabled:cursor-not-allowed;
+    min-height: 44px; /* iOS 触控最小推荐尺寸 */
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-5 py-3
+           border border-gray-200 text-gray-700 font-medium rounded-lg
+           hover:bg-gray-50 active:scale-[0.98]
+           transition-all duration-150 cursor-pointer select-none;
+    min-height: 44px;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center px-4 py-2.5
+           text-gray-500 font-medium rounded-lg
+           hover:text-gray-700 hover:bg-gray-50
+           transition-colors cursor-pointer select-none;
+    min-height: 44px;
+  }
+
+  .btn-success {
+    @apply btn-primary bg-green-600 hover:bg-green-700;
+  }
+
+  .btn-danger {
+    @apply btn-primary bg-red-600 hover:bg-red-700;
+  }
+
+  .btn-warning {
+    @apply btn-primary bg-amber-500 hover:bg-amber-600;
+  }
+
+  .input {
+    @apply w-full px-4 py-3 bg-white border border-gray-200 rounded-lg
+           text-gray-900 placeholder-gray-400
+           focus:border-brand-500 focus:ring-2 focus:ring-brand-100
+           outline-none transition-all;
+    font-size: 16px; /* 防 iOS 缩放 */
+  }
+
+  .kbd {
+    @apply inline-flex items-center gap-1 rounded-md
+           border border-gray-200 bg-gray-50
+           text-gray-400 text-[10px] px-1.5 py-0.5;
+  }
+  .kbd .key {
+    @apply text-gray-600 font-medium;
   }
 }
 
 ::-webkit-scrollbar {
   width: 6px;
 }
-
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: #F9FAFB;
 }
-
 ::-webkit-scrollbar-thumb {
-  background: #d1d5db;
+  background: #D1D5DB;
   border-radius: 3px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
-  background: #9ca3af;
+  background: #9CA3AF;
 }

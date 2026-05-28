@@ -1,0 +1,6502 @@
+[
+  {
+    "word": "more",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "更多的",
+        "examWeight": 5
+      }
+    ],
+    "frequencyRank": 1,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "passage",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "段落、通道",
+        "examWeight": 5
+      }
+    ],
+    "frequencyRank": 2,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "question",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "问题",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 3,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "answer",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "回答",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 4,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "part",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "部分",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 5,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "follow",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "跟随",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 6,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "each",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "每个",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 7,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "write",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "写",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 8,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "section",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "部分、地段",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 9,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "word",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "说话、单词",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 10,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "mark",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "标记",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 11,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "many",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "很多",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 12,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "read",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "读",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 13,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "hear",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "听到",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 14,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "base",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "基础、基地",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 15,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "student",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "学生",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 16,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "child",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "孩子",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 17,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "find",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "发现",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 18,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "sheet",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "被单、（一）张、纸",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 19,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "man",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "男人",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 20,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "through",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "通过、穿过",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 21,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "woman",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "女人",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 22,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "school",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "学校",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 23,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "world",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "世界",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 24,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "choice",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "选择",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 25,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "change",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "改变",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 26,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "direction",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "方向、指令",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 27,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "much",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "许多的、非常",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 28,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "life",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "生命、人生",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 29,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "long",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "长",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 30,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "study",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "学习",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 31,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "help",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "帮助",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 32,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "four",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "四",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 33,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "job",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "工作",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 34,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "learn",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "学习、了解",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 35,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "high",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "高的、高",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 36,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "minute",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "分钟、微小的",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 37,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "live",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "住、生活",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 38,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "line",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "排队、线",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 39,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "become",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "成为、适宜",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 40,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "author",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "作者",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 41,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "such",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "这样的",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 42,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "mean",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "意思是、意味着",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 43,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "letter",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "信件",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 44,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "three",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "三",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 45,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "those",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "那些",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 46,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "end",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "结束",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 47,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "once",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "曾经、一次",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 48,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "company",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "公司、陪伴",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 49,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "conversation",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "对话",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 50,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "problem",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "问题",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 51,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "university",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "大学",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 52,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "human",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "人",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 53,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "state",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "陈述、状态",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 54,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "food",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "食物",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 55,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "country",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "国家",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 56,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "choose",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "选择",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 57,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "less",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "更少",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 58,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "accord",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "协议、符合",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 59,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "show",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "展示、展现",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 60,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "both",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "两者",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 61,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "social",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "社会的、交际的",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 62,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "great",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "巨大的",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 63,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "thing",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "事情",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 64,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "information",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "信息",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 65,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "business",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "商业",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 66,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "between",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "在…之间",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 67,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "research",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "研究",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 68,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "before",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "在…之前",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 69,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "number",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "数字",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 70,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "single",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "单一的",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 71,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "own",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "拥有",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 72,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "feel",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "感觉",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 73,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "family",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "家庭",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 74,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "often",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "经常",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 75,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "old",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "老的",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 76,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "parent",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "父母",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 77,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "increase",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "增加",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 78,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "paragraph",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "段落",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 79,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "provide",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "提供",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 80,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "few",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "很少",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 81,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "home",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "家",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 82,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "while",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "当…时、而、尽管",
+        "examWeight": 4
+      }
+    ],
+    "frequencyRank": 83,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "different",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "不同的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 84,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "point",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "点、指",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 85,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "last",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "最后的、持续",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 86,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "text",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "文本",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 87,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "correspond",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "相符合、相当",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 88,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "education",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "教育",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 89,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "place",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "放置、地点",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 90,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "pay",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "支付",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 91,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "language",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "语言、风格",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 92,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "still",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "仍然",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 93,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "keep",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "保持",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 94,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "where",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "哪里",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 95,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "book",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "预定、书籍",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 96,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "government",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "政府",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 97,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "college",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "大学",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 98,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "second",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "第二的、次等的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 99,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "listen",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "听",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 100,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "why",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "为什么",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 101,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "system",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "系统",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 102,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "put",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "放",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 103,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "blank",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "空白的、失色的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 104,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "result",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "结果",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 105,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "try",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "尝试",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 106,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "money",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "钱",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 107,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "ask",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "问",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 108,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "seem",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "似乎",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 109,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "speak",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "说",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 110,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "news",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "新闻",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 111,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "example",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "例子",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 112,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "same",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "同样的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 113,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "important",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "重要的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 114,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "right",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "正确的、权利",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 115,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "report",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "报告",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 116,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "believe",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "相信",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 117,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "computer",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "电脑",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 118,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "public",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "公众的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 119,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "health",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "健康",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 120,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "far",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "远的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 121,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "young",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "年轻的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 122,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "large",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "大的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 123,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "call",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "打电话",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 124,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "city",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "城市",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 125,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "develop",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "发展",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 126,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "start",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "开始",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 127,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "another",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "另一个",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 128,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "centre",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "中心、中央",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 129,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "idea",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "想法",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 130,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "during",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "在…期间",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 131,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "science",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "科学",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 132,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "allow",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "允许",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 133,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "age",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "年龄",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 134,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "leave",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "离开",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 135,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "every",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "每个",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 136,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "talk",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "说",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 137,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "require",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "需要、要求",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 138,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "car",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "车",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 139,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "statement",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "声明",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 140,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "society",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "社会",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 141,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "short",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "短",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 142,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "cause",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "造成",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 143,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "down",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "在…下面、情绪低落",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 144,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "technology",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "技术、工艺",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 145,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "grow",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "成长、增长",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 146,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "sentence",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "句子、判决",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 147,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "without",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "没有",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 148,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "hour",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "小时",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 149,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "economic",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "经济上的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 150,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "big",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "大",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 151,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "begin",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "开始",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 152,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "lead",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "带领",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 153,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "build",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "建造",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 154,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "early",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "早期的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 155,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "off",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "关闭、不在原处",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 156,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "spend",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "花",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 157,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "little",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "少、小",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 158,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "bank",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "银行",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 159,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "hard",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "困难的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 160,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "cost",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "花费",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 161,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "class",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "班级",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 162,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "group",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "小组",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 163,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "price",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "价格",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 164,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "effect",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "效果",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 165,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "comprehension",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "理解",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 166,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "today",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "在今天、现今",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 167,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "tell",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "告诉",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 168,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "set",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "设定",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 169,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "something",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "某事",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 170,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "play",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "玩、扮演、戏剧",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 171,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "likely",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "很可能的、大概",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 172,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "turn",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "翻转",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 173,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "course",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "课程",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 174,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "buy",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "购买",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 175,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "understand",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "理解",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 176,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "offer",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "提供",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 177,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "service",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "服务、公共设施",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 178,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "small",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "小的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 179,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "product",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "产品",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 180,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "experience",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "经历",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 181,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "suggest",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "建议",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 182,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "decide",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "决定",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 183,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "test",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "测试",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 184,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "scientist",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "科学家",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 185,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "bring",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "带来",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 186,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "since",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "自从、因为、既然",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 187,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "however",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "但是、然而",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 188,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "person",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "人",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 189,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "teacher",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "教师",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 190,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "around",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "周围、环绕",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 191,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "whether",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "是否",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 192,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "future",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "未来",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 193,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "reason",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "理由",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 194,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "view",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "景观",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 195,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "water",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "水",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 196,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "improve",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "改进、提高",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 197,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "care",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "关心、在意",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 198,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "benefit",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "益处、好处",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 199,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "low",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "低的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 200,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "program",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "项目",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 201,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "worker",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "工人",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 202,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "market",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "市场",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 203,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "teach",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "教",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 204,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "support",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "支持",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 205,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "among",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "在……之中",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 206,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "kind",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "仁慈的、种类",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 207,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "friend",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "朋友",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 208,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "skill",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "技术",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 209,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "yet",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "然而",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 210,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "form",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "形式、形成",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 211,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "include",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "包括",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 212,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "move",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "移动",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 213,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "rather",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "相当的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 214,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "create",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "创造",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 215,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "never",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "从不",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 216,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "century",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "世纪",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 217,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "bad",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "坏的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 218,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "eat",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "吃",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 219,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "always",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "总是",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 220,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "least",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "最小的、最少的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 221,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "face",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "面对",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 222,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "plan",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "计划",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 223,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "consider",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "考虑",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 224,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "industry",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "工业、行业",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 225,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "themselves",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "他们自己、他们亲自",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 226,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "process",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "过程、进程",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 227,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "rate",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "比率",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 228,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "fact",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "事实",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 229,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "house",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "房子",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 230,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "culture",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "文化",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 231,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "power",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "力、功率",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 232,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "share",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "分享",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 233,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "area",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "地区、范围",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 234,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "million",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "百万",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 235,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "lot",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "很、许多",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 236,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "sense",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "感觉",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 237,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "lose",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "失去、失败",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 238,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "against",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "相对、相反",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 239,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "rise",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "上升",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 240,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "energy",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "精力",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 241,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "control",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "控制",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 242,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "space",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "空间",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 243,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "case",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "情况",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 244,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "hold",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "握着、坚持",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 245,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "possible",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "可能的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 246,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "ability",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "能力",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 247,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "animal",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "动物",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 248,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "enough",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "足够",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 249,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "value",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "价值",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 250,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "role",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "角色",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 251,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "week",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "周末",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 252,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "individual",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "个人的、独特的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 253,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "hand",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "手",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 254,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "open",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "打开",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 255,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "ten",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "十",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 256,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "term",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "条款、期限",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 257,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "away",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "离开",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 258,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "happen",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "发生",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 259,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "fall",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "下降、掉落",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 260,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "self",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "自我、自己",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 261,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "art",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "艺术",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 262,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "decision",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "决定、决议",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 263,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "interest",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "兴趣",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 264,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "drive",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "驾驶、驱使",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 265,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "issue",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "问题、期刊、发布",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 266,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "produce",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "生产",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 267,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "complete",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "完全地",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 268,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "under",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "在…之下",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 269,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "activity",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "活跃、活动",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 270,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "national",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "国家的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 271,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "brain",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "大脑",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 272,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "level",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "水平、等级",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 273,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "able",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "有能力的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 274,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "run",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "跑步、运转",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 275,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "past",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "过去的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 276,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "win",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "赢",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 277,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "present",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "呈现、提出、礼物、现在",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 278,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "quality",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "质量",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 279,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "difficult",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "困难的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 280,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "easy",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "容易的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 281,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "tend",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "趋向于、照料",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 282,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "reduce",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "减少",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 283,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "five",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "五",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 284,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "expect",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "预料、期待",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 285,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "order",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "订单、命令、顺序",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 286,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "law",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "法律、法则",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 287,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "environment",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "环境、自然环境",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 288,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "paper",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "纸、试卷",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 289,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "mind",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "思维、想法",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 290,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "kid",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "孩子",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 291,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "economy",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "经济",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 292,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "percent",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "百分之的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 293,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "sleep",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "睡眠",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 294,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "recent",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "近来的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 295,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "half",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "一半",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 296,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "close",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "关闭、近",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 297,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "attention",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "注意",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 298,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "poor",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "贫穷的、可怜的、糟糕的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 299,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "free",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "自由的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "body",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "身体",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 301,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "measure",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "衡量、测量",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 302,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "office",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "办公室",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 303,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "travel",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "旅行",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 304,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "major",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "主要的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 305,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "professor",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "教授",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 306,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "natural",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "自然的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 307,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "remain",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "保持",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 308,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "though",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "尽管",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 309,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "next",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "下一个",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 310,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "design",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "设计",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 311,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "history",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "历史",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 312,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "nation",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "国家",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 313,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "real",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "真的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 314,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "almost",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "几乎",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 315,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "customer",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "顾客",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 316,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "subject",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "科目",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 317,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "ago",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "以前",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 318,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "focus",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "聚焦、焦点",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 319,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "local",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "当地的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "really",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "确实",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 321,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "certain",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "确定的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 322,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "ever",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "从来",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 323,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "success",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "成功",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 324,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "late",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "晚的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 325,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "true",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "真实",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 326,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "name",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "名称、命名",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 327,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "knowledge",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "知识",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 328,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "stress",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "压力",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 329,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "matter",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "事情、问题、重要",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 330,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "involve",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "涉及",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 331,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "raise",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "举起、提出",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 332,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "identify",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "识别、鉴定",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 333,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "stay",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "保持、停留",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 334,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "population",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "人口",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 335,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "risk",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "风险",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 336,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "medium",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "中等的、媒介",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 337,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "lack",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "缺乏",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 338,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "strong",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "强壮的、强烈的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 339,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "fill",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "填",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 340,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "patient",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "有耐心的、病人",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 341,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "rule",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "规则",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 342,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "until",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "直到",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 343,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "continue",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "继续",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 344,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "receive",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "收到",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 345,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "already",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "已经",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 346,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "record",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "记录",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 347,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "employee",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "雇工",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 348,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "sell",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "卖",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 349,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "note",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "笔记",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 350,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "month",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "月",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 351,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "community",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "社区、共同体",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 352,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "demand",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "要求",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 353,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "personal",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "个人的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 354,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "instead",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "反而",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 355,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "challenge",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "挑战",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 356,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "store",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "存储、商店",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 357,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "check",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "检查",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 358,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "deal",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "处理",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 359,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "opportunity",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "机会",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 360,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "relationship",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "关系",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 361,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "list",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "清单",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 362,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "usually",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "通常、平常",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 363,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "average",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "平均的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 364,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "although",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "尽管",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 365,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "eye",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "眼睛",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 366,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "break",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "打破",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 367,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "fast",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "快",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 368,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "common",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "普通的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 369,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "condition",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "条件、情况",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 370,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "behavior",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "行为",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 371,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "global",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "全球的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 372,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "within",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "内部",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 373,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "difference",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "不同",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 374,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "light",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "点亮、轻的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 375,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "growth",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "生长",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 376,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "shop",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "购物",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 377,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "meet",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "遇见、会见",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 378,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "concern",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "关心、涉及",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 379,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "task",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "任务",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "scientific",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "科学的、细致严谨的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 381,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "effort",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "努力",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 382,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "plant",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "植物、工厂",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 383,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "encourage",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "鼓励、发展",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 384,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "career",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "职业",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 385,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "fail",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "衰退、破产",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 386,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "influence",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "影响",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 387,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "avoid",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "避免",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 388,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "music",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "音乐",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 389,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "add",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "增加",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 390,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "policy",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "政策",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 391,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "item",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "物品、条款",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 392,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "force",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "强迫、迫使",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 393,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "member",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "成员",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 394,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "explain",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "解释",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 395,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "translation",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "翻译",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 396,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "side",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "一边",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 397,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "enjoy",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "享受",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 398,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "cut",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "切、砍",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 399,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "adult",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "大人、成人",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 400,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "international",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "国际的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 401,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "training",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "训练",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 402,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "general",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "一般的、总的、将军",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 403,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "nature",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "自然界、性质",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 404,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "type",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "类型、输入",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 405,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "doctor",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "医生",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 406,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "mother",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "妈妈",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 407,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "situation",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "情况",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 408,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "several",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "几个",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 409,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "save",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "保存、拯救",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 410,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "essay",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "论文",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 411,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "game",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "游戏",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 412,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "graduate",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "毕业、获学位",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 413,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "decade",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "十年",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 414,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "medical",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "医疗的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 415,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "miss",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "错过、想念",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 416,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "train",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "列车、行列",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 417,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "third",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "第三",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 418,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "interview",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "采访、面试",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 419,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "stop",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "阻止",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "financial",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "财政的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 421,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "reach",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "到达、达到",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 422,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "professional",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "职业的、专业的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 423,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "sign",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "标牌",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 424,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "earth",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "地球、泥土",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 425,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "project",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "项目、计划",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 426,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "generation",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "产生、一代人",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 427,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "standard",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "标准",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 428,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "war",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "战争",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 429,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "story",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "故事",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 430,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "rich",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "丰富的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 431,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "later",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "后来、其后",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 432,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "again",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "再次",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 433,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "air",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "空气",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 434,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "night",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "夜晚",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 435,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "contain",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "包含",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 436,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "main",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "主要的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 437,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "soon",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "很快的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 438,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "sound",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "声音",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 439,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "love",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "爱",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 440,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "account",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "账户",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 441,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "return",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "回归、返回",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 442,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "affect",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "影响",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 443,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "translate",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "解释、翻译、转变",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 444,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "sure",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "肯定的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 445,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "describe",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "描述",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 446,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "purpose",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "目的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 447,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "full",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "满的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 448,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "room",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "房间",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 449,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "appear",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "出现",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 450,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "impact",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "冲击",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 451,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "period",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "一段时间",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 452,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "television",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "电视",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 453,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "quite",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "相当的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 454,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "position",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "位置",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 455,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "attitude",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "态度",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 456,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "machine",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "机器",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 457,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "clear",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "清楚的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 458,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "field",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "田地、场地、领域",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 459,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "pass",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "经过",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 460,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "below",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "在…下面",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 461,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "here",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "这里",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 462,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "communication",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "沟通",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 463,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "protect",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "保护",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 464,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "performance",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "表演",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 465,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "lecture",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "讲座",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 466,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "factor",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "因素、因子",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 467,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "top",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "顶端",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 468,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "firm",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "牢固的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 469,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "draw",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "画画",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 470,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "memory",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "记忆",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 471,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "whole",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "全部的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 472,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "writer",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "作家",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 473,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "watch",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "观看",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 474,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "death",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "死亡",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 475,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "white",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "白色的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 476,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "academic",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "学术的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 477,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "bear",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "携带、承受",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 478,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "importance",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "重要性",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 479,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "decline",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "拒绝、下降",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "claim",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "索要、声称",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 481,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "model",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "模型",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 482,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "wrong",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "错误的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 483,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "expert",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "专家、专门的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 484,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "carry",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "携带",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 485,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "act",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "行为、行动、扮演",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 486,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "send",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "发送",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 487,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "accept",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "接受",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 488,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "potential",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "潜在的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 489,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "degree",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "温度、程度",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 490,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "resource",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "资源",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 491,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "pause",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "暂停",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 492,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "opinion",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "意见",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 493,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "income",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "收入",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 494,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "amount",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "数量",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 495,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "disease",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "疾病",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 496,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "stand",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "站立",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 497,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "political",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "政治的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 498,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "popular",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "受欢迎的",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 499,
+    "level": "core",
+    "examples": []
+  },
+  {
+    "word": "argue",
+    "meanings": [
+      {
+        "pos": "",
+        "defCn": "论述、争论、争吵",
+        "examWeight": 3
+      }
+    ],
+    "frequencyRank": 500,
+    "level": "core",
+    "examples": []
+  }
+]

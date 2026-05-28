@@ -1,83 +1,93 @@
 import { Request, Response, NextFunction } from 'express';
 import db from '../config/db';
-import AppError from '../utils/AppError';
 
-const LEVEL_NAMES: Record<string, string> = {
-  'high-freq': '考研高频词',
-  'mid-freq': '考研中频词',
-  'low-freq': '考研低频词',
-  'core': '真题核心词',
-  'cet4': 'CET-4',
-  'cet6': 'CET-6',
-  'postgraduate': '考研大纲完整版',
-};
 
-export const getWordbooks = async (_req: Request, res: Response, next: NextFunction): Promise<void> => {
+
+export const getWordbook = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    const userId = req.userId || 0;
   try {
-    const rows = db.prepare(`
-      SELECT level as id, COUNT(*) as total FROM words GROUP BY level ORDER BY level
-    `).all() as { id: string; total: number }[];
+    const { type } = req.query;
+    let query = `
+      SELECT wb.id as wb_id, wb.type, wb.created_at as added_at, w.*
+      FROM wordbook wb JOIN words w ON wb.word_id = w.id
+      WHERE wb.user_id = ?
+    `;
+    const params: (string | number)[] = [userId];
 
-    const wordbooks = rows.map((r) => ({
-      id: r.id,
-      name: LEVEL_NAMES[r.id] || r.id,
-      total: r.total,
-    }));
-
-    res.json({ success: true, data: wordbooks });
-  } catch (error) {
-    next(error);
-  }
-};
-
-export const getWordbookProgress = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
-  try {
-    const { id } = req.params;
-    const row = db.prepare(`SELECT COUNT(*) as total FROM words WHERE level = ?`).get(id) as { total: number };
-    if (!row || row.total === 0) {
-      throw new AppError('Wordbook not found', 404);
+    if (type && (type === 'wrong' || type === 'favorite')) {
+      query += ' AND wb.type = ?';
+      params.push(type);
     }
-    res.json({
-      success: true,
-      data: { id, name: LEVEL_NAMES[id] || id, total: row.total, learned: 0, mastered: 0 },
-    });
+
+    query += ' ORDER BY wb.created_at DESC';
+
+    const rows = db.prepare(query).all(...params) as any[];
+
+    const words = rows.map((r) => ({
+      _id: r.id.toString(),
+      word: r.word,
+      phoneticUs: r.phonetic_us,
+      phoneticUk: r.phonetic_uk,
+      meanings: JSON.parse(r.meanings || '[]'),
+      level: r.level,
+      addedAt: r.added_at,
+      type: r.type,
+    }));
+
+    res.json({ success: true, data: words });
   } catch (error) {
     next(error);
   }
 };
 
-export const searchWords = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+export const addToWordbook = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    const userId = req.userId || 0;
   try {
-    const { q, level, page = '1', limit = '20' } = req.query;
-    const pageNum = parseInt(page as string, 10);
-    const limitNum = Math.min(parseInt(limit as string, 10), 50);
-    const offset = (pageNum - 1) * limitNum;
+    const { wordId, type } = req.body;
+    if (!wordId || !type) {
+      res.status(400).json({ success: false, message: 'wordId and type are required' });
+      return;
+    }
 
-    let query = 'SELECT * FROM words WHERE 1=1';
-    const params: (string | number)[] = [];
+    if (!['wrong', 'favorite'].includes(type)) {
+      res.status(400).json({ success: false, message: 'type must be "wrong" or "favorite"' });
+      return;
+    }
 
-    if (level) { query += ' AND level = ?'; params.push(level as string); }
-    if (q) { query += ' AND word LIKE ?'; params.push(`%${q}%`); }
+    // Check word exists
+    const word = db.prepare(`SELECT id FROM words WHERE id = ?`).get(parseInt(wordId));
+    if (!word) {
+      res.status(404).json({ success: false, message: 'Word not found' });
+      return;
+    }
 
-    const countRow = db.prepare(query.replace('SELECT *', 'SELECT COUNT(*) as total')).get(...params) as { total: number };
-    const words = db.prepare(query + ' LIMIT ? OFFSET ?').all(...params, limitNum, offset);
+    // Upsert
+    db.prepare(`
+      INSERT INTO wordbook (user_id, word_id, type) VALUES (?, ?, ?)
+      ON CONFLICT(user_id, word_id, type) DO NOTHING
+    `).run(userId, parseInt(wordId), type);
 
-    const parsed = (words as any[]).map(w => ({
-      ...w,
-      id: w.id.toString(),
-      meanings: JSON.parse(w.meanings || '[]'),
-      rootAffix: w.root_affix ? JSON.parse(w.root_affix) : undefined,
-      derivatives: w.derivatives ? JSON.parse(w.derivatives) : undefined,
-      collocations: w.collocations ? JSON.parse(w.collocations) : undefined,
-    }));
+    res.json({ success: true, data: { wordId, type }, message: 'Added to wordbook' });
+  } catch (error) {
+    next(error);
+  }
+};
 
-    res.json({
-      success: true,
-      data: {
-        words: parsed,
-        pagination: { page: pageNum, limit: limitNum, total: countRow.total, pages: Math.ceil(countRow.total / limitNum) },
-      },
-    });
+export const removeFromWordbook = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    const userId = req.userId || 0;
+  try {
+    const { wordId } = req.params;
+    const { type } = req.query;
+
+    if (type) {
+      db.prepare(`DELETE FROM wordbook WHERE user_id = ? AND word_id = ? AND type = ?`)
+        .run(userId, parseInt(wordId), type);
+    } else {
+      db.prepare(`DELETE FROM wordbook WHERE user_id = ? AND word_id = ?`)
+        .run(userId, parseInt(wordId));
+    }
+
+    res.json({ success: true, data: null, message: 'Removed from wordbook' });
   } catch (error) {
     next(error);
   }

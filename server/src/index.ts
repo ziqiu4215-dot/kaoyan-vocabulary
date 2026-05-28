@@ -10,6 +10,12 @@ import './config/db'; // SQLite auto-initializes on import
 import wordbookRoutes from './routes/wordbook';
 import learnRoutes from './routes/learn';
 import testRoutes from './routes/test';
+import reviewRoutes from './routes/review';
+import statsRoutes from './routes/stats';
+import authRoutes from './routes/auth';
+import userRoutes from './routes/user';
+import leaderboardRoutes from './routes/leaderboard';
+import { optionalAuth } from './middleware/auth';
 import errorHandler from './middleware/errorHandler';
 
 const app = express();
@@ -35,9 +41,15 @@ app.get('/api/health', (_req, res) => {
   res.json({ success: true, message: '研词 API is running', timestamp: new Date().toISOString() });
 });
 
+app.use('/api/auth', authRoutes);
+app.use('/api', optionalAuth);
 app.use('/api/wordbooks', wordbookRoutes);
 app.use('/api/learn', learnRoutes);
 app.use('/api/test', testRoutes);
+app.use('/api/review', reviewRoutes);
+app.use('/api/stats', statsRoutes);
+app.use('/api/user', userRoutes);
+app.use('/api/leaderboard', leaderboardRoutes);
 
 // Error handler
 app.use(errorHandler);

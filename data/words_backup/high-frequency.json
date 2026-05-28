@@ -1,0 +1,4344 @@
+[
+  {
+    "word": "abandon",
+    "phoneticUs": "/əˈbændən/",
+    "phoneticUk": "/əˈbændən/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "放弃；抛弃；遗弃",
+        "examWeight": 5
+      },
+      {
+        "pos": "n.",
+        "defCn": "放任；狂热",
+        "examWeight": 2
+      }
+    ],
+    "rootAffix": {
+      "root": "bandon",
+      "affixes": [
+        {
+          "part": "a-",
+          "meaning": "不/无"
+        }
+      ],
+      "meaning": "a-(不) + bandon(控制) → 不再控制 → 放弃"
+    },
+    "derivatives": [
+      {
+        "word": "abandoned",
+        "pos": "adj.",
+        "defCn": "被抛弃的；放纵的"
+      },
+      {
+        "word": "abandonment",
+        "pos": "n.",
+        "defCn": "放弃；抛弃"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "abandon oneself to",
+        "meaning": "沉溺于；放纵于"
+      },
+      {
+        "phrase": "with abandon",
+        "meaning": "放任地；纵情地"
+      }
+    ],
+    "frequencyRank": 1,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "They abandoned the plan because of the financial crisis.",
+        "translation": "他们因为金融危机放弃了这个计划。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "She abandoned herself to despair after hearing the news.",
+        "translation": "听到消息后，她陷入了绝望。",
+        "source": "经典例句",
+        "difficulty": 3
+      }
+    ]
+  },
+  {
+    "word": "abstract",
+    "phoneticUs": "/ˈæbstrækt/",
+    "phoneticUk": "/ˈæbstrækt/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "抽象的；理论的",
+        "examWeight": 5
+      },
+      {
+        "pos": "n.",
+        "defCn": "摘要；抽象概念",
+        "examWeight": 4
+      },
+      {
+        "pos": "vt.",
+        "defCn": "提取；分离；写摘要",
+        "examWeight": 2
+      }
+    ],
+    "rootAffix": {
+      "root": "tract",
+      "rootMeaning": "拉/拖",
+      "affixes": [
+        {
+          "part": "abs-",
+          "meaning": "离开/脱离"
+        }
+      ],
+      "meaning": "abs-(离开) + tract(拉) → 拉开/抽离出来 → 抽象的"
+    },
+    "derivatives": [
+      {
+        "word": "abstraction",
+        "pos": "n.",
+        "defCn": "抽象；提取；心不在焉"
+      },
+      {
+        "word": "abstractly",
+        "pos": "adv.",
+        "defCn": "抽象地"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "abstract concept",
+        "meaning": "抽象概念"
+      },
+      {
+        "phrase": "in the abstract",
+        "meaning": "抽象地；理论上"
+      }
+    ],
+    "frequencyRank": 2,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The abstract concepts in physics can be difficult to visualize.",
+        "translation": "物理学中的抽象概念可能难以可视化。",
+        "source": "考研英语一 阅读",
+        "difficulty": 3
+      },
+      {
+        "sentence": "Please write an abstract of your research paper.",
+        "translation": "请为你的研究论文写一份摘要。",
+        "source": "学术写作",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "accommodate",
+    "phoneticUs": "/əˈkɑːmədeɪt/",
+    "phoneticUk": "/əˈkɒmədeɪt/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "容纳；提供住宿；适应；调解",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "mod",
+      "rootMeaning": "模式/方式",
+      "affixes": [
+        {
+          "part": "ac-",
+          "meaning": "朝向"
+        },
+        {
+          "part": "-ate",
+          "meaning": "动词后缀"
+        }
+      ],
+      "meaning": "ac-(朝向) + com-(共同) + mod(模式) + -ate → 使适合共同模式 → 适应/容纳"
+    },
+    "derivatives": [
+      {
+        "word": "accommodation",
+        "pos": "n.",
+        "defCn": "住宿；适应；调解"
+      },
+      {
+        "word": "accommodating",
+        "pos": "adj.",
+        "defCn": "乐于助人的；随和的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "accommodate oneself to",
+        "meaning": "使自己适应于"
+      },
+      {
+        "phrase": "accommodate the needs of",
+        "meaning": "满足...的需求"
+      }
+    ],
+    "frequencyRank": 3,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The new stadium can accommodate over 50,000 spectators.",
+        "translation": "新体育场可以容纳超过五万名观众。",
+        "source": "考研英语二 完形",
+        "difficulty": 1
+      },
+      {
+        "sentence": "Companies must accommodate themselves to changing market conditions.",
+        "translation": "公司必须适应不断变化的市场环境。",
+        "source": "考研英语一 阅读",
+        "difficulty": 3
+      }
+    ]
+  },
+  {
+    "word": "acknowledge",
+    "phoneticUs": "/əkˈnɑːlɪdʒ/",
+    "phoneticUk": "/əkˈnɒlɪdʒ/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "承认；确认收到；感谢；致意",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "know",
+      "rootMeaning": "知道",
+      "affixes": [
+        {
+          "part": "ac-",
+          "meaning": "朝向"
+        },
+        {
+          "part": "-ledge",
+          "meaning": "名词/动词后缀"
+        }
+      ],
+      "meaning": "ac-(朝向) + knowledge(知识) → 承认知道 → 承认"
+    },
+    "derivatives": [
+      {
+        "word": "acknowledgement",
+        "pos": "n.",
+        "defCn": "承认；感谢；确认收悉"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "acknowledge the importance of",
+        "meaning": "承认...的重要性"
+      },
+      {
+        "phrase": "it is widely acknowledged that",
+        "meaning": "人们普遍认为..."
+      }
+    ],
+    "frequencyRank": 4,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "It is widely acknowledged that climate change poses a serious threat.",
+        "translation": "人们普遍认为气候变化构成严重威胁。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "He refused to acknowledge his mistake.",
+        "translation": "他拒绝承认他的错误。",
+        "source": "考研英语一 翻译",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "acquire",
+    "phoneticUs": "/əˈkwaɪər/",
+    "phoneticUk": "/əˈkwaɪə/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "获得；习得；收购",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "quire",
+      "rootMeaning": "寻求/获取",
+      "affixes": [
+        {
+          "part": "ac-",
+          "meaning": "朝向"
+        }
+      ],
+      "meaning": "ac-(朝向) + quire(寻求) → 寻求得到 → 获得/习得"
+    },
+    "derivatives": [
+      {
+        "word": "acquisition",
+        "pos": "n.",
+        "defCn": "获得；收购；习得"
+      },
+      {
+        "word": "acquisitive",
+        "pos": "adj.",
+        "defCn": "贪婪的；渴望获得的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "acquire knowledge",
+        "meaning": "获取知识"
+      },
+      {
+        "phrase": "acquire a taste for",
+        "meaning": "开始喜欢/培养...的品味"
+      }
+    ],
+    "frequencyRank": 5,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Children acquire language naturally through interaction.",
+        "translation": "儿童通过互动自然习得语言。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "The company acquired several smaller competitors last year.",
+        "translation": "该公司去年收购了几家较小的竞争对手。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "adapt",
+    "phoneticUs": "/əˈdæpt/",
+    "phoneticUk": "/əˈdæpt/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "使适应；改编",
+        "examWeight": 5
+      },
+      {
+        "pos": "vi.",
+        "defCn": "适应",
+        "examWeight": 4
+      }
+    ],
+    "rootAffix": {
+      "root": "apt",
+      "rootMeaning": "适合的",
+      "affixes": [
+        {
+          "part": "ad-",
+          "meaning": "朝向"
+        }
+      ],
+      "meaning": "ad-(朝向) + apt(适合) → 使适合 → 适应"
+    },
+    "derivatives": [
+      {
+        "word": "adaptation",
+        "pos": "n.",
+        "defCn": "适应；改编；改编本"
+      },
+      {
+        "word": "adaptive",
+        "pos": "adj.",
+        "defCn": "适应的；有适应能力的"
+      },
+      {
+        "word": "adaptable",
+        "pos": "adj.",
+        "defCn": "能适应的；可改编的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "adapt to",
+        "meaning": "适应于"
+      },
+      {
+        "phrase": "adapt oneself to",
+        "meaning": "使自己适应"
+      }
+    ],
+    "frequencyRank": 6,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Species that fail to adapt to environmental changes risk extinction.",
+        "translation": "无法适应环境变化的物种面临灭绝的风险。",
+        "source": "考研英语一 阅读",
+        "difficulty": 3
+      },
+      {
+        "sentence": "The novel was adapted into a successful film.",
+        "translation": "这部小说被改编成了一部成功的电影。",
+        "source": "经典例句",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "advocate",
+    "phoneticUs": "/ˈædvəkeɪt/",
+    "phoneticUk": "/ˈædvəkeɪt/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "提倡；主张；拥护",
+        "examWeight": 5
+      },
+      {
+        "pos": "n.",
+        "defCn": "倡导者；支持者；律师",
+        "examWeight": 4
+      }
+    ],
+    "rootAffix": {
+      "root": "voc",
+      "rootMeaning": "声音/叫喊",
+      "affixes": [
+        {
+          "part": "ad-",
+          "meaning": "朝向"
+        }
+      ],
+      "meaning": "ad-(朝向) + voc(声音) + -ate → 为...发声 → 提倡/主张"
+    },
+    "derivatives": [
+      {
+        "word": "advocacy",
+        "pos": "n.",
+        "defCn": "提倡；支持；辩护"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "advocate for",
+        "meaning": "为...倡导"
+      },
+      {
+        "phrase": "a strong advocate of",
+        "meaning": "...的坚定支持者"
+      }
+    ],
+    "frequencyRank": 7,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Many experts advocate a more flexible approach to education.",
+        "translation": "许多专家提倡更灵活的教育方式。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "He has been a lifelong advocate of human rights.",
+        "translation": "他一生都是人权的倡导者。",
+        "source": "考研英语一 完形",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "alternative",
+    "phoneticUs": "/ɔːlˈtɜːrnətɪv/",
+    "phoneticUk": "/ɔːlˈtɜːnətɪv/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "替代方案；供替代的选择",
+        "examWeight": 5
+      },
+      {
+        "pos": "adj.",
+        "defCn": "替代的；另类的",
+        "examWeight": 4
+      }
+    ],
+    "rootAffix": {
+      "root": "alter",
+      "rootMeaning": "其他的/改变",
+      "affixes": [
+        {
+          "part": "-ate",
+          "meaning": "形容词/动词后缀"
+        },
+        {
+          "part": "-ive",
+          "meaning": "形容词/名词后缀"
+        }
+      ],
+      "meaning": "alter(其他的) + -ate + -ive → 其他的选择 → 替代方案"
+    },
+    "derivatives": [
+      {
+        "word": "alternatively",
+        "pos": "adv.",
+        "defCn": "或者；作为替代"
+      },
+      {
+        "word": "alternate",
+        "pos": "v./adj.",
+        "defCn": "交替；交替的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "alternative energy",
+        "meaning": "替代能源"
+      },
+      {
+        "phrase": "have no alternative but to",
+        "meaning": "除...外别无选择"
+      }
+    ],
+    "frequencyRank": 8,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "We need to find alternative sources of energy.",
+        "translation": "我们需要寻找替代能源。",
+        "source": "考研英语二 阅读",
+        "difficulty": 1
+      },
+      {
+        "sentence": "There is no alternative but to reform the current system.",
+        "translation": "除了改革现有体制，别无选择。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "ambiguous",
+    "phoneticUs": "/æmˈbɪɡjuəs/",
+    "phoneticUk": "/æmˈbɪɡjuəs/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "模糊的；有歧义的；不明确的",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "amb",
+      "rootMeaning": "两者/周围",
+      "affixes": [
+        {
+          "part": "ambi-",
+          "meaning": "两/双"
+        },
+        {
+          "part": "-ous",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "meaning": "ambi-(两) + gu(驱动) + -ous → 两边都可以驱动 → 模糊不清的"
+    },
+    "derivatives": [
+      {
+        "word": "ambiguity",
+        "pos": "n.",
+        "defCn": "模糊；歧义；不明确"
+      },
+      {
+        "word": "unambiguous",
+        "pos": "adj.",
+        "defCn": "明确的；不含糊的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "ambiguous statement",
+        "meaning": "含糊的陈述"
+      },
+      {
+        "phrase": "remain ambiguous",
+        "meaning": "仍然不明确"
+      }
+    ],
+    "frequencyRank": 9,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The wording of the contract is deliberately ambiguous.",
+        "translation": "合同的措辞故意含糊不清。",
+        "source": "考研英语一 阅读",
+        "difficulty": 3
+      },
+      {
+        "sentence": "The results of the experiment were ambiguous.",
+        "translation": "实验结果是模糊的。",
+        "source": "考研英语二 完形",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "analyze",
+    "phoneticUs": "/ˈænəlaɪz/",
+    "phoneticUk": "/ˈænəlaɪz/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "分析；解析；研究",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "ly",
+      "rootMeaning": "解开/分解",
+      "affixes": [
+        {
+          "part": "ana-",
+          "meaning": "向上/彻底"
+        },
+        {
+          "part": "-ize",
+          "meaning": "动词后缀"
+        }
+      ],
+      "meaning": "ana-(彻底) + lyze(松开) → 彻底分解 → 分析"
+    },
+    "derivatives": [
+      {
+        "word": "analysis",
+        "pos": "n.",
+        "defCn": "分析；解析"
+      },
+      {
+        "word": "analytical",
+        "pos": "adj.",
+        "defCn": "分析的；善于分析的"
+      },
+      {
+        "word": "analyst",
+        "pos": "n.",
+        "defCn": "分析师；分析者"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "analyze data",
+        "meaning": "分析数据"
+      },
+      {
+        "phrase": "analyze the problem",
+        "meaning": "分析问题"
+      }
+    ],
+    "frequencyRank": 10,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Researchers analyzed data from over 10,000 participants.",
+        "translation": "研究人员分析了一万多名参与者的数据。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "It is essential to analyze the root cause of the issue.",
+        "translation": "分析问题的根本原因至关重要。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "approach",
+    "phoneticUs": "/əˈproʊtʃ/",
+    "phoneticUk": "/əˈprəʊtʃ/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "方法；途径；接近",
+        "examWeight": 5
+      },
+      {
+        "pos": "v.",
+        "defCn": "接近；处理；接洽",
+        "examWeight": 4
+      }
+    ],
+    "derivatives": [
+      {
+        "word": "approachable",
+        "pos": "adj.",
+        "defCn": "可接近的；平易近人的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "a new approach to",
+        "meaning": "对...的新方法"
+      },
+      {
+        "phrase": "take an approach",
+        "meaning": "采取一种方法"
+      }
+    ],
+    "frequencyRank": 11,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "We need to adopt a more scientific approach to the problem.",
+        "translation": "我们需要采用更科学的方法来处理这个问题。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "As the deadline approaches, the pressure increases.",
+        "translation": "随着截止日期临近，压力越来越大。",
+        "source": "考研英语一 完形",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "appropriate",
+    "phoneticUs": "/əˈproʊpriət/",
+    "phoneticUk": "/əˈprəʊpriət/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "适当的；恰当的",
+        "examWeight": 5
+      },
+      {
+        "pos": "vt.",
+        "defCn": "挪用；拨款",
+        "examWeight": 3
+      }
+    ],
+    "rootAffix": {
+      "root": "propr",
+      "rootMeaning": "自己的/适当的",
+      "affixes": [
+        {
+          "part": "ap-",
+          "meaning": "朝向"
+        },
+        {
+          "part": "-ate",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "meaning": "ap-(朝向) + propri(自己的) + -ate → 使成为自己的 → 适当的/挪用"
+    },
+    "derivatives": [
+      {
+        "word": "inappropriate",
+        "pos": "adj.",
+        "defCn": "不适当的；不合适的"
+      },
+      {
+        "word": "appropriation",
+        "pos": "n.",
+        "defCn": "挪用；拨款"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "in appropriate circumstances",
+        "meaning": "在适当的情况下"
+      },
+      {
+        "phrase": "take appropriate measures",
+        "meaning": "采取适当措施"
+      }
+    ],
+    "frequencyRank": 12,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "It is not appropriate to judge others without understanding their situations.",
+        "translation": "在不了解他人处境的情况下评判他人是不适当的。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "The government appropriated funds for the new infrastructure project.",
+        "translation": "政府为新的基础设施项目拨款。",
+        "source": "考研英语一 阅读",
+        "difficulty": 3
+      }
+    ]
+  },
+  {
+    "word": "assess",
+    "phoneticUs": "/əˈses/",
+    "phoneticUk": "/əˈses/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "评估；评定；估算",
+        "examWeight": 5
+      }
+    ],
+    "derivatives": [
+      {
+        "word": "assessment",
+        "pos": "n.",
+        "defCn": "评估；评定"
+      },
+      {
+        "word": "assessor",
+        "pos": "n.",
+        "defCn": "评估师；评审员"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "assess the impact of",
+        "meaning": "评估...的影响"
+      },
+      {
+        "phrase": "assess the situation",
+        "meaning": "评估形势"
+      }
+    ],
+    "frequencyRank": 13,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "It is difficult to assess the long-term effects of the policy.",
+        "translation": "很难评估该政策的长期影响。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "Teachers need to assess students' progress regularly.",
+        "translation": "教师需要定期评估学生的进步。",
+        "source": "考研英语二 完形",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "assume",
+    "phoneticUs": "/əˈsuːm/",
+    "phoneticUk": "/əˈsjuːm/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "假设；认为；承担；呈现",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "sum",
+      "rootMeaning": "拿/取",
+      "affixes": [
+        {
+          "part": "as-",
+          "meaning": "朝向"
+        }
+      ],
+      "meaning": "as-(朝向) + sume(拿/取) → 拿来作为...→ 假设/承担"
+    },
+    "derivatives": [
+      {
+        "word": "assumption",
+        "pos": "n.",
+        "defCn": "假设；承担"
+      },
+      {
+        "word": "assuming",
+        "pos": "conj.",
+        "defCn": "假定；假设"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "assume responsibility",
+        "meaning": "承担责任"
+      },
+      {
+        "phrase": "it is generally assumed that",
+        "meaning": "人们普遍认为"
+      }
+    ],
+    "frequencyRank": 14,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Don't assume that all students learn in the same way.",
+        "translation": "不要假设所有学生都以同样的方式学习。",
+        "source": "考研英语二 阅读",
+        "difficulty": 1
+      },
+      {
+        "sentence": "The new president will assume office in January.",
+        "translation": "新总统将于一月就职。",
+        "source": "考研英语一 完形",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "available",
+    "phoneticUs": "/əˈveɪləbl/",
+    "phoneticUk": "/əˈveɪləbl/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "可获得的；有空的；可用的",
+        "examWeight": 5
+      }
+    ],
+    "derivatives": [
+      {
+        "word": "availability",
+        "pos": "n.",
+        "defCn": "可用性；可获得性"
+      },
+      {
+        "word": "unavailable",
+        "pos": "adj.",
+        "defCn": "不可用的；没空的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "readily available",
+        "meaning": "容易获得的"
+      },
+      {
+        "phrase": "make available to",
+        "meaning": "使...可供使用"
+      }
+    ],
+    "frequencyRank": 15,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The report will be made available to the public next week.",
+        "translation": "该报告将于下周向公众公布。",
+        "source": "考研英语二 阅读",
+        "difficulty": 1
+      },
+      {
+        "sentence": "There are few jobs available in the current economic climate.",
+        "translation": "在当前的经济环境下，可供选择的工作很少。",
+        "source": "考研英语一 翻译",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "benefit",
+    "phoneticUs": "/ˈbenɪfɪt/",
+    "phoneticUk": "/ˈbenɪfɪt/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "利益；好处；福利",
+        "examWeight": 5
+      },
+      {
+        "pos": "v.",
+        "defCn": "有益于；受益",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "ben",
+      "rootMeaning": "好",
+      "affixes": [
+        {
+          "part": "bene-",
+          "meaning": "好"
+        }
+      ],
+      "meaning": "bene-(好) + fit(做) → 做好事 → 利益/有益于"
+    },
+    "derivatives": [
+      {
+        "word": "beneficial",
+        "pos": "adj.",
+        "defCn": "有益的；有利的"
+      },
+      {
+        "word": "beneficiary",
+        "pos": "n.",
+        "defCn": "受益者；受益人"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "benefit from",
+        "meaning": "从...中受益"
+      },
+      {
+        "phrase": "mutual benefit",
+        "meaning": "互惠互利"
+      }
+    ],
+    "frequencyRank": 16,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Regular exercise benefits both physical and mental health.",
+        "translation": "定期锻炼有益于身心健康。",
+        "source": "考研英语二 阅读",
+        "difficulty": 1
+      },
+      {
+        "sentence": "Both parties will benefit from the agreement.",
+        "translation": "双方都将从协议中受益。",
+        "source": "考研英语一 阅读",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "capacity",
+    "phoneticUs": "/kəˈpæsəti/",
+    "phoneticUk": "/kəˈpæsəti/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "能力；容量；生产力",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "cap",
+      "rootMeaning": "拿/取/容纳",
+      "affixes": [
+        {
+          "part": "-ity",
+          "meaning": "名词后缀"
+        }
+      ],
+      "meaning": "cap(容纳) + -acity → 容纳的能力 → 容量/能力"
+    },
+    "derivatives": [
+      {
+        "word": "capable",
+        "pos": "adj.",
+        "defCn": "有能力的"
+      },
+      {
+        "word": "incapacity",
+        "pos": "n.",
+        "defCn": "无能力"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "the capacity to do",
+        "meaning": "做...的能力"
+      },
+      {
+        "phrase": "at full capacity",
+        "meaning": "满负荷；全力"
+      }
+    ],
+    "frequencyRank": 17,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Humans have an innate capacity for language learning.",
+        "translation": "人类具有天生的语言学习能力。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "The factory is running at full capacity.",
+        "translation": "工厂正在满负荷运转。",
+        "source": "考研英语二 完形",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "challenge",
+    "phoneticUs": "/ˈtʃælɪndʒ/",
+    "phoneticUk": "/ˈtʃælɪndʒ/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "挑战；质疑",
+        "examWeight": 5
+      },
+      {
+        "pos": "vt.",
+        "defCn": "挑战；质疑；考验",
+        "examWeight": 4
+      }
+    ],
+    "derivatives": [
+      {
+        "word": "challenging",
+        "pos": "adj.",
+        "defCn": "有挑战性的；困难的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "pose a challenge",
+        "meaning": "构成挑战"
+      },
+      {
+        "phrase": "meet the challenge",
+        "meaning": "迎接挑战"
+      }
+    ],
+    "frequencyRank": 18,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Climate change poses a significant challenge to global agriculture.",
+        "translation": "气候变化对全球农业构成重大挑战。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "The new evidence challenges the traditional theory.",
+        "translation": "新的证据挑战了传统理论。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "compelling",
+    "phoneticUs": "/kəmˈpelɪŋ/",
+    "phoneticUk": "/kəmˈpelɪŋ/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "引人入胜的；令人信服的；不可抗拒的",
+        "examWeight": 5
+      }
+    ],
+    "derivatives": [
+      {
+        "word": "compel",
+        "pos": "vt.",
+        "defCn": "强迫；迫使"
+      },
+      {
+        "word": "compellingly",
+        "pos": "adv.",
+        "defCn": "令人信服地"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "compelling evidence",
+        "meaning": "令人信服的证据"
+      },
+      {
+        "phrase": "compelling reason",
+        "meaning": "令人信服的理由"
+      }
+    ],
+    "frequencyRank": 20,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "There is compelling evidence that exercise improves mental health.",
+        "translation": "有令人信服的证据表明锻炼能改善心理健康。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "The book offers a compelling account of the events leading to the war.",
+        "translation": "这本书对导致战争的事件做了引人入胜的叙述。",
+        "source": "考研英语一 阅读",
+        "difficulty": 3
+      }
+    ]
+  },
+  {
+    "word": "consequence",
+    "phoneticUs": "/ˈkɑːnsɪkwens/",
+    "phoneticUk": "/ˈkɒnsɪkwəns/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "结果；后果；重要性",
+        "examWeight": 5
+      }
+    ],
+    "derivatives": [
+      {
+        "word": "consequent",
+        "pos": "adj.",
+        "defCn": "随之发生的；作为结果的"
+      },
+      {
+        "word": "consequently",
+        "pos": "adv.",
+        "defCn": "因此；所以"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "as a consequence",
+        "meaning": "因此；结果"
+      },
+      {
+        "phrase": "face the consequences",
+        "meaning": "面对后果"
+      }
+    ],
+    "frequencyRank": 21,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The economic crisis was a direct consequence of poor regulation.",
+        "translation": "经济危机是监管不力的直接后果。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "As a consequence of globalization, cultures are becoming more interconnected.",
+        "translation": "全球化的结果是，各种文化变得更加相互联系。",
+        "source": "考研英语一 翻译",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "considerable",
+    "phoneticUs": "/kənˈsɪdərəbl/",
+    "phoneticUk": "/kənˈsɪdərəbl/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "大量的；相当多的；重要的",
+        "examWeight": 5
+      }
+    ],
+    "derivatives": [
+      {
+        "word": "considerably",
+        "pos": "adv.",
+        "defCn": "相当多地；显著地"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "a considerable amount of",
+        "meaning": "大量的"
+      },
+      {
+        "phrase": "considerable progress",
+        "meaning": "显著进展"
+      }
+    ],
+    "frequencyRank": 22,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The project has made considerable progress over the past year.",
+        "translation": "该项目在过去一年取得了显著进展。",
+        "source": "考研英语二 阅读",
+        "difficulty": 1
+      },
+      {
+        "sentence": "A considerable number of students struggle with academic pressure.",
+        "translation": "相当多的学生因学业压力而挣扎。",
+        "source": "考研英语一 完形",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "contribute",
+    "phoneticUs": "/kənˈtrɪbjuːt/",
+    "phoneticUk": "/kənˈtrɪbjuːt/",
+    "meanings": [
+      {
+        "pos": "v.",
+        "defCn": "贡献；捐献；投稿；促成",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "tribut",
+      "rootMeaning": "给予/分配",
+      "affixes": [
+        {
+          "part": "con-",
+          "meaning": "共同"
+        }
+      ],
+      "meaning": "con-(共同) + tribute(给予) → 共同给予 → 贡献"
+    },
+    "derivatives": [
+      {
+        "word": "contribution",
+        "pos": "n.",
+        "defCn": "贡献；捐献；稿件"
+      },
+      {
+        "word": "contributor",
+        "pos": "n.",
+        "defCn": "贡献者；投稿人"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "contribute to",
+        "meaning": "贡献于；有助于；导致"
+      },
+      {
+        "phrase": "make a contribution",
+        "meaning": "做出贡献"
+      }
+    ],
+    "frequencyRank": 23,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Air pollution contributes to an estimated 7 million premature deaths annually.",
+        "translation": "空气污染每年导致约700万人过早死亡。",
+        "source": "考研英语二 阅读",
+        "difficulty": 3
+      },
+      {
+        "sentence": "Everyone can contribute to reducing carbon emissions.",
+        "translation": "每个人都可以为减少碳排放做出贡献。",
+        "source": "考研英语一 阅读",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "controversial",
+    "phoneticUs": "/ˌkɑːntrəˈvɜːrʃl/",
+    "phoneticUk": "/ˌkɒntrəˈvɜːʃl/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "有争议的；引起争论的",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "vers",
+      "rootMeaning": "转",
+      "affixes": [
+        {
+          "part": "contro-",
+          "meaning": "相反/对立"
+        },
+        {
+          "part": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "meaning": "contro-(相反) + vers(转) + -ial → 转向相反的 → 有争议的"
+    },
+    "derivatives": [
+      {
+        "word": "controversy",
+        "pos": "n.",
+        "defCn": "争论；争议"
+      },
+      {
+        "word": "uncontroversial",
+        "pos": "adj.",
+        "defCn": "无争议的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "a controversial issue",
+        "meaning": "有争议的问题"
+      },
+      {
+        "phrase": "highly controversial",
+        "meaning": "极具争议的"
+      }
+    ],
+    "frequencyRank": 24,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Genetic modification remains a highly controversial topic.",
+        "translation": "基因改造仍然是一个极具争议的话题。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "The controversial policy sparked widespread debate.",
+        "translation": "这项有争议的政策引发了广泛讨论。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "convince",
+    "phoneticUs": "/kənˈvɪns/",
+    "phoneticUk": "/kənˈvɪns/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "使相信；说服",
+        "examWeight": 5
+      }
+    ],
+    "derivatives": [
+      {
+        "word": "convincing",
+        "pos": "adj.",
+        "defCn": "令人信服的"
+      },
+      {
+        "word": "unconvincing",
+        "pos": "adj.",
+        "defCn": "不令人信服的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "convince someone to do",
+        "meaning": "说服某人做某事"
+      },
+      {
+        "phrase": "convince someone of",
+        "meaning": "使某人相信"
+      }
+    ],
+    "frequencyRank": 25,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The evidence convinced the jury of his innocence.",
+        "translation": "证据使陪审团相信他是无辜的。",
+        "source": "考研英语二 阅读",
+        "difficulty": 1
+      },
+      {
+        "sentence": "She tried to convince her parents to let her study abroad.",
+        "translation": "她试图说服父母让她出国留学。",
+        "source": "经典例句",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "critical",
+    "phoneticUs": "/ˈkrɪtɪkl/",
+    "phoneticUk": "/ˈkrɪtɪkl/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "批评的；关键的；危急的",
+        "examWeight": 5
+      }
+    ],
+    "derivatives": [
+      {
+        "word": "critically",
+        "pos": "adv.",
+        "defCn": "批评地；关键地；严重地"
+      },
+      {
+        "word": "criticism",
+        "pos": "n.",
+        "defCn": "批评；评论"
+      },
+      {
+        "word": "criticize",
+        "pos": "v.",
+        "defCn": "批评；批判"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "critical thinking",
+        "meaning": "批判性思维"
+      },
+      {
+        "phrase": "play a critical role in",
+        "meaning": "在...中起关键作用"
+      }
+    ],
+    "frequencyRank": 26,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Education plays a critical role in reducing inequality.",
+        "translation": "教育在减少不平等方面起着关键作用。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "Critical thinking is an essential skill in the modern workplace.",
+        "translation": "批判性思维是现代职场的一项基本技能。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "demonstrate",
+    "phoneticUs": "/ˈdemənstreɪt/",
+    "phoneticUk": "/ˈdemənstreɪt/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "展示；证明；示威",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "monstr",
+      "rootMeaning": "显示",
+      "affixes": [
+        {
+          "part": "de-",
+          "meaning": "完全/向下"
+        },
+        {
+          "part": "-ate",
+          "meaning": "动词后缀"
+        }
+      ],
+      "meaning": "de-(完全) + monstr(显示) + -ate → 完全展示出来 → 证明/展示"
+    },
+    "derivatives": [
+      {
+        "word": "demonstration",
+        "pos": "n.",
+        "defCn": "展示；证明；示威游行"
+      },
+      {
+        "word": "demonstrative",
+        "pos": "adj.",
+        "defCn": "公开表露的；指示的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "demonstrate the ability to",
+        "meaning": "展示...的能力"
+      },
+      {
+        "phrase": "clearly demonstrate",
+        "meaning": "清楚地表明"
+      }
+    ],
+    "frequencyRank": 27,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The study demonstrates a clear link between diet and health.",
+        "translation": "该研究表明饮食与健康之间有明确的联系。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "Students must demonstrate their understanding through practical application.",
+        "translation": "学生必须通过实际应用来展示他们的理解。",
+        "source": "考研英语二 完形",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "diverse",
+    "phoneticUs": "/daɪˈvɜːrs/",
+    "phoneticUk": "/daɪˈvɜːs/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "多样化的；不同的",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "vers",
+      "rootMeaning": "转",
+      "affixes": [
+        {
+          "part": "di-",
+          "meaning": "分离/分开"
+        }
+      ],
+      "meaning": "di-(分离) + verse(转) → 转向不同方向 → 多样化的"
+    },
+    "derivatives": [
+      {
+        "word": "diversity",
+        "pos": "n.",
+        "defCn": "多样性；差异"
+      },
+      {
+        "word": "diversify",
+        "pos": "v.",
+        "defCn": "使多样化"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "culturally diverse",
+        "meaning": "文化多元的"
+      },
+      {
+        "phrase": "diverse range of",
+        "meaning": "多种多样的"
+      }
+    ],
+    "frequencyRank": 28,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The university attracts students from diverse cultural backgrounds.",
+        "translation": "这所大学吸引了来自不同文化背景的学生。",
+        "source": "考研英语二 阅读",
+        "difficulty": 1
+      },
+      {
+        "sentence": "A diverse workforce brings different perspectives to problem-solving.",
+        "translation": "多元化的员工队伍为问题解决带来了不同的视角。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "domestic",
+    "phoneticUs": "/dəˈmestɪk/",
+    "phoneticUk": "/dəˈmestɪk/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "国内的；家庭的；驯养的",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "dom",
+      "rootMeaning": "家/房屋",
+      "affixes": [
+        {
+          "part": "-est",
+          "meaning": "(连接)"
+        },
+        {
+          "part": "-ic",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "meaning": "dom(家) + est + -ic → 家的 → 国内的/家庭的"
+    },
+    "derivatives": [
+      {
+        "word": "domestically",
+        "pos": "adv.",
+        "defCn": "国内地；家庭内地"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "domestic market",
+        "meaning": "国内市场"
+      },
+      {
+        "phrase": "gross domestic product (GDP)",
+        "meaning": "国内生产总值"
+      }
+    ],
+    "frequencyRank": 29,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The domestic economy has shown signs of recovery.",
+        "translation": "国内经济已经显示出复苏迹象。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "The government introduced policies to boost domestic consumption.",
+        "translation": "政府出台了促进国内消费的政策。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "emerge",
+    "phoneticUs": "/iˈmɜːrdʒ/",
+    "phoneticUk": "/iˈmɜːdʒ/",
+    "meanings": [
+      {
+        "pos": "vi.",
+        "defCn": "出现；浮现；暴露",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "merg",
+      "rootMeaning": "沉没/浸",
+      "affixes": [
+        {
+          "part": "e-",
+          "meaning": "出/外"
+        }
+      ],
+      "meaning": "e-(出) + merge(沉) → 从沉没中出来 → 浮现/出现"
+    },
+    "derivatives": [
+      {
+        "word": "emergence",
+        "pos": "n.",
+        "defCn": "出现；浮现"
+      },
+      {
+        "word": "emergent",
+        "pos": "adj.",
+        "defCn": "新兴的；紧急的"
+      },
+      {
+        "word": "emergency",
+        "pos": "n.",
+        "defCn": "紧急情况"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "emerge from",
+        "meaning": "从...中出现"
+      },
+      {
+        "phrase": "emerging economies",
+        "meaning": "新兴经济体"
+      }
+    ],
+    "frequencyRank": 30,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "A new trend has emerged in the digital economy.",
+        "translation": "数字经济中出现了一种新趋势。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "After the crisis, the country emerged as a stronger economy.",
+        "translation": "危机过后，该国以更强的经济体姿态出现。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "engage",
+    "phoneticUs": "/ɪnˈɡeɪdʒ/",
+    "phoneticUk": "/ɪnˈɡeɪdʒ/",
+    "meanings": [
+      {
+        "pos": "v.",
+        "defCn": "参与；从事；吸引；雇用",
+        "examWeight": 5
+      }
+    ],
+    "derivatives": [
+      {
+        "word": "engagement",
+        "pos": "n.",
+        "defCn": "参与；订婚；约定"
+      },
+      {
+        "word": "engaging",
+        "pos": "adj.",
+        "defCn": "吸引人的；迷人的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "engage in",
+        "meaning": "参与；从事"
+      },
+      {
+        "phrase": "engage with",
+        "meaning": "与...互动；处理"
+      }
+    ],
+    "frequencyRank": 31,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Students who actively engage in class discussions tend to perform better.",
+        "translation": "积极参与课堂讨论的学生往往表现更好。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "The company is seeking to engage new talent.",
+        "translation": "公司正在寻求招募新人才。",
+        "source": "经典例句",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "enhance",
+    "phoneticUs": "/ɪnˈhæns/",
+    "phoneticUk": "/ɪnˈhɑːns/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "增强；提高；改善",
+        "examWeight": 5
+      }
+    ],
+    "derivatives": [
+      {
+        "word": "enhancement",
+        "pos": "n.",
+        "defCn": "增强；提高"
+      },
+      {
+        "word": "enhanced",
+        "pos": "adj.",
+        "defCn": "增强的；提高的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "enhance the quality of",
+        "meaning": "提高...的质量"
+      },
+      {
+        "phrase": "enhance efficiency",
+        "meaning": "提高效率"
+      }
+    ],
+    "frequencyRank": 32,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Technology can significantly enhance the learning experience.",
+        "translation": "技术可以显著改善学习体验。",
+        "source": "考研英语二 阅读",
+        "difficulty": 1
+      },
+      {
+        "sentence": "The program aims to enhance students' critical thinking skills.",
+        "translation": "该项目旨在提高学生的批判性思维能力。",
+        "source": "考研英语一 完形",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "evidence",
+    "phoneticUs": "/ˈevɪdəns/",
+    "phoneticUk": "/ˈevɪdəns/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "证据；迹象；证明",
+        "examWeight": 5
+      },
+      {
+        "pos": "vt.",
+        "defCn": "证明；表明",
+        "examWeight": 2
+      }
+    ],
+    "rootAffix": {
+      "root": "vid",
+      "rootMeaning": "看",
+      "affixes": [
+        {
+          "part": "e-",
+          "meaning": "出"
+        },
+        {
+          "part": "-ence",
+          "meaning": "名词后缀"
+        }
+      ],
+      "meaning": "e-(出) + vid(看) + -ence → 看出来 → 证据"
+    },
+    "derivatives": [
+      {
+        "word": "evident",
+        "pos": "adj.",
+        "defCn": "明显的；显然的"
+      },
+      {
+        "word": "evidently",
+        "pos": "adv.",
+        "defCn": "显然地；明显地"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "scientific evidence",
+        "meaning": "科学证据"
+      },
+      {
+        "phrase": "there is evidence that",
+        "meaning": "有证据表明..."
+      }
+    ],
+    "frequencyRank": 33,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "There is strong evidence linking smoking to lung cancer.",
+        "translation": "有强有力的证据将吸烟与肺癌联系起来。",
+        "source": "考研英语二 阅读",
+        "difficulty": 1
+      },
+      {
+        "sentence": "The study provides further evidence of the benefits of bilingual education.",
+        "translation": "这项研究为双语教育的好处提供了进一步的证据。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "evolution",
+    "phoneticUs": "/ˌevəˈluːʃn/",
+    "phoneticUk": "/ˌiːvəˈluːʃn/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "进化；演变；发展",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "volv",
+      "rootMeaning": "卷/转",
+      "affixes": [
+        {
+          "part": "e-",
+          "meaning": "出"
+        },
+        {
+          "part": "-tion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "meaning": "e-(出) + volut(卷/转) + -ion → 展开/发展出来 → 进化/演变"
+    },
+    "derivatives": [
+      {
+        "word": "evolve",
+        "pos": "v.",
+        "defCn": "进化；逐步发展"
+      },
+      {
+        "word": "evolutionary",
+        "pos": "adj.",
+        "defCn": "进化的；演变的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "theory of evolution",
+        "meaning": "进化论"
+      },
+      {
+        "phrase": "the evolution of",
+        "meaning": "...的演变"
+      }
+    ],
+    "frequencyRank": 34,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The evolution of the internet has transformed the way we communicate.",
+        "translation": "互联网的演变改变了我们的沟通方式。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "Scientists continue to study the evolution of language.",
+        "translation": "科学家们继续研究语言的进化。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "explicit",
+    "phoneticUs": "/ɪkˈsplɪsɪt/",
+    "phoneticUk": "/ɪkˈsplɪsɪt/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "明确的；清楚的；直言的",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "plic",
+      "rootMeaning": "折叠",
+      "affixes": [
+        {
+          "part": "ex-",
+          "meaning": "出/外"
+        }
+      ],
+      "meaning": "ex-(向外) + plicit(折叠) → 向外展开 → 明确表达的"
+    },
+    "derivatives": [
+      {
+        "word": "explicitly",
+        "pos": "adv.",
+        "defCn": "明确地；清楚地"
+      },
+      {
+        "word": "implicit",
+        "pos": "adj.",
+        "defCn": "含蓄的；隐含的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "explicit instructions",
+        "meaning": "明确的指示"
+      },
+      {
+        "phrase": "make explicit",
+        "meaning": "阐明；明确表达"
+      }
+    ],
+    "frequencyRank": 35,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The contract contains no explicit mention of penalties for late delivery.",
+        "translation": "合同中没有明确提到延迟交付的处罚。",
+        "source": "考研英语一 阅读",
+        "difficulty": 3
+      },
+      {
+        "sentence": "Teachers need to give explicit feedback to help students improve.",
+        "translation": "教师需要给予明确的反馈来帮助学生改进。",
+        "source": "考研英语二 完形",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "facilitate",
+    "phoneticUs": "/fəˈsɪlɪteɪt/",
+    "phoneticUk": "/fəˈsɪlɪteɪt/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "促进；使便利；帮助",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "facil",
+      "rootMeaning": "容易",
+      "affixes": [
+        {
+          "part": "-ate",
+          "meaning": "动词后缀"
+        }
+      ],
+      "meaning": "facil(容易) + -itate → 使容易 → 促进"
+    },
+    "derivatives": [
+      {
+        "word": "facilitation",
+        "pos": "n.",
+        "defCn": "促进；便利"
+      },
+      {
+        "word": "facilitator",
+        "pos": "n.",
+        "defCn": "促进者；引导者"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "facilitate communication",
+        "meaning": "促进沟通"
+      },
+      {
+        "phrase": "facilitate the process",
+        "meaning": "简化流程"
+      }
+    ],
+    "frequencyRank": 36,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Technology can facilitate collaboration among remote teams.",
+        "translation": "技术可以促进远程团队之间的协作。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "The new policy aims to facilitate trade between the two countries.",
+        "translation": "新政策旨在促进两国之间的贸易。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "fundamental",
+    "phoneticUs": "/ˌfʌndəˈmentl/",
+    "phoneticUk": "/ˌfʌndəˈmentl/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "基本的；根本的；重要的",
+        "examWeight": 5
+      },
+      {
+        "pos": "n.",
+        "defCn": "基本原理；基础",
+        "examWeight": 3
+      }
+    ],
+    "rootAffix": {
+      "root": "fund",
+      "rootMeaning": "基础/底部",
+      "affixes": [
+        {
+          "part": "-ment",
+          "meaning": "名词后缀"
+        },
+        {
+          "part": "-al",
+          "meaning": "形容词后缀"
+        }
+      ],
+      "meaning": "funda(基础) + ment + -al → 基础的/根本的"
+    },
+    "derivatives": [
+      {
+        "word": "fundamentally",
+        "pos": "adv.",
+        "defCn": "根本地；基本地"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "fundamental change",
+        "meaning": "根本性变化"
+      },
+      {
+        "phrase": "play a fundamental role",
+        "meaning": "起根本性作用"
+      }
+    ],
+    "frequencyRank": 37,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Education is fundamental to a country's development.",
+        "translation": "教育对一个国家的发展至关重要。",
+        "source": "考研英语二 阅读",
+        "difficulty": 1
+      },
+      {
+        "sentence": "There is a fundamental difference between the two approaches.",
+        "translation": "这两种方法之间存在根本的区别。",
+        "source": "考研英语一 完形",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "generate",
+    "phoneticUs": "/ˈdʒenəreɪt/",
+    "phoneticUk": "/ˈdʒenəreɪt/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "产生；生成；引起",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "gen",
+      "rootMeaning": "产生/出生",
+      "affixes": [
+        {
+          "part": "-ate",
+          "meaning": "动词后缀"
+        }
+      ],
+      "meaning": "gener(产生) + -ate → 产生/生成"
+    },
+    "derivatives": [
+      {
+        "word": "generation",
+        "pos": "n.",
+        "defCn": "产生；一代人"
+      },
+      {
+        "word": "generator",
+        "pos": "n.",
+        "defCn": "发电机；发生器"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "generate income",
+        "meaning": "产生收入"
+      },
+      {
+        "phrase": "generate interest",
+        "meaning": "引起兴趣"
+      }
+    ],
+    "frequencyRank": 38,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The project is expected to generate thousands of new jobs.",
+        "translation": "该项目预计将创造数千个新就业岗位。",
+        "source": "考研英语二 阅读",
+        "difficulty": 1
+      },
+      {
+        "sentence": "Renewable energy sources generate electricity without producing carbon emissions.",
+        "translation": "可再生能源在不产生碳排放的情况下发电。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "hypothesis",
+    "phoneticUs": "/haɪˈpɑːθəsɪs/",
+    "phoneticUk": "/haɪˈpɒθəsɪs/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "假说；假设；猜想",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "thes",
+      "rootMeaning": "放置",
+      "affixes": [
+        {
+          "part": "hypo-",
+          "meaning": "在下/低于"
+        },
+        {
+          "part": "-is",
+          "meaning": "名词后缀"
+        }
+      ],
+      "meaning": "hypo-(在下) + thesis(放置) → 放在下面的基础 → 假设"
+    },
+    "derivatives": [
+      {
+        "word": "hypothesize",
+        "pos": "v.",
+        "defCn": "假设；假定"
+      },
+      {
+        "word": "hypothetical",
+        "pos": "adj.",
+        "defCn": "假设的；假想的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "test a hypothesis",
+        "meaning": "检验假设"
+      },
+      {
+        "phrase": "working hypothesis",
+        "meaning": "工作假设"
+      }
+    ],
+    "frequencyRank": 39,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The researchers developed a new hypothesis to explain the phenomenon.",
+        "translation": "研究人员提出了一个新的假说来解释这一现象。",
+        "source": "考研英语一 阅读",
+        "difficulty": 3
+      },
+      {
+        "sentence": "Further experiments are needed to test this hypothesis.",
+        "translation": "需要进一步的实验来检验这个假设。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "identify",
+    "phoneticUs": "/aɪˈdentɪfaɪ/",
+    "phoneticUk": "/aɪˈdentɪfaɪ/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "识别；确认；认同",
+        "examWeight": 5
+      }
+    ],
+    "derivatives": [
+      {
+        "word": "identification",
+        "pos": "n.",
+        "defCn": "识别；身份证明；认同"
+      },
+      {
+        "word": "identity",
+        "pos": "n.",
+        "defCn": "身份；同一性"
+      },
+      {
+        "word": "identifiable",
+        "pos": "adj.",
+        "defCn": "可识别的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "identify with",
+        "meaning": "认同；与...产生共鸣"
+      },
+      {
+        "phrase": "identify the problem",
+        "meaning": "识别问题"
+      }
+    ],
+    "frequencyRank": 40,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Scientists have identified a gene linked to the disease.",
+        "translation": "科学家们已经识别出与这种疾病相关的一个基因。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "Many young people identify with the characters in the novel.",
+        "translation": "许多年轻人认同小说中的角色。",
+        "source": "考研英语一 翻译",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "implement",
+    "phoneticUs": "/ˈɪmplɪment/",
+    "phoneticUk": "/ˈɪmplɪment/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "实施；执行；实现",
+        "examWeight": 5
+      },
+      {
+        "pos": "n.",
+        "defCn": "工具；器具",
+        "examWeight": 1
+      }
+    ],
+    "rootAffix": {
+      "root": "ple",
+      "rootMeaning": "填满/完成",
+      "affixes": [
+        {
+          "part": "im-",
+          "meaning": "进入"
+        },
+        {
+          "part": "-ment",
+          "meaning": "名词/动词后缀"
+        }
+      ],
+      "meaning": "im-(进入) + ple(填满) + -ment → 完成 → 实施/执行"
+    },
+    "derivatives": [
+      {
+        "word": "implementation",
+        "pos": "n.",
+        "defCn": "实施；执行"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "implement a plan",
+        "meaning": "实施计划"
+      },
+      {
+        "phrase": "implement measures",
+        "meaning": "采取措施"
+      }
+    ],
+    "frequencyRank": 41,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The government has implemented a series of economic reforms.",
+        "translation": "政府已经实施了一系列经济改革。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "It takes time to implement changes in large organizations.",
+        "translation": "在大型组织中实施变革需要时间。",
+        "source": "考研英语一 阅读",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "implication",
+    "phoneticUs": "/ˌɪmplɪˈkeɪʃn/",
+    "phoneticUk": "/ˌɪmplɪˈkeɪʃn/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "含义；暗示；可能的影响",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "plic",
+      "rootMeaning": "折叠",
+      "affixes": [
+        {
+          "part": "im-",
+          "meaning": "在内"
+        },
+        {
+          "part": "-tion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "meaning": "im-(在内) + plic(折叠) + -ation → 折在里面 → 隐含之意 → 含义"
+    },
+    "derivatives": [
+      {
+        "word": "imply",
+        "pos": "vt.",
+        "defCn": "暗示；意味着"
+      },
+      {
+        "word": "implicit",
+        "pos": "adj.",
+        "defCn": "含蓄的；隐含的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "have implications for",
+        "meaning": "对...有影响"
+      },
+      {
+        "phrase": "far-reaching implications",
+        "meaning": "深远的影响"
+      }
+    ],
+    "frequencyRank": 42,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The findings have important implications for public health policy.",
+        "translation": "这些发现对公共卫生政策有重要影响。",
+        "source": "考研英语一 阅读",
+        "difficulty": 3
+      },
+      {
+        "sentence": "The implications of artificial intelligence for employment are widely debated.",
+        "translation": "人工智能对就业的影响引起了广泛讨论。",
+        "source": "考研英语二 阅读",
+        "difficulty": 3
+      }
+    ]
+  },
+  {
+    "word": "incentive",
+    "phoneticUs": "/ɪnˈsentɪv/",
+    "phoneticUk": "/ɪnˈsentɪv/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "激励；刺激；诱因",
+        "examWeight": 5
+      }
+    ],
+    "derivatives": [
+      {
+        "word": "incentivize",
+        "pos": "vt.",
+        "defCn": "激励；以物质刺激"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "economic incentive",
+        "meaning": "经济激励"
+      },
+      {
+        "phrase": "provide an incentive",
+        "meaning": "提供激励"
+      }
+    ],
+    "frequencyRank": 43,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Tax incentives can encourage businesses to invest in renewable energy.",
+        "translation": "税收激励可以鼓励企业投资可再生能源。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "Without sufficient incentive, employees may lack motivation to innovate.",
+        "translation": "没有足够的激励，员工可能缺乏创新的动力。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "infrastructure",
+    "phoneticUs": "/ˈɪnfrəstrʌktʃər/",
+    "phoneticUk": "/ˈɪnfrəstrʌktʃə/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "基础设施；基础结构",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "struct",
+      "rootMeaning": "建造",
+      "affixes": [
+        {
+          "part": "infra-",
+          "meaning": "在下/在下部"
+        },
+        {
+          "part": "-ure",
+          "meaning": "名词后缀"
+        }
+      ],
+      "meaning": "infra-(在下) + struct(建造) + -ure → 在下面的建筑 → 基础设施"
+    },
+    "collocations": [
+      {
+        "phrase": "transport infrastructure",
+        "meaning": "交通基础设施"
+      },
+      {
+        "phrase": "digital infrastructure",
+        "meaning": "数字基础设施"
+      }
+    ],
+    "frequencyRank": 44,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Investment in infrastructure is crucial for economic growth.",
+        "translation": "基础设施投资对经济增长至关重要。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "The country has been upgrading its digital infrastructure.",
+        "translation": "该国一直在升级其数字基础设施。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "interpret",
+    "phoneticUs": "/ɪnˈtɜːrprɪt/",
+    "phoneticUk": "/ɪnˈtɜːprɪt/",
+    "meanings": [
+      {
+        "pos": "v.",
+        "defCn": "解释；阐释；口译",
+        "examWeight": 5
+      }
+    ],
+    "derivatives": [
+      {
+        "word": "interpretation",
+        "pos": "n.",
+        "defCn": "解释；阐释；口译"
+      },
+      {
+        "word": "interpreter",
+        "pos": "n.",
+        "defCn": "口译员；解释者"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "interpret data",
+        "meaning": "解读数据"
+      },
+      {
+        "phrase": "be open to interpretation",
+        "meaning": "有待解读"
+      }
+    ],
+    "frequencyRank": 46,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "How we interpret data depends on our theoretical framework.",
+        "translation": "我们如何解读数据取决于我们的理论框架。",
+        "source": "考研英语一 阅读",
+        "difficulty": 3
+      },
+      {
+        "sentence": "The results of the study can be interpreted in several ways.",
+        "translation": "研究结果可以用几种不同的方式来解释。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "justify",
+    "phoneticUs": "/ˈdʒʌstɪfaɪ/",
+    "phoneticUk": "/ˈdʒʌstɪfaɪ/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "证明...正当；为...辩护；为...提供理由",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "just",
+      "rootMeaning": "公正/法律",
+      "affixes": [
+        {
+          "part": "-ify",
+          "meaning": "动词后缀"
+        }
+      ],
+      "meaning": "just(公正) + -ify → 使公正 → 证明正当"
+    },
+    "derivatives": [
+      {
+        "word": "justification",
+        "pos": "n.",
+        "defCn": "正当理由；辩护"
+      },
+      {
+        "word": "justifiable",
+        "pos": "adj.",
+        "defCn": "有正当理由的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "justify the cost",
+        "meaning": "证明成本合理"
+      },
+      {
+        "phrase": "cannot be justified",
+        "meaning": "无法被证明是正当的"
+      }
+    ],
+    "frequencyRank": 47,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "How can we justify spending so much on space exploration?",
+        "translation": "我们如何证明在太空探索上花费这么多是合理的？",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "Nothing can justify discrimination.",
+        "translation": "什么都不能为歧视辩护。",
+        "source": "考研英语一 翻译",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "legislation",
+    "phoneticUs": "/ˌledʒɪsˈleɪʃn/",
+    "phoneticUk": "/ˌledʒɪsˈleɪʃn/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "立法；法律；法规",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "leg",
+      "rootMeaning": "法律",
+      "affixes": [
+        {
+          "part": "-is",
+          "meaning": "(连接)"
+        },
+        {
+          "part": "-tion",
+          "meaning": "名词后缀"
+        }
+      ],
+      "meaning": "legis(法律) + lat(提出) + -ion → 提出法律 → 立法"
+    },
+    "derivatives": [
+      {
+        "word": "legislate",
+        "pos": "v.",
+        "defCn": "立法；制定法律"
+      },
+      {
+        "word": "legislative",
+        "pos": "adj.",
+        "defCn": "立法的"
+      },
+      {
+        "word": "legislator",
+        "pos": "n.",
+        "defCn": "立法者"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "pass legislation",
+        "meaning": "通过立法"
+      },
+      {
+        "phrase": "environmental legislation",
+        "meaning": "环境法规"
+      }
+    ],
+    "frequencyRank": 48,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "New legislation was introduced to protect consumer rights.",
+        "translation": "新立法被引入以保护消费者权益。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "The legislation aims to reduce carbon emissions by 40% by 2030.",
+        "translation": "该立法旨在到2030年将碳排放减少40%。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "manifest",
+    "phoneticUs": "/ˈmænɪfest/",
+    "phoneticUk": "/ˈmænɪfest/",
+    "meanings": [
+      {
+        "pos": "v.",
+        "defCn": "显示；表明；显现",
+        "examWeight": 5
+      },
+      {
+        "pos": "adj.",
+        "defCn": "明显的；清楚的",
+        "examWeight": 3
+      }
+    ],
+    "derivatives": [
+      {
+        "word": "manifestation",
+        "pos": "n.",
+        "defCn": "显示；表现；显现"
+      },
+      {
+        "word": "manifestly",
+        "pos": "adv.",
+        "defCn": "明显地"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "manifest itself",
+        "meaning": "显现出来"
+      },
+      {
+        "phrase": "make manifest",
+        "meaning": "使显露"
+      }
+    ],
+    "frequencyRank": 49,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Stress often manifests itself in physical symptoms.",
+        "translation": "压力通常以身体症状表现出来。",
+        "source": "考研英语一 阅读",
+        "difficulty": 3
+      },
+      {
+        "sentence": "The problem manifests a deeper crisis in the system.",
+        "translation": "这个问题表明了系统中更深层次的危机。",
+        "source": "考研英语二 阅读",
+        "difficulty": 3
+      }
+    ]
+  },
+  {
+    "word": "mechanism",
+    "phoneticUs": "/ˈmekənɪzəm/",
+    "phoneticUk": "/ˈmekənɪzəm/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "机制；机理；方法",
+        "examWeight": 5
+      }
+    ],
+    "derivatives": [
+      {
+        "word": "mechanistic",
+        "pos": "adj.",
+        "defCn": "机械论的"
+      },
+      {
+        "word": "mechanically",
+        "pos": "adv.",
+        "defCn": "机械地"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "coping mechanism",
+        "meaning": "应对机制"
+      },
+      {
+        "phrase": "underlying mechanism",
+        "meaning": "潜在机制"
+      }
+    ],
+    "frequencyRank": 50,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Scientists are still studying the mechanism behind the disease.",
+        "translation": "科学家们仍在研究这种疾病背后的机制。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      },
+      {
+        "sentence": "The market mechanism is not always efficient in allocating resources.",
+        "translation": "市场机制在资源配置方面并不总是有效的。",
+        "source": "考研英语一 阅读",
+        "difficulty": 3
+      }
+    ]
+  },
+  {
+    "word": "abuse",
+    "phoneticUs": "/əˈbjuːz/",
+    "meanings": [
+      {
+        "pos": "vt./n.",
+        "defCn": "滥用；虐待；辱骂",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "us",
+      "rootMeaning": "使用",
+      "affixes": [
+        {
+          "part": "ab-",
+          "meaning": "偏离/异常"
+        }
+      ],
+      "meaning": "ab-(偏离) + use(使用) → 使用偏离正常 → 滥用"
+    },
+    "derivatives": [
+      {
+        "word": "abusive",
+        "pos": "adj.",
+        "defCn": "辱骂的；虐待的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "drug abuse",
+        "meaning": "药物滥用"
+      },
+      {
+        "phrase": "abuse of power",
+        "meaning": "滥用权力"
+      }
+    ],
+    "frequencyRank": 2,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The official was accused of abusing his power.",
+        "translation": "该官员被指控滥用职权。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "access",
+    "phoneticUs": "/ˈækses/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "通道；进入；使用权",
+        "examWeight": 5
+      },
+      {
+        "pos": "vt.",
+        "defCn": "访问；存取（数据）",
+        "examWeight": 4
+      }
+    ],
+    "rootAffix": {
+      "root": "cess",
+      "rootMeaning": "走/去",
+      "affixes": [
+        {
+          "part": "ac-",
+          "meaning": "朝向"
+        }
+      ],
+      "meaning": "ac-(朝向) + cess(走) → 走向某处 → 进入/通道"
+    },
+    "derivatives": [
+      {
+        "word": "accessible",
+        "pos": "adj.",
+        "defCn": "可进入的；易接近的"
+      },
+      {
+        "word": "accessibility",
+        "pos": "n.",
+        "defCn": "可及性；可达性"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "have access to",
+        "meaning": "可以获得/使用"
+      },
+      {
+        "phrase": "Internet access",
+        "meaning": "互联网接入"
+      }
+    ],
+    "frequencyRank": 3,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Students have free access to the library's digital resources.",
+        "translation": "学生可以免费使用图书馆的数字资源。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "accomplish",
+    "phoneticUs": "/əˈkɑːmplɪʃ/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "完成；达到；实现",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "pl",
+      "rootMeaning": "填满",
+      "affixes": [
+        {
+          "part": "ac-",
+          "meaning": "朝向"
+        },
+        {
+          "part": "com-",
+          "meaning": "完全"
+        }
+      ],
+      "meaning": "ac-(朝向) + com-(完全) + pl(填满) → 完全填满 → 完成"
+    },
+    "derivatives": [
+      {
+        "word": "accomplishment",
+        "pos": "n.",
+        "defCn": "成就；完成"
+      },
+      {
+        "word": "accomplished",
+        "pos": "adj.",
+        "defCn": "有成就的；熟练的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "accomplish a goal",
+        "meaning": "实现目标"
+      },
+      {
+        "phrase": "accomplish a task",
+        "meaning": "完成任务"
+      }
+    ],
+    "frequencyRank": 4,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "She accomplished her PhD in just three years.",
+        "translation": "她在短短三年内完成了博士学位。",
+        "source": "经典例句",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "account",
+    "phoneticUs": "/əˈkaʊnt/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "账户；描述；解释",
+        "examWeight": 5
+      },
+      {
+        "pos": "vi.",
+        "defCn": "解释；说明（account for）",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "count",
+      "rootMeaning": "数/计算",
+      "affixes": [
+        {
+          "part": "ac-",
+          "meaning": "朝向"
+        }
+      ],
+      "meaning": "ac-(朝向) + count(计算) → 计算 → 账目/说明"
+    },
+    "derivatives": [
+      {
+        "word": "accountable",
+        "pos": "adj.",
+        "defCn": "负有责任的"
+      },
+      {
+        "word": "accountant",
+        "pos": "n.",
+        "defCn": "会计师"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "account for",
+        "meaning": "解释；占（比例）"
+      },
+      {
+        "phrase": "take into account",
+        "meaning": "考虑到"
+      },
+      {
+        "phrase": "on account of",
+        "meaning": "由于"
+      }
+    ],
+    "frequencyRank": 5,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "How do you account for the sudden drop in sales?",
+        "translation": "你如何解释销量的突然下降？",
+        "source": "考研英语一 阅读",
+        "difficulty": 3
+      },
+      {
+        "sentence": "The service sector accounts for over 70% of the GDP.",
+        "translation": "服务业占GDP的70%以上。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "adequate",
+    "phoneticUs": "/ˈædɪkwət/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "足够的；适当的；胜任的",
+        "examWeight": 4
+      }
+    ],
+    "rootAffix": {
+      "root": "equ",
+      "rootMeaning": "相等",
+      "affixes": [
+        {
+          "part": "ad-",
+          "meaning": "朝向"
+        }
+      ],
+      "meaning": "ad-(朝向) + equ(相等) → 达到等同 → 足够的"
+    },
+    "derivatives": [
+      {
+        "word": "adequacy",
+        "pos": "n.",
+        "defCn": "足够；适当"
+      },
+      {
+        "word": "inadequate",
+        "pos": "adj.",
+        "defCn": "不充分的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "adequate for",
+        "meaning": "对...足够"
+      },
+      {
+        "phrase": "adequate to",
+        "meaning": "胜任..."
+      }
+    ],
+    "frequencyRank": 8,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The current safety measures are not adequate to prevent accidents.",
+        "translation": "目前的安全措施不足以预防事故。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "appeal",
+    "phoneticUs": "/əˈpiːl/",
+    "meanings": [
+      {
+        "pos": "vi./n.",
+        "defCn": "呼吁；吸引；上诉",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "peal",
+      "rootMeaning": "驱动/推",
+      "affixes": [
+        {
+          "part": "ap-",
+          "meaning": "朝向"
+        }
+      ],
+      "meaning": "ap-(朝向) + peal(推动) → 推动某人 → 呼吁/吸引"
+    },
+    "derivatives": [
+      {
+        "word": "appealing",
+        "pos": "adj.",
+        "defCn": "吸引人的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "appeal to",
+        "meaning": "吸引；呼吁"
+      },
+      {
+        "phrase": "appeal against",
+        "meaning": "对...提出上诉"
+      },
+      {
+        "phrase": "appeal for",
+        "meaning": "恳求"
+      }
+    ],
+    "frequencyRank": 12,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The idea of working from home appeals to many young professionals.",
+        "translation": "在家工作的想法吸引了许多年轻专业人士。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "authority",
+    "phoneticUs": "/əˈθɔːrəti/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "权威；权力；当局",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "auth",
+      "rootMeaning": "创造/增加",
+      "affixes": [],
+      "meaning": "author(作者/创造者) + ity → 有创造权的人 → 权威"
+    },
+    "derivatives": [
+      {
+        "word": "authoritative",
+        "pos": "adj.",
+        "defCn": "权威的；命令式的"
+      },
+      {
+        "word": "authorize",
+        "pos": "vt.",
+        "defCn": "授权；批准"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "in authority",
+        "meaning": "掌权"
+      },
+      {
+        "phrase": "have the authority to",
+        "meaning": "有权做..."
+      }
+    ],
+    "frequencyRank": 16,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The local authorities have approved the construction project.",
+        "translation": "地方当局已批准该建设项目。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "barrier",
+    "phoneticUs": "/ˈbæriər/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "障碍；屏障；壁垒",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "bar",
+      "rootMeaning": "棒/栏杆",
+      "affixes": [],
+      "meaning": "bar(栏杆) + rier → 障碍物 → 屏障/壁垒"
+    },
+    "derivatives": [],
+    "collocations": [
+      {
+        "phrase": "trade barrier",
+        "meaning": "贸易壁垒"
+      },
+      {
+        "phrase": "language barrier",
+        "meaning": "语言障碍"
+      },
+      {
+        "phrase": "break down barriers",
+        "meaning": "打破障碍"
+      }
+    ],
+    "frequencyRank": 18,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Language barriers can hinder international communication.",
+        "translation": "语言障碍会阻碍国际交流。",
+        "source": "考研英语一 翻译",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "capable",
+    "phoneticUs": "/ˈkeɪpəbl/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "有能力的；能够的",
+        "examWeight": 4
+      }
+    ],
+    "rootAffix": {
+      "root": "cap",
+      "rootMeaning": "拿/取",
+      "affixes": [],
+      "meaning": "cap(拿) + able(能) → 能拿住的 → 有能力的"
+    },
+    "derivatives": [
+      {
+        "word": "capability",
+        "pos": "n.",
+        "defCn": "能力；才能"
+      },
+      {
+        "word": "incapable",
+        "pos": "adj.",
+        "defCn": "无能力的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "be capable of",
+        "meaning": "能够做..."
+      },
+      {
+        "phrase": "capable hands",
+        "meaning": "能手"
+      }
+    ],
+    "frequencyRank": 20,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "She is capable of handling complex negotiations.",
+        "translation": "她有能力处理复杂的谈判。",
+        "source": "经典例句",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "circumstance",
+    "phoneticUs": "/ˈsɜːrkəmstæns/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "环境；情况；境遇",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "circum",
+      "rootMeaning": "周围/环绕",
+      "affixes": [
+        {
+          "part": "stance",
+          "meaning": "站立"
+        }
+      ],
+      "meaning": "circum(周围) + stance(站立) → 站在周围的东西 → 环境"
+    },
+    "derivatives": [],
+    "collocations": [
+      {
+        "phrase": "under/in no circumstances",
+        "meaning": "决不"
+      },
+      {
+        "phrase": "under the circumstances",
+        "meaning": "在这种情况下"
+      }
+    ],
+    "frequencyRank": 22,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Under no circumstances should we give up hope.",
+        "translation": "我们决不应该放弃希望。",
+        "source": "考研英语一 完型",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "claim",
+    "phoneticUs": "/kleɪm/",
+    "meanings": [
+      {
+        "pos": "vt./n.",
+        "defCn": "声称；要求；索赔",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "claim",
+      "rootMeaning": "呼喊/叫",
+      "affixes": [],
+      "meaning": "claim(呼喊) → 大声说出 → 声称/要求"
+    },
+    "derivatives": [
+      {
+        "word": "disclaim",
+        "pos": "vt.",
+        "defCn": "否认；放弃"
+      },
+      {
+        "word": "reclaim",
+        "pos": "vt.",
+        "defCn": "回收；开垦"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "claim responsibility",
+        "meaning": "声称负责"
+      },
+      {
+        "phrase": "make a claim",
+        "meaning": "提出索赔/声明"
+      }
+    ],
+    "frequencyRank": 23,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The company claims that its product is 100% natural.",
+        "translation": "该公司声称其产品是100%天然的。",
+        "source": "考研英语二 阅读",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "communicate",
+    "phoneticUs": "/kəˈmjuːnɪkeɪt/",
+    "meanings": [
+      {
+        "pos": "v.",
+        "defCn": "交流；传达；沟通",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "commun",
+      "rootMeaning": "共同/公共",
+      "affixes": [],
+      "meaning": "commun(共同) + icate → 使共同分享 → 交流/传达"
+    },
+    "derivatives": [
+      {
+        "word": "communication",
+        "pos": "n.",
+        "defCn": "交流；通讯"
+      },
+      {
+        "word": "communicative",
+        "pos": "adj.",
+        "defCn": "健谈的；交际的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "communicate with",
+        "meaning": "与...交流"
+      },
+      {
+        "phrase": "communicate effectively",
+        "meaning": "有效沟通"
+      }
+    ],
+    "frequencyRank": 24,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The ability to communicate effectively is essential in the workplace.",
+        "translation": "有效沟通的能力在职场中至关重要。",
+        "source": "考研英语二 阅读",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "community",
+    "phoneticUs": "/kəˈmjuːnəti/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "社区；团体；社会",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "commun",
+      "rootMeaning": "共同/公共",
+      "affixes": [],
+      "meaning": "commun(共同) + ity → 共同生活的地方 → 社区"
+    },
+    "collocations": [
+      {
+        "phrase": "international community",
+        "meaning": "国际社会"
+      },
+      {
+        "phrase": "scientific community",
+        "meaning": "科学界"
+      }
+    ],
+    "frequencyRank": 25,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The local community has rallied together to support the victims.",
+        "translation": "当地社区团结起来支持受害者。",
+        "source": "考研英语一 阅读",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "concentrate",
+    "phoneticUs": "/ˈkɑːnsntreɪt/",
+    "meanings": [
+      {
+        "pos": "v.",
+        "defCn": "集中；专注；浓缩",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "centr",
+      "rootMeaning": "中心",
+      "affixes": [
+        {
+          "part": "con-",
+          "meaning": "共同"
+        }
+      ],
+      "meaning": "con-(共同) + centr(中心) → 共同到中心 → 集中"
+    },
+    "derivatives": [
+      {
+        "word": "concentration",
+        "pos": "n.",
+        "defCn": "集中；专注；浓度"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "concentrate on",
+        "meaning": "专注于"
+      }
+    ],
+    "frequencyRank": 26,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "I can't concentrate on my work with all this noise.",
+        "translation": "这些噪音让我无法专注于工作。",
+        "source": "经典例句",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "concept",
+    "phoneticUs": "/ˈkɑːnsept/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "概念；观念",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "cept",
+      "rootMeaning": "拿/取",
+      "affixes": [
+        {
+          "part": "con-",
+          "meaning": "共同"
+        }
+      ],
+      "meaning": "con-(共同) + cept(拿) → 共同持有的想法 → 概念"
+    },
+    "derivatives": [
+      {
+        "word": "conception",
+        "pos": "n.",
+        "defCn": "概念；构想；怀孕"
+      },
+      {
+        "word": "conceptual",
+        "pos": "adj.",
+        "defCn": "概念的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "basic concept",
+        "meaning": "基本概念"
+      }
+    ],
+    "frequencyRank": 27,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The concept of sustainable development has gained widespread acceptance.",
+        "translation": "可持续发展的概念已获得广泛接受。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "conduct",
+    "phoneticUs": "/kənˈdʌkt/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "进行；实施；指挥",
+        "examWeight": 5
+      },
+      {
+        "pos": "n.",
+        "defCn": "行为；举止",
+        "examWeight": 3
+      }
+    ],
+    "rootAffix": {
+      "root": "duct",
+      "rootMeaning": "引导",
+      "affixes": [
+        {
+          "part": "con-",
+          "meaning": "共同"
+        }
+      ],
+      "meaning": "con-(共同) + duct(引导) → 引导大家 → 指挥/实施"
+    },
+    "derivatives": [
+      {
+        "word": "conductor",
+        "pos": "n.",
+        "defCn": "指挥；导体；售票员"
+      },
+      {
+        "word": "misconduct",
+        "pos": "n.",
+        "defCn": "不当行为"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "conduct research",
+        "meaning": "进行研究"
+      },
+      {
+        "phrase": "conduct an experiment",
+        "meaning": "进行实验"
+      },
+      {
+        "phrase": "code of conduct",
+        "meaning": "行为准则"
+      }
+    ],
+    "frequencyRank": 28,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The university conducted a survey on student satisfaction.",
+        "translation": "该大学进行了一项学生满意度调查。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "consume",
+    "phoneticUs": "/kənˈsuːm/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "消费；消耗；吞噬",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "sum",
+      "rootMeaning": "拿/取",
+      "affixes": [
+        {
+          "part": "con-",
+          "meaning": "完全"
+        }
+      ],
+      "meaning": "con-(完全) + sume(拿取) → 完全拿走 → 消费/消耗"
+    },
+    "derivatives": [
+      {
+        "word": "consumer",
+        "pos": "n.",
+        "defCn": "消费者"
+      },
+      {
+        "word": "consumption",
+        "pos": "n.",
+        "defCn": "消费；消耗"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "consume energy",
+        "meaning": "消耗能量"
+      },
+      {
+        "phrase": "consumer behavior",
+        "meaning": "消费者行为"
+      }
+    ],
+    "frequencyRank": 30,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The device consumes very little electricity.",
+        "translation": "该设备耗电极少。",
+        "source": "考研英语二 阅读",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "corporation",
+    "phoneticUs": "/ˌkɔːrpəˈreɪʃn/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "公司；企业；法人",
+        "examWeight": 4
+      }
+    ],
+    "rootAffix": {
+      "root": "corp",
+      "rootMeaning": "身体/团体",
+      "affixes": [],
+      "meaning": "corp(团体) + oration → 法人团体 → 公司"
+    },
+    "derivatives": [
+      {
+        "word": "corporate",
+        "pos": "adj.",
+        "defCn": "公司的；法人的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "multinational corporation",
+        "meaning": "跨国公司"
+      }
+    ],
+    "frequencyRank": 33,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Large corporations are increasingly focused on sustainability.",
+        "translation": "大型企业越来越关注可持续发展。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "culture",
+    "phoneticUs": "/ˈkʌltʃər/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "文化；教养；培养",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "cult",
+      "rootMeaning": "耕种/培养",
+      "affixes": [],
+      "meaning": "cult(培养) + ure → 培养出来的东西 → 文化"
+    },
+    "derivatives": [
+      {
+        "word": "cultural",
+        "pos": "adj.",
+        "defCn": "文化的"
+      },
+      {
+        "word": "multicultural",
+        "pos": "adj.",
+        "defCn": "多元文化的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "corporate culture",
+        "meaning": "企业文化"
+      },
+      {
+        "phrase": "culture shock",
+        "meaning": "文化冲击"
+      }
+    ],
+    "frequencyRank": 35,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Language is an essential part of a nation's culture.",
+        "translation": "语言是一个国家文化的重要组成部分。",
+        "source": "考研英语一 翻译",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "debate",
+    "phoneticUs": "/dɪˈbeɪt/",
+    "meanings": [
+      {
+        "pos": "n./v.",
+        "defCn": "辩论；争论；讨论",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "bat",
+      "rootMeaning": "打",
+      "affixes": [
+        {
+          "part": "de-",
+          "meaning": "向下"
+        }
+      ],
+      "meaning": "de-(向下) + bate(打) → 打下去 → 辩论"
+    },
+    "derivatives": [
+      {
+        "word": "debatable",
+        "pos": "adj.",
+        "defCn": "有争议的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "a heated debate",
+        "meaning": "激烈的辩论"
+      },
+      {
+        "phrase": "under debate",
+        "meaning": "在讨论中"
+      }
+    ],
+    "frequencyRank": 36,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "There is an ongoing debate about the future of education.",
+        "translation": "关于教育的未来存在持续的争论。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "decline",
+    "phoneticUs": "/dɪˈklaɪn/",
+    "meanings": [
+      {
+        "pos": "vi./n.",
+        "defCn": "下降；衰退；拒绝",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "clin",
+      "rootMeaning": "倾斜",
+      "affixes": [
+        {
+          "part": "de-",
+          "meaning": "向下"
+        }
+      ],
+      "meaning": "de-(向下) + cline(倾斜) → 向下倾斜 → 下降/衰退"
+    },
+    "collocations": [
+      {
+        "phrase": "economic decline",
+        "meaning": "经济衰退"
+      },
+      {
+        "phrase": "decline an invitation",
+        "meaning": "拒绝邀请"
+      }
+    ],
+    "frequencyRank": 37,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The population of the region has been in decline for decades.",
+        "translation": "该地区的人口几十年来一直在下降。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "define",
+    "phoneticUs": "/dɪˈfaɪn/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "定义；界定；明确",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "fin",
+      "rootMeaning": "边界/结束",
+      "affixes": [
+        {
+          "part": "de-",
+          "meaning": "完全"
+        }
+      ],
+      "meaning": "de-(完全) + fine(边界) → 划定边界 → 定义"
+    },
+    "derivatives": [
+      {
+        "word": "definition",
+        "pos": "n.",
+        "defCn": "定义；清晰度"
+      },
+      {
+        "word": "definite",
+        "pos": "adj.",
+        "defCn": "明确的；确定的"
+      },
+      {
+        "word": "indefinite",
+        "pos": "adj.",
+        "defCn": "不确定的；无限期的"
+      }
+    ],
+    "frequencyRank": 38,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "How do you define success in life?",
+        "translation": "你如何定义人生的成功？",
+        "source": "经典例句",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "despite",
+    "phoneticUs": "/dɪˈspaɪt/",
+    "meanings": [
+      {
+        "pos": "prep.",
+        "defCn": "尽管；不管",
+        "examWeight": 5
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "despite the fact that",
+        "meaning": "尽管事实是..."
+      },
+      {
+        "phrase": "despite all odds",
+        "meaning": "尽管困难重重"
+      }
+    ],
+    "frequencyRank": 40,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Despite the difficulties, the team managed to complete the project on time.",
+        "translation": "尽管困难重重，团队还是按时完成了项目。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "distinguish",
+    "phoneticUs": "/dɪˈstɪŋɡwɪʃ/",
+    "meanings": [
+      {
+        "pos": "v.",
+        "defCn": "区分；辨别；使杰出",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "sting",
+      "rootMeaning": "刺/分开",
+      "affixes": [
+        {
+          "part": "dis-",
+          "meaning": "分开"
+        }
+      ],
+      "meaning": "dis-(分开) + stinguish(刺) → 用刺分开 → 区分"
+    },
+    "derivatives": [
+      {
+        "word": "distinguished",
+        "pos": "adj.",
+        "defCn": "杰出的；卓越的"
+      },
+      {
+        "word": "distinguishable",
+        "pos": "adj.",
+        "defCn": "可区分的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "distinguish between",
+        "meaning": "区分...和..."
+      },
+      {
+        "phrase": "distinguish oneself",
+        "meaning": "使自己出众"
+      }
+    ],
+    "frequencyRank": 41,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "It's important to distinguish between facts and opinions.",
+        "translation": "区分事实和观点很重要。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "economy",
+    "phoneticUs": "/ɪˈkɑːnəmi/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "经济；节约",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "eco",
+      "rootMeaning": "家/环境",
+      "affixes": [
+        {
+          "part": "nomy",
+          "meaning": "管理"
+        }
+      ],
+      "meaning": "eco(家) + nomy(管理) → 管理家务 → 经济/节约"
+    },
+    "derivatives": [
+      {
+        "word": "economic",
+        "pos": "adj.",
+        "defCn": "经济的"
+      },
+      {
+        "word": "economical",
+        "pos": "adj.",
+        "defCn": "节约的"
+      },
+      {
+        "word": "economics",
+        "pos": "n.",
+        "defCn": "经济学"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "market economy",
+        "meaning": "市场经济"
+      },
+      {
+        "phrase": "global economy",
+        "meaning": "全球经济"
+      }
+    ],
+    "frequencyRank": 43,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The digital economy is growing at an unprecedented rate.",
+        "translation": "数字经济正以前所未有的速度增长。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "effective",
+    "phoneticUs": "/ɪˈfektɪv/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "有效的；实际的",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "fect",
+      "rootMeaning": "做",
+      "affixes": [
+        {
+          "part": "ef-",
+          "meaning": "出"
+        }
+      ],
+      "meaning": "ef-(出) + fect(做) + ive → 做出效果的 → 有效的"
+    },
+    "derivatives": [
+      {
+        "word": "effectiveness",
+        "pos": "n.",
+        "defCn": "有效性"
+      },
+      {
+        "word": "ineffective",
+        "pos": "adj.",
+        "defCn": "无效的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "effective measures",
+        "meaning": "有效措施"
+      },
+      {
+        "phrase": "cost-effective",
+        "meaning": "合算的；性价比高的"
+      }
+    ],
+    "frequencyRank": 44,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The new drug has proven effective against the virus.",
+        "translation": "新药已被证明对病毒有效。",
+        "source": "考研英语一 阅读",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "emphasize",
+    "phoneticUs": "/ˈemfəsaɪz/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "强调；着重",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "pha",
+      "rootMeaning": "显示/出现",
+      "affixes": [
+        {
+          "part": "em-",
+          "meaning": "在...中"
+        }
+      ],
+      "meaning": "em-(在...中) + phas(显示) → 在话语中显示 → 强调"
+    },
+    "derivatives": [
+      {
+        "word": "emphasis",
+        "pos": "n.",
+        "defCn": "强调；重点"
+      },
+      {
+        "word": "emphatic",
+        "pos": "adj.",
+        "defCn": "强调的；有力的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "emphasize the importance of",
+        "meaning": "强调...的重要性"
+      }
+    ],
+    "frequencyRank": 46,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The report emphasizes the need for immediate action on climate change.",
+        "translation": "报告强调了对气候变化采取立即行动的必要性。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "enable",
+    "phoneticUs": "/ɪˈneɪbl/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "使能够；使成为可能",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "able",
+      "rootMeaning": "能够",
+      "affixes": [
+        {
+          "part": "en-",
+          "meaning": "使"
+        }
+      ],
+      "meaning": "en-(使) + able(能够) → 使能够"
+    },
+    "collocations": [
+      {
+        "phrase": "enable sb to do",
+        "meaning": "使某人能够做"
+      }
+    ],
+    "frequencyRank": 47,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "Technology enables us to connect with people around the world.",
+        "translation": "技术使我们能够与世界各地的人联系。",
+        "source": "考研英语二 阅读",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "environment",
+    "phoneticUs": "/ɪnˈvaɪrənmənt/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "环境；周围",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "viron",
+      "rootMeaning": "环绕",
+      "affixes": [
+        {
+          "part": "en-",
+          "meaning": "在...中"
+        }
+      ],
+      "meaning": "en-(在...中) + viron(环绕) + ment → 环绕着的东西 → 环境"
+    },
+    "derivatives": [
+      {
+        "word": "environmental",
+        "pos": "adj.",
+        "defCn": "环境的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "working environment",
+        "meaning": "工作环境"
+      },
+      {
+        "phrase": "protect the environment",
+        "meaning": "保护环境"
+      }
+    ],
+    "frequencyRank": 48,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "We must take responsibility for protecting the environment.",
+        "translation": "我们必须承担保护环境的责任。",
+        "source": "考研英语一 阅读",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "establish",
+    "phoneticUs": "/ɪˈstæblɪʃ/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "建立；设立；确立",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "sta",
+      "rootMeaning": "站立",
+      "affixes": [
+        {
+          "part": "e-",
+          "meaning": "出"
+        }
+      ],
+      "meaning": "e-(出) + stabl(稳定) + ish → 使稳定出来 → 建立"
+    },
+    "derivatives": [
+      {
+        "word": "establishment",
+        "pos": "n.",
+        "defCn": "建立；机构"
+      },
+      {
+        "word": "established",
+        "pos": "adj.",
+        "defCn": "已建立的；确定的"
+      }
+    ],
+    "frequencyRank": 49,
+    "level": "high-freq",
+    "examples": [
+      {
+        "sentence": "The company was established in 1998.",
+        "translation": "该公司成立于1998年。",
+        "source": "经典例句",
+        "difficulty": 1
+      }
+    ]
+  }
+]

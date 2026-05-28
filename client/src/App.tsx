@@ -1,31 +1,35 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import LearnPage from './pages/LearnPage';
 import TestPage from './pages/TestPage';
-
-function Placeholder({ title }: { title: string }) {
-  return (
-    <div className="flex items-center justify-center h-64 text-gray-400">
-      <p className="text-lg">{title} — 开发中</p>
-    </div>
-  );
-}
+import ReviewPage from './pages/ReviewPage';
+import WordbookPage from './pages/WordbookPage';
+import SearchPage from './pages/SearchPage';
+import StatsPage from './pages/StatsPage';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
+import AuthCallbackPage from './pages/AuthCallbackPage';
+import LeaderboardPage from './pages/LeaderboardPage';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/learn" element={<LearnPage />} />
           <Route path="/test" element={<TestPage />} />
-          <Route path="/review" element={<Placeholder title="复习" />} />
-          <Route path="/wordbook" element={<Placeholder title="生词本" />} />
-          <Route path="/search" element={<Placeholder title="搜索" />} />
-          <Route path="/stats" element={<Placeholder title="统计" />} />
+          <Route path="/review" element={<ReviewPage />} />
+          <Route path="/wordbook" element={<WordbookPage />} />
+          <Route path="/search" element={<SearchPage />} />
+          <Route path="/stats" element={<StatsPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/auth/callback" element={<AuthCallbackPage />} />
+          <Route path="/leaderboard" element={<LeaderboardPage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

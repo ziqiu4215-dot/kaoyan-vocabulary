@@ -93,6 +93,32 @@ db.exec(`
   );
 `);
 
+// Run migrations (safe to run multiple times)
+for (const sql of [
+  `ALTER TABLE users ADD COLUMN phone TEXT`,
+  `ALTER TABLE users ADD COLUMN oauth_provider TEXT`,
+  `ALTER TABLE users ADD COLUMN oauth_id TEXT`,
+  `ALTER TABLE users ADD COLUMN xp INTEGER DEFAULT 0`,
+  `ALTER TABLE users ADD COLUMN level INTEGER DEFAULT 1`,
+  `ALTER TABLE users ADD COLUMN streak INTEGER DEFAULT 0`,
+  `ALTER TABLE users ADD COLUMN last_study_date TEXT`,
+  `CREATE UNIQUE INDEX IF NOT EXISTS idx_users_phone ON users(phone)`,
+  `CREATE UNIQUE INDEX IF NOT EXISTS idx_users_oauth ON users(oauth_provider, oauth_id)`,
+]) {
+  try { db.exec(sql); } catch { /* column/index already exists */ }
+}
+
+// Create achievements table
+db.exec(`
+  CREATE TABLE IF NOT EXISTS achievements (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER NOT NULL,
+    badge_key TEXT NOT NULL,
+    unlocked_at TEXT DEFAULT (datetime('now')),
+    UNIQUE(user_id, badge_key)
+  );
+`);
+
 // Create indexes
 db.exec(`
   CREATE INDEX IF NOT EXISTS idx_words_level ON words(level);

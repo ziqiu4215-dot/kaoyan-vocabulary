@@ -1,0 +1,548 @@
+[
+  {
+    "word": "abolish",
+    "phoneticUs": "/əˈbɑːlɪʃ/",
+    "phoneticUk": "/əˈbɒlɪʃ/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "废除；取消",
+        "examWeight": 3
+      }
+    ],
+    "level": "low-freq",
+    "frequencyRank": 401
+  },
+  {
+    "word": "absurd",
+    "phoneticUs": "/əbˈsɜːrd/",
+    "phoneticUk": "/əbˈsɜːd/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "荒谬的；荒唐的；可笑的",
+        "examWeight": 3
+      }
+    ],
+    "level": "low-freq",
+    "frequencyRank": 402
+  },
+  {
+    "word": "allege",
+    "phoneticUs": "/əˈledʒ/",
+    "phoneticUk": "/əˈledʒ/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "声称；指控",
+        "examWeight": 3
+      }
+    ],
+    "level": "low-freq",
+    "frequencyRank": 403
+  },
+  {
+    "word": "analogy",
+    "phoneticUs": "/əˈnælədʒi/",
+    "phoneticUk": "/əˈnælədʒi/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "类比；相似；类推",
+        "examWeight": 3
+      }
+    ],
+    "level": "low-freq",
+    "frequencyRank": 404
+  },
+  {
+    "word": "bureaucracy",
+    "phoneticUs": "/bjʊˈrɑːkrəsi/",
+    "phoneticUk": "/bjʊəˈrɒkrəsi/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "官僚机构；官僚主义",
+        "examWeight": 3
+      }
+    ],
+    "level": "low-freq",
+    "frequencyRank": 406
+  },
+  {
+    "word": "captive",
+    "phoneticUs": "/ˈkæptɪv/",
+    "phoneticUk": "/ˈkæptɪv/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "俘虏；被捕获者",
+        "examWeight": 2
+      },
+      {
+        "pos": "adj.",
+        "defCn": "被俘的；被迷住的",
+        "examWeight": 3
+      }
+    ],
+    "level": "low-freq",
+    "frequencyRank": 407
+  },
+  {
+    "word": "coincide",
+    "phoneticUs": "/ˌkoʊɪnˈsaɪd/",
+    "phoneticUk": "/ˌkəʊɪnˈsaɪd/",
+    "meanings": [
+      {
+        "pos": "vi.",
+        "defCn": "同时发生；相符合；一致",
+        "examWeight": 3
+      }
+    ],
+    "level": "low-freq",
+    "frequencyRank": 408
+  },
+  {
+    "word": "compile",
+    "phoneticUs": "/kəmˈpaɪl/",
+    "phoneticUk": "/kəmˈpaɪl/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "编纂；编译；汇编",
+        "examWeight": 3
+      }
+    ],
+    "level": "low-freq",
+    "frequencyRank": 409
+  },
+  {
+    "word": "conceive",
+    "phoneticUs": "/kənˈsiːv/",
+    "phoneticUk": "/kənˈsiːv/",
+    "meanings": [
+      {
+        "pos": "v.",
+        "defCn": "想象；构思；设想；怀孕",
+        "examWeight": 3
+      }
+    ],
+    "level": "low-freq",
+    "frequencyRank": 410
+  },
+  {
+    "word": "contemplate",
+    "phoneticUs": "/ˈkɑːntəmpleɪt/",
+    "phoneticUk": "/ˈkɒntəmpleɪt/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "沉思；仔细考虑；凝视",
+        "examWeight": 3
+      }
+    ],
+    "level": "low-freq",
+    "frequencyRank": 411
+  },
+  {
+    "word": "deceive",
+    "phoneticUs": "/dɪˈsiːv/",
+    "phoneticUk": "/dɪˈsiːv/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "欺骗；蒙蔽",
+        "examWeight": 3
+      }
+    ],
+    "level": "low-freq",
+    "frequencyRank": 412
+  },
+  {
+    "word": "deteriorate",
+    "phoneticUs": "/dɪˈtɪriəreɪt/",
+    "phoneticUk": "/dɪˈtɪəriəreɪt/",
+    "meanings": [
+      {
+        "pos": "vi.",
+        "defCn": "恶化；退化；变质",
+        "examWeight": 3
+      }
+    ],
+    "level": "low-freq",
+    "frequencyRank": 413
+  },
+  {
+    "word": "diminish",
+    "phoneticUs": "/dɪˈmɪnɪʃ/",
+    "phoneticUk": "/dɪˈmɪnɪʃ/",
+    "meanings": [
+      {
+        "pos": "v.",
+        "defCn": "减少；缩小；减弱",
+        "examWeight": 3
+      }
+    ],
+    "level": "low-freq",
+    "frequencyRank": 414
+  },
+  {
+    "word": "doctrine",
+    "phoneticUs": "/ˈdɑːktrɪn/",
+    "phoneticUk": "/ˈdɒktrɪn/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "教义；学说；信条",
+        "examWeight": 3
+      }
+    ],
+    "level": "low-freq",
+    "frequencyRank": 415
+  },
+  {
+    "word": "embody",
+    "phoneticUs": "/ɪmˈbɑːdi/",
+    "phoneticUk": "/ɪmˈbɒdi/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "体现；包含；具体表达",
+        "examWeight": 3
+      }
+    ],
+    "level": "low-freq",
+    "frequencyRank": 416
+  },
+  {
+    "word": "endeavor",
+    "phoneticUs": "/ɪnˈdevər/",
+    "phoneticUk": "/ɪnˈdevə/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "努力；尽力",
+        "examWeight": 3
+      },
+      {
+        "pos": "vi.",
+        "defCn": "努力；尽力",
+        "examWeight": 3
+      }
+    ],
+    "level": "low-freq",
+    "frequencyRank": 417
+  },
+  {
+    "word": "enlighten",
+    "phoneticUs": "/ɪnˈlaɪtn/",
+    "phoneticUk": "/ɪnˈlaɪtn/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "启发；启迪；开导",
+        "examWeight": 3
+      }
+    ],
+    "level": "low-freq",
+    "frequencyRank": 418
+  },
+  {
+    "word": "fluctuate",
+    "phoneticUs": "/ˈflʌktʃueɪt/",
+    "phoneticUk": "/ˈflʌktʃueɪt/",
+    "meanings": [
+      {
+        "pos": "vi.",
+        "defCn": "波动；起伏；变动",
+        "examWeight": 3
+      }
+    ],
+    "level": "low-freq",
+    "frequencyRank": 419
+  },
+  {
+    "word": "gracious",
+    "phoneticUs": "/ˈɡreɪʃəs/",
+    "phoneticUk": "/ˈɡreɪʃəs/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "亲切的；仁慈的；优雅的",
+        "examWeight": 3
+      }
+    ],
+    "level": "low-freq",
+    "frequencyRank": 420
+  },
+  {
+    "word": "coincidence",
+    "phoneticUs": "/koʊˈɪnsɪdəns/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "巧合；同时发生",
+        "examWeight": 3
+      }
+    ],
+    "rootAffix": {
+      "root": "cid",
+      "rootMeaning": "落下/发生",
+      "affixes": [
+        {
+          "part": "co-",
+          "meaning": "共同"
+        },
+        {
+          "part": "in-",
+          "meaning": "在...上"
+        }
+      ],
+      "meaning": "co-(共同) + in(在) + cid(发生) → 共同发生 → 巧合"
+    },
+    "collocations": [
+      {
+        "phrase": "pure coincidence",
+        "meaning": "纯属巧合"
+      }
+    ],
+    "frequencyRank": 121,
+    "level": "low-freq",
+    "examples": [
+      {
+        "sentence": "It's no coincidence that the best students also read the most.",
+        "translation": "最好的学生也是读书最多的，这并非巧合。",
+        "source": "经典例句",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "dilemma",
+    "phoneticUs": "/dɪˈlemə/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "困境；进退两难",
+        "examWeight": 3
+      }
+    ],
+    "rootAffix": {
+      "root": "lemma",
+      "rootMeaning": "假设/前提",
+      "affixes": [
+        {
+          "part": "di-",
+          "meaning": "二"
+        }
+      ],
+      "meaning": "di-(二) + lemma(假设) → 两个假设之间 → 进退两难"
+    },
+    "frequencyRank": 122,
+    "level": "low-freq",
+    "examples": [
+      {
+        "sentence": "The doctor faced an ethical dilemma.",
+        "translation": "医生面临道德困境。",
+        "source": "考研英语一 阅读",
+        "difficulty": 3
+      }
+    ]
+  },
+  {
+    "word": "friction",
+    "phoneticUs": "/ˈfrɪkʃn/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "摩擦；冲突；不和",
+        "examWeight": 3
+      }
+    ],
+    "derivatives": [
+      {
+        "word": "frictional",
+        "pos": "adj.",
+        "defCn": "摩擦的"
+      }
+    ],
+    "frequencyRank": 124,
+    "level": "low-freq",
+    "examples": [
+      {
+        "sentence": "There is a certain amount of friction between the two departments.",
+        "translation": "两个部门之间存在一定的摩擦。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "hierarchy",
+    "phoneticUs": "/ˈhaɪərɑːrki/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "等级制度；层级；层次",
+        "examWeight": 3
+      }
+    ],
+    "rootAffix": {
+      "root": "hier",
+      "rootMeaning": "神圣",
+      "affixes": [],
+      "meaning": "hier(神圣) + archy(统治) → 神职人员的统治等级 → 等级制度"
+    },
+    "derivatives": [
+      {
+        "word": "hierarchical",
+        "pos": "adj.",
+        "defCn": "等级制度的"
+      }
+    ],
+    "frequencyRank": 125,
+    "level": "low-freq",
+    "examples": [
+      {
+        "sentence": "The company has a rigid hierarchy.",
+        "translation": "该公司有着严格的等级制度。",
+        "source": "经典例句",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "inflation",
+    "phoneticUs": "/ɪnˈfleɪʃn/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "通货膨胀；膨胀",
+        "examWeight": 3
+      }
+    ],
+    "rootAffix": {
+      "root": "flat",
+      "rootMeaning": "吹/膨胀",
+      "affixes": [
+        {
+          "part": "in-",
+          "meaning": "进入"
+        }
+      ],
+      "meaning": "in-(进入) + flat(吹) + ion → 吹进去 → 膨胀"
+    },
+    "frequencyRank": 126,
+    "level": "low-freq",
+    "examples": [
+      {
+        "sentence": "The government is taking measures to control inflation.",
+        "translation": "政府正在采取措施控制通货膨胀。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "legitimate",
+    "phoneticUs": "/lɪˈdʒɪtɪmət/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "合法的；正当的；合理的",
+        "examWeight": 3
+      }
+    ],
+    "rootAffix": {
+      "root": "leg",
+      "rootMeaning": "法律",
+      "affixes": [],
+      "meaning": "leg(法律) + itimate → 法律的 → 合法的"
+    },
+    "collocations": [
+      {
+        "phrase": "legitimate concern",
+        "meaning": "合理的担忧"
+      }
+    ],
+    "frequencyRank": 127,
+    "level": "low-freq",
+    "examples": [
+      {
+        "sentence": "The government has a legitimate interest in protecting public health.",
+        "translation": "政府在保护公众健康方面有正当利益。",
+        "source": "考研英语一 阅读",
+        "difficulty": 3
+      }
+    ]
+  },
+  {
+    "word": "momentum",
+    "phoneticUs": "/moʊˈmentəm/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "势头；动力；动量",
+        "examWeight": 3
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "gain momentum",
+        "meaning": "获得动力/势头增长"
+      }
+    ],
+    "frequencyRank": 128,
+    "level": "low-freq",
+    "examples": [
+      {
+        "sentence": "The campaign has gained momentum in recent weeks.",
+        "translation": "该运动在最近几周势头增长。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "prejudice",
+    "phoneticUs": "/ˈpredʒudɪs/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "偏见；歧视；成见",
+        "examWeight": 3
+      }
+    ],
+    "rootAffix": {
+      "root": "jud",
+      "rootMeaning": "判断",
+      "affixes": [
+        {
+          "part": "pre-",
+          "meaning": "之前"
+        }
+      ],
+      "meaning": "pre-(之前) + jud(判断) + ice → 提前判断 → 偏见"
+    },
+    "collocations": [
+      {
+        "phrase": "racial prejudice",
+        "meaning": "种族偏见"
+      },
+      {
+        "phrase": "without prejudice",
+        "meaning": "不带偏见"
+      }
+    ],
+    "frequencyRank": 129,
+    "level": "low-freq",
+    "examples": [
+      {
+        "sentence": "Pride and Prejudice is a classic novel by Jane Austen.",
+        "translation": "《傲慢与偏见》是简·奥斯汀的经典小说。",
+        "source": "经典例句",
+        "difficulty": 1
+      }
+    ]
+  }
+]

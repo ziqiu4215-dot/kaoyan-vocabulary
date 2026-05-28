@@ -1,17 +1,17 @@
 import { Request, Response, NextFunction } from 'express';
 import db from '../config/db';
 import AppError from '../utils/AppError';
-
-const DEMO_USER = 'demo-user';
+import { addXp } from './userController';
 
 export const getNextWord = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
+    const userId = req.userId || 0;
     const wordbookId = (req.query.wordbookId as string) || 'high-freq';
 
     // Find learned word IDs
     const learnedRows = db.prepare(
       `SELECT word_id FROM learning_records WHERE user_id = ?`
-    ).all(DEMO_USER) as { word_id: number }[];
+    ).all(userId) as { word_id: number }[];
     const learnedIds = learnedRows.map(r => r.word_id);
 
     let row: any;
@@ -55,6 +55,7 @@ export const getNextWord = async (req: Request, res: Response, next: NextFunctio
 
 export const submitLearningRecord = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
+    const userId = req.userId || 0;
     const { wordId, status, quality } = req.body;
     if (!wordId || !status) {
       throw new AppError('wordId and status are required', 400);
@@ -67,7 +68,7 @@ export const submitLearningRecord = async (req: Request, res: Response, next: Ne
 
     const existing = db.prepare(
       `SELECT * FROM learning_records WHERE user_id = ? AND word_id = ?`
-    ).get(DEMO_USER, parseInt(wordId)) as any;
+    ).get(userId, parseInt(wordId)) as any;
 
     const q = quality || (status === 'mastered' ? 4 : 1);
     let ef = existing?.ease_factor ?? 2.5;
@@ -98,20 +99,23 @@ export const submitLearningRecord = async (req: Request, res: Response, next: Ne
         UPDATE learning_records SET status=?, ease_factor=?, interval=?, repetitions=?,
         last_review_at=?, next_review_at=?, correct_count=?, incorrect_count=?, updated_at=?
         WHERE user_id=? AND word_id=?
-      `).run(status, ef, interval, repetitions, now, nextReviewAt, correctCount, incorrectCount, now, DEMO_USER, parseInt(wordId));
+      `).run(status, ef, interval, repetitions, now, nextReviewAt, correctCount, incorrectCount, now, userId, parseInt(wordId));
     } else {
       db.prepare(`
         INSERT INTO learning_records (user_id, word_id, status, ease_factor, interval, repetitions,
         last_review_at, next_review_at, correct_count, incorrect_count)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-      `).run(DEMO_USER, parseInt(wordId), status, ef, interval, repetitions, now, nextReviewAt, correctCount, incorrectCount);
+      `).run(userId, parseInt(wordId), status, ef, interval, repetitions, now, nextReviewAt, correctCount, incorrectCount);
     }
 
     const record = db.prepare(
       `SELECT * FROM learning_records WHERE user_id=? AND word_id=?`
-    ).get(DEMO_USER, parseInt(wordId));
+    ).get(userId, parseInt(wordId));
 
-    res.json({ success: true, data: record });
+    const xpAmount = status === 'mastered' ? 10 : 5;
+    const xpResult = addXp(userId, xpAmount);
+
+    res.json({ success: true, data: { ...(record as any), xpEarned: xpAmount, ...xpResult } });
   } catch (error) {
     next(error);
   }
@@ -119,14 +123,15 @@ export const submitLearningRecord = async (req: Request, res: Response, next: Ne
 
 export const getLearningStats = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
+    const userId = req.userId || 0;
     const { wordbookId } = req.params;
     const total = (db.prepare(`SELECT COUNT(*) as c FROM words WHERE level = ?`).get(wordbookId) as any).c;
     const learned = (db.prepare(
       `SELECT COUNT(*) as c FROM learning_records l JOIN words w ON l.word_id = w.id WHERE l.user_id=? AND w.level=?`
-    ).get(DEMO_USER, wordbookId) as any).c;
+    ).get(userId, wordbookId) as any).c;
     const mastered = (db.prepare(
       `SELECT COUNT(*) as c FROM learning_records l JOIN words w ON l.word_id = w.id WHERE l.user_id=? AND w.level=? AND l.status='mastered'`
-    ).get(DEMO_USER, wordbookId) as any).c;
+    ).get(userId, wordbookId) as any).c;
 
     res.json({
       success: true,

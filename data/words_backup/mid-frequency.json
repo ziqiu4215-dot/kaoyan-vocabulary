@@ -1,0 +1,1131 @@
+[
+  {
+    "word": "anticipate",
+    "phoneticUs": "/ænˈtɪsɪpeɪt/",
+    "phoneticUk": "/ænˈtɪsɪpeɪt/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "预期；预料；期望",
+        "examWeight": 4
+      },
+      {
+        "pos": "vi.",
+        "defCn": "提前行动",
+        "examWeight": 2
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 201,
+    "derivatives": [
+      {
+        "word": "anticipation",
+        "pos": "n.",
+        "defCn": "预期；预料"
+      }
+    ]
+  },
+  {
+    "word": "arbitrary",
+    "phoneticUs": "/ˈɑːrbɪtreri/",
+    "phoneticUk": "/ˈɑːbɪtrəri/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "随意的；专断的；任意的",
+        "examWeight": 4
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 202,
+    "derivatives": [
+      {
+        "word": "arbitrarily",
+        "pos": "adv.",
+        "defCn": "任意地；随意地"
+      }
+    ]
+  },
+  {
+    "word": "attribute",
+    "phoneticUs": "/əˈtrɪbjuːt/",
+    "phoneticUk": "/əˈtrɪbjuːt/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "归因于；认为是...的属性",
+        "examWeight": 5
+      },
+      {
+        "pos": "n.",
+        "defCn": "属性；特征",
+        "examWeight": 4
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 203,
+    "collocations": [
+      {
+        "phrase": "attribute to",
+        "meaning": "归因于"
+      }
+    ]
+  },
+  {
+    "word": "boom",
+    "phoneticUs": "/buːm/",
+    "phoneticUk": "/buːm/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "繁荣；激增；隆隆声",
+        "examWeight": 4
+      },
+      {
+        "pos": "vi.",
+        "defCn": "繁荣；迅速发展",
+        "examWeight": 4
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 205,
+    "collocations": [
+      {
+        "phrase": "baby boom",
+        "meaning": "婴儿潮"
+      }
+    ]
+  },
+  {
+    "word": "burden",
+    "phoneticUs": "/ˈbɜːrdn/",
+    "phoneticUk": "/ˈbɜːdn/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "负担；重担",
+        "examWeight": 4
+      },
+      {
+        "pos": "vt.",
+        "defCn": "使负重担；加重负担于",
+        "examWeight": 3
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 206
+  },
+  {
+    "word": "chronic",
+    "phoneticUs": "/ˈkrɑːnɪk/",
+    "phoneticUk": "/ˈkrɒnɪk/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "慢性的；长期的",
+        "examWeight": 4
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 207,
+    "derivatives": [
+      {
+        "word": "chronically",
+        "pos": "adv.",
+        "defCn": "慢性地；长期地"
+      }
+    ]
+  },
+  {
+    "word": "commodity",
+    "phoneticUs": "/kəˈmɑːdəti/",
+    "phoneticUk": "/kəˈmɒdəti/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "商品；日用品；有价值的东西",
+        "examWeight": 4
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 208
+  },
+  {
+    "word": "compensate",
+    "phoneticUs": "/ˈkɑːmpenseɪt/",
+    "phoneticUk": "/ˈkɒmpenseɪt/",
+    "meanings": [
+      {
+        "pos": "v.",
+        "defCn": "补偿；赔偿；弥补",
+        "examWeight": 4
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 209,
+    "collocations": [
+      {
+        "phrase": "compensate for",
+        "meaning": "弥补；补偿"
+      }
+    ]
+  },
+  {
+    "word": "confine",
+    "phoneticUs": "/kənˈfaɪn/",
+    "phoneticUk": "/kənˈfaɪn/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "限制；局限于；禁闭",
+        "examWeight": 4
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 210,
+    "collocations": [
+      {
+        "phrase": "be confined to",
+        "meaning": "被限制在"
+      }
+    ]
+  },
+  {
+    "word": "consensus",
+    "phoneticUs": "/kənˈsensəs/",
+    "phoneticUk": "/kənˈsensəs/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "共识；一致意见",
+        "examWeight": 4
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 211,
+    "collocations": [
+      {
+        "phrase": "reach a consensus",
+        "meaning": "达成共识"
+      }
+    ]
+  },
+  {
+    "word": "constitute",
+    "phoneticUs": "/ˈkɑːnstɪtuːt/",
+    "phoneticUk": "/ˈkɒnstɪtjuːt/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "构成；组成；设立",
+        "examWeight": 4
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 212
+  },
+  {
+    "word": "consumption",
+    "phoneticUs": "/kənˈsʌmpʃn/",
+    "phoneticUk": "/kənˈsʌmpʃn/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "消费；消耗；消耗量",
+        "examWeight": 4
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 213
+  },
+  {
+    "word": "counsel",
+    "phoneticUs": "/ˈkaʊnsl/",
+    "phoneticUk": "/ˈkaʊnsl/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "劝告；建议；法律顾问",
+        "examWeight": 3
+      },
+      {
+        "pos": "vt.",
+        "defCn": "劝告；建议",
+        "examWeight": 3
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 214
+  },
+  {
+    "word": "crisis",
+    "phoneticUs": "/ˈkraɪsɪs/",
+    "phoneticUk": "/ˈkraɪsɪs/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "危机；紧要关头",
+        "examWeight": 5
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 215,
+    "collocations": [
+      {
+        "phrase": "financial crisis",
+        "meaning": "金融危机"
+      }
+    ]
+  },
+  {
+    "word": "curb",
+    "phoneticUs": "/kɜːrb/",
+    "phoneticUk": "/kɜːb/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "抑制；控制；约束",
+        "examWeight": 4
+      },
+      {
+        "pos": "n.",
+        "defCn": "约束；抑制",
+        "examWeight": 2
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 216
+  },
+  {
+    "word": "depict",
+    "phoneticUs": "/dɪˈpɪkt/",
+    "phoneticUk": "/dɪˈpɪkt/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "描述；描绘；刻画",
+        "examWeight": 4
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 217
+  },
+  {
+    "word": "deprive",
+    "phoneticUs": "/dɪˈpraɪv/",
+    "phoneticUk": "/dɪˈpraɪv/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "剥夺；使丧失",
+        "examWeight": 4
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 218,
+    "collocations": [
+      {
+        "phrase": "deprive of",
+        "meaning": "剥夺"
+      }
+    ]
+  },
+  {
+    "word": "discriminate",
+    "phoneticUs": "/dɪˈskrɪmɪneɪt/",
+    "phoneticUk": "/dɪˈskrɪmɪneɪt/",
+    "meanings": [
+      {
+        "pos": "v.",
+        "defCn": "歧视；区分；区别对待",
+        "examWeight": 4
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 220,
+    "collocations": [
+      {
+        "phrase": "discriminate against",
+        "meaning": "歧视"
+      }
+    ]
+  },
+  {
+    "word": "disorder",
+    "phoneticUs": "/dɪsˈɔːrdər/",
+    "phoneticUk": "/dɪsˈɔːdə/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "混乱；紊乱；失调",
+        "examWeight": 4
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 221
+  },
+  {
+    "word": "dramatic",
+    "phoneticUs": "/drəˈmætɪk/",
+    "phoneticUk": "/drəˈmætɪk/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "戏剧性的；巨大的；引人注目的",
+        "examWeight": 4
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 222
+  },
+  {
+    "word": "elaborate",
+    "phoneticUs": "/ɪˈlæbərət/",
+    "phoneticUk": "/ɪˈlæbərət/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "精心制作的；详尽的",
+        "examWeight": 4
+      },
+      {
+        "pos": "v.",
+        "defCn": "详细说明；精心制作",
+        "examWeight": 3
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 223
+  },
+  {
+    "word": "elementary",
+    "phoneticUs": "/ˌelɪˈmentri/",
+    "phoneticUk": "/ˌelɪˈmentri/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "基本的；初级的；小学的",
+        "examWeight": 3
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 224
+  },
+  {
+    "word": "exceed",
+    "phoneticUs": "/ɪkˈsiːd/",
+    "phoneticUk": "/ɪkˈsiːd/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "超过；超越",
+        "examWeight": 4
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 225
+  },
+  {
+    "word": "exploit",
+    "phoneticUs": "/ɪkˈsplɔɪt/",
+    "phoneticUk": "/ɪkˈsplɔɪt/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "开采；利用；剥削",
+        "examWeight": 4
+      },
+      {
+        "pos": "n.",
+        "defCn": "功绩",
+        "examWeight": 1
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 226
+  },
+  {
+    "word": "external",
+    "phoneticUs": "/ɪkˈstɜːrnl/",
+    "phoneticUk": "/ɪkˈstɜːnl/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "外部的；外界的；外在的",
+        "examWeight": 4
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 227
+  },
+  {
+    "word": "flourish",
+    "phoneticUs": "/ˈflɜːrɪʃ/",
+    "phoneticUk": "/ˈflʌrɪʃ/",
+    "meanings": [
+      {
+        "pos": "vi.",
+        "defCn": "繁荣；兴旺；茁壮成长",
+        "examWeight": 4
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 228
+  },
+  {
+    "word": "frontier",
+    "phoneticUs": "/frʌnˈtɪr/",
+    "phoneticUk": "/ˈfrʌntɪə/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "边境；前沿；新领域",
+        "examWeight": 4
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 229
+  },
+  {
+    "word": "genuine",
+    "phoneticUs": "/ˈdʒenjuɪn/",
+    "phoneticUk": "/ˈdʒenjuɪn/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "真正的；真诚的",
+        "examWeight": 4
+      }
+    ],
+    "level": "mid-freq",
+    "frequencyRank": 230
+  },
+  {
+    "word": "inevitable",
+    "phoneticUs": "/ɪnˈevɪtəbl/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "不可避免的；必然的",
+        "examWeight": 4
+      }
+    ],
+    "rootAffix": {
+      "root": "evit",
+      "rootMeaning": "避免",
+      "affixes": [
+        {
+          "part": "in-",
+          "meaning": "不"
+        }
+      ],
+      "meaning": "in-(不) + evitable(可避免的) → 不可避免的"
+    },
+    "derivatives": [
+      {
+        "word": "inevitably",
+        "pos": "adv.",
+        "defCn": "不可避免地"
+      }
+    ],
+    "frequencyRank": 61,
+    "level": "mid-freq",
+    "examples": [
+      {
+        "sentence": "Change is an inevitable part of life.",
+        "translation": "变化是生活中不可避免的一部分。",
+        "source": "经典例句",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "negotiate",
+    "phoneticUs": "/nɪˈɡoʊʃieɪt/",
+    "meanings": [
+      {
+        "pos": "v.",
+        "defCn": "谈判；协商；商定",
+        "examWeight": 4
+      }
+    ],
+    "rootAffix": {
+      "root": "neg",
+      "rootMeaning": "否定/没有",
+      "affixes": [],
+      "meaning": "neg(不) + oti + ate → 不是休闲的 → 谈判"
+    },
+    "derivatives": [
+      {
+        "word": "negotiation",
+        "pos": "n.",
+        "defCn": "谈判；协商"
+      }
+    ],
+    "frequencyRank": 65,
+    "level": "mid-freq",
+    "examples": [
+      {
+        "sentence": "The union is negotiating with management for better working conditions.",
+        "translation": "工会正在与管理层谈判改善工作条件。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "perspective",
+    "phoneticUs": "/pərˈspektɪv/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "观点；视角；透视",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "spect",
+      "rootMeaning": "看",
+      "affixes": [
+        {
+          "part": "per-",
+          "meaning": "穿过"
+        }
+      ],
+      "meaning": "per-(穿过) + spect(看) + ive → 看穿 → 视角/观点"
+    },
+    "collocations": [
+      {
+        "phrase": "from a ... perspective",
+        "meaning": "从...角度看"
+      },
+      {
+        "phrase": "broaden one's perspective",
+        "meaning": "开阔视野"
+      }
+    ],
+    "frequencyRank": 66,
+    "level": "mid-freq",
+    "examples": [
+      {
+        "sentence": "From a historical perspective, this event was inevitable.",
+        "translation": "从历史角度看，这一事件是不可避免的。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "phenomenon",
+    "phoneticUs": "/fɪˈnɑːmɪnən/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "现象；奇迹",
+        "examWeight": 4
+      }
+    ],
+    "rootAffix": {
+      "root": "pheno",
+      "rootMeaning": "显现/出现",
+      "affixes": [],
+      "meaning": "pheno(显现) + menon → 显现出来的东西 → 现象"
+    },
+    "derivatives": [
+      {
+        "word": "phenomenal",
+        "pos": "adj.",
+        "defCn": "非凡的；现象的"
+      }
+    ],
+    "frequencyRank": 67,
+    "level": "mid-freq",
+    "examples": [
+      {
+        "sentence": "Globalization is a complex phenomenon that affects every aspect of our lives.",
+        "translation": "全球化是一个复杂的现象，影响着我们生活的方方面面。",
+        "source": "考研英语二 阅读",
+        "difficulty": 3
+      }
+    ]
+  },
+  {
+    "word": "priority",
+    "phoneticUs": "/praɪˈɔːrəti/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "优先；优先事项",
+        "examWeight": 4
+      }
+    ],
+    "rootAffix": {
+      "root": "prior",
+      "rootMeaning": "在前/优先",
+      "affixes": [],
+      "meaning": "prior(在前) + ity → 优先"
+    },
+    "derivatives": [
+      {
+        "word": "prioritize",
+        "pos": "vt.",
+        "defCn": "优先考虑；排序"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "give priority to",
+        "meaning": "优先考虑"
+      },
+      {
+        "phrase": "top priority",
+        "meaning": "重中之重"
+      }
+    ],
+    "frequencyRank": 68,
+    "level": "mid-freq",
+    "examples": [
+      {
+        "sentence": "Education should be a top priority for any government.",
+        "translation": "教育应是任何政府的首要任务。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "psychology",
+    "phoneticUs": "/saɪˈkɑːlədʒi/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "心理学；心理",
+        "examWeight": 4
+      }
+    ],
+    "rootAffix": {
+      "root": "psycho",
+      "rootMeaning": "心灵/精神",
+      "affixes": [
+        {
+          "part": "logy",
+          "meaning": "学科"
+        }
+      ],
+      "meaning": "psycho(心灵) + logy(学科) → 心理学"
+    },
+    "derivatives": [
+      {
+        "word": "psychological",
+        "pos": "adj.",
+        "defCn": "心理的"
+      },
+      {
+        "word": "psychologist",
+        "pos": "n.",
+        "defCn": "心理学家"
+      }
+    ],
+    "frequencyRank": 69,
+    "level": "mid-freq",
+    "examples": [
+      {
+        "sentence": "Color psychology suggests that blue has a calming effect.",
+        "translation": "色彩心理学表明蓝色有镇静作用。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "restrict",
+    "phoneticUs": "/rɪˈstrɪkt/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "限制；约束；限定",
+        "examWeight": 4
+      }
+    ],
+    "rootAffix": {
+      "root": "strict",
+      "rootMeaning": "拉紧",
+      "affixes": [
+        {
+          "part": "re-",
+          "meaning": "回/再次"
+        }
+      ],
+      "meaning": "re-(回) + strict(拉紧) → 拉回来 → 限制"
+    },
+    "derivatives": [
+      {
+        "word": "restriction",
+        "pos": "n.",
+        "defCn": "限制；约束"
+      },
+      {
+        "word": "restrictive",
+        "pos": "adj.",
+        "defCn": "限制性的"
+      }
+    ],
+    "frequencyRank": 70,
+    "level": "mid-freq",
+    "examples": [
+      {
+        "sentence": "The new law restricts the sale of tobacco to minors.",
+        "translation": "新法限制向未成年人出售烟草。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "revolution",
+    "phoneticUs": "/ˌrevəˈluːʃn/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "革命；变革；旋转",
+        "examWeight": 4
+      }
+    ],
+    "rootAffix": {
+      "root": "volu",
+      "rootMeaning": "转/滚",
+      "affixes": [
+        {
+          "part": "re-",
+          "meaning": "回/重新"
+        }
+      ],
+      "meaning": "re-(回) + volu(转) + tion → 翻转过来 → 革命"
+    },
+    "derivatives": [
+      {
+        "word": "revolutionary",
+        "pos": "adj.",
+        "defCn": "革命性的"
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "Industrial Revolution",
+        "meaning": "工业革命"
+      },
+      {
+        "phrase": "digital revolution",
+        "meaning": "数字革命"
+      }
+    ],
+    "frequencyRank": 71,
+    "level": "mid-freq",
+    "examples": [
+      {
+        "sentence": "The digital revolution has transformed the way we communicate.",
+        "translation": "数字革命已经改变了我们沟通的方式。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "species",
+    "phoneticUs": "/ˈspiːʃiːz/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "物种；种类",
+        "examWeight": 4
+      }
+    ],
+    "rootAffix": {
+      "root": "spec",
+      "rootMeaning": "看/种类",
+      "affixes": [],
+      "meaning": "spec(种类) + ies → 物种"
+    },
+    "collocations": [
+      {
+        "phrase": "endangered species",
+        "meaning": "濒危物种"
+      }
+    ],
+    "frequencyRank": 72,
+    "level": "mid-freq",
+    "examples": [
+      {
+        "sentence": "Hundreds of species become extinct every year due to habitat loss.",
+        "translation": "每年有数百个物种因栖息地丧失而灭绝。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "strategy",
+    "phoneticUs": "/ˈstrætədʒi/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "策略；战略",
+        "examWeight": 5
+      }
+    ],
+    "rootAffix": {
+      "root": "strat",
+      "rootMeaning": "军队/层",
+      "affixes": [],
+      "meaning": "strat(军队) + egy → 军事指挥 → 战略"
+    },
+    "derivatives": [
+      {
+        "word": "strategic",
+        "pos": "adj.",
+        "defCn": "战略的；策略的"
+      }
+    ],
+    "frequencyRank": 73,
+    "level": "mid-freq",
+    "examples": [
+      {
+        "sentence": "The company needs to develop a new marketing strategy.",
+        "translation": "公司需要制定新的营销策略。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "sufficient",
+    "phoneticUs": "/səˈfɪʃnt/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "足够的；充分的",
+        "examWeight": 4
+      }
+    ],
+    "rootAffix": {
+      "root": "fic",
+      "rootMeaning": "做",
+      "affixes": [
+        {
+          "part": "suf-",
+          "meaning": "下面"
+        }
+      ],
+      "meaning": "suf-(在下面) + fic(做) + ient → 在下面做的 → 足够的支撑 → 充分的"
+    },
+    "derivatives": [
+      {
+        "word": "sufficiency",
+        "pos": "n.",
+        "defCn": "充足"
+      },
+      {
+        "word": "insufficient",
+        "pos": "adj.",
+        "defCn": "不足的"
+      }
+    ],
+    "frequencyRank": 74,
+    "level": "mid-freq",
+    "examples": [
+      {
+        "sentence": "The evidence is not sufficient to prove his guilt.",
+        "translation": "证据不足以证明他有罪。",
+        "source": "经典例句",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "survive",
+    "phoneticUs": "/sərˈvaɪv/",
+    "meanings": [
+      {
+        "pos": "v.",
+        "defCn": "幸存；生存；比...活得长",
+        "examWeight": 4
+      }
+    ],
+    "rootAffix": {
+      "root": "viv",
+      "rootMeaning": "活/生命",
+      "affixes": [
+        {
+          "part": "sur-",
+          "meaning": "超过/上面"
+        }
+      ],
+      "meaning": "sur-(超过) + vive(活) → 活得超过 → 幸存"
+    },
+    "derivatives": [
+      {
+        "word": "survival",
+        "pos": "n.",
+        "defCn": "幸存；生存"
+      },
+      {
+        "word": "survivor",
+        "pos": "n.",
+        "defCn": "幸存者"
+      }
+    ],
+    "frequencyRank": 75,
+    "level": "mid-freq",
+    "examples": [
+      {
+        "sentence": "Only a few species can survive in such extreme conditions.",
+        "translation": "只有少数物种能在如此极端的环境下生存。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "transform",
+    "phoneticUs": "/trænsˈfɔːrm/",
+    "meanings": [
+      {
+        "pos": "vt.",
+        "defCn": "转变；改造；转换",
+        "examWeight": 4
+      }
+    ],
+    "rootAffix": {
+      "root": "form",
+      "rootMeaning": "形状/形式",
+      "affixes": [
+        {
+          "part": "trans-",
+          "meaning": "跨越/转变"
+        }
+      ],
+      "meaning": "trans-(转变) + form(形状) → 改变形状 → 转变"
+    },
+    "derivatives": [
+      {
+        "word": "transformation",
+        "pos": "n.",
+        "defCn": "转变；改造"
+      }
+    ],
+    "frequencyRank": 77,
+    "level": "mid-freq",
+    "examples": [
+      {
+        "sentence": "Technology has transformed every aspect of modern life.",
+        "translation": "技术已经改变了现代生活的方方面面。",
+        "source": "考研英语二 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "trend",
+    "phoneticUs": "/trend/",
+    "meanings": [
+      {
+        "pos": "n.",
+        "defCn": "趋势；潮流；走向",
+        "examWeight": 4
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "economic trend",
+        "meaning": "经济趋势"
+      },
+      {
+        "phrase": "follow the trend",
+        "meaning": "跟随潮流"
+      }
+    ],
+    "frequencyRank": 78,
+    "level": "mid-freq",
+    "examples": [
+      {
+        "sentence": "There is a growing trend towards remote working.",
+        "translation": "远程工作的趋势日益增长。",
+        "source": "考研英语二 阅读",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "word": "ultimate",
+    "phoneticUs": "/ˈʌltɪmət/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "最终的；终极的；根本的",
+        "examWeight": 4
+      }
+    ],
+    "rootAffix": {
+      "root": "ultim",
+      "rootMeaning": "最后/最远",
+      "affixes": [],
+      "meaning": "ultim(最远) + ate → 最终的"
+    },
+    "derivatives": [
+      {
+        "word": "ultimately",
+        "pos": "adv.",
+        "defCn": "最终；根本上"
+      }
+    ],
+    "frequencyRank": 79,
+    "level": "mid-freq",
+    "examples": [
+      {
+        "sentence": "The ultimate goal of education is to cultivate independent thinkers.",
+        "translation": "教育的最终目标是培养独立思考者。",
+        "source": "考研英语一 阅读",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "word": "valid",
+    "phoneticUs": "/ˈvælɪd/",
+    "meanings": [
+      {
+        "pos": "adj.",
+        "defCn": "有效的；合理的；有根据的",
+        "examWeight": 4
+      }
+    ],
+    "rootAffix": {
+      "root": "val",
+      "rootMeaning": "力量/价值",
+      "affixes": [],
+      "meaning": "val(价值) + id → 有价值的 → 有效的"
+    },
+    "derivatives": [
+      {
+        "word": "validity",
+        "pos": "n.",
+        "defCn": "有效性；合法性"
+      },
+      {
+        "word": "invalid",
+        "pos": "adj.",
+        "defCn": "无效的"
+      }
+    ],
+    "frequencyRank": 80,
+    "level": "mid-freq",
+    "examples": [
+      {
+        "sentence": "This ticket is valid for three months.",
+        "translation": "这张票有效期为三个月。",
+        "source": "经典例句",
+        "difficulty": 1
+      }
+    ]
+  }
+]

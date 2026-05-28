@@ -1,5 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import db from '../config/db';
+import { addXp, checkTestAchievements } from './userController';
 
 export const getTestQuestions = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
@@ -94,14 +95,27 @@ export const submitTestAnswers = async (req: Request, res: Response, next: NextF
       return;
     }
 
+    const correctCount = answers.filter((a: any) => a.correct).length;
+    const wrongCount = answers.filter((a: any) => !a.correct).length;
     const results = {
       total: answers.length,
-      correct: answers.filter((a: any) => a.correct).length,
-      wrong: answers.filter((a: any) => !a.correct).length,
+      correct: correctCount,
+      wrong: wrongCount,
       wordResults: answers.map((a: any) => ({ wordId: a.wordId, correct: a.correct })),
     };
 
-    res.json({ success: true, data: results });
+    // Award XP
+    const xpAmount = correctCount * 15 + wrongCount * 3;
+    const userId = (req as any).userId || 0;
+    const xpResult = addXp(userId, xpAmount);
+
+    // Check test achievements
+    const newAchievements = checkTestAchievements(userId, answers.length, correctCount);
+
+    res.json({
+      success: true,
+      data: { ...results, xpEarned: xpAmount, ...xpResult, newAchievements },
+    });
   } catch (error) {
     next(error);
   }
