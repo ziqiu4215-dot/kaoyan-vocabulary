@@ -1,15 +1,55 @@
-import mongoose from 'mongoose';
+import Database from 'better-sqlite3';
 import * as fs from 'fs';
 import * as path from 'path';
 
-const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/kaoyan-vocabulary';
+const DB_PATH = process.env.DB_PATH || path.join(__dirname, 'kaoyan.db');
+
+console.log('Seeding database:', DB_PATH);
+
+const db = new Database(DB_PATH);
+db.pragma('journal_mode = WAL');
+db.pragma('foreign_keys = ON');
+
+// Create tables
+db.exec(`
+  CREATE TABLE IF NOT EXISTS words (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    word TEXT UNIQUE NOT NULL,
+    phonetic_us TEXT,
+    phonetic_uk TEXT,
+    meanings TEXT NOT NULL,
+    root_affix TEXT,
+    derivatives TEXT,
+    frequency_rank INTEGER,
+    collocations TEXT,
+    level TEXT NOT NULL,
+    created_at TEXT DEFAULT (datetime('now')),
+    updated_at TEXT DEFAULT (datetime('now'))
+  );
+
+  CREATE TABLE IF NOT EXISTS examples (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    word_id INTEGER NOT NULL REFERENCES words(id),
+    sentence TEXT NOT NULL,
+    translation TEXT NOT NULL,
+    source TEXT,
+    audio_url TEXT,
+    difficulty INTEGER DEFAULT 1,
+    created_at TEXT DEFAULT (datetime('now')),
+    updated_at TEXT DEFAULT (datetime('now'))
+  );
+`);
+
+// Clear existing data
+db.exec('DELETE FROM examples');
+db.exec('DELETE FROM words');
 
 interface WordData {
   word: string;
   phoneticUs?: string;
   phoneticUk?: string;
   meanings: { pos: string; defCn: string; defEn?: string; examWeight?: number }[];
-  rootAffix?: { root?: string; rootMeaning?: string; affixes?: { part: string; meaning: string }[]; meaning: string };
+  rootAffix?: any;
   derivatives?: { word: string; pos: string; defCn: string }[];
   frequencyRank?: number;
   collocations?: { phrase: string; meaning: string }[];
@@ -17,86 +57,70 @@ interface WordData {
   examples?: { sentence: string; translation: string; source?: string; difficulty?: number }[];
 }
 
-async function seed() {
-  console.log('Connecting to MongoDB...');
-  await mongoose.connect(MONGO_URI);
-  console.log('Connected.');
+const insertWord = db.prepare(`
+  INSERT INTO words (word, phonetic_us, phonetic_uk, meanings, root_affix, derivatives, frequency_rank, collocations, level)
+  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+`);
 
-  const db = mongoose.connection.db!;
+const insertExample = db.prepare(`
+  INSERT INTO examples (word_id, sentence, translation, source, difficulty)
+  VALUES (?, ?, ?, ?, ?)
+`);
 
-  // Clear existing data
-  await db.dropCollection('words').catch(() => console.log('No words collection to drop'));
-  await db.dropCollection('examples').catch(() => console.log('No examples collection to drop'));
+const wordsDir = path.join(__dirname, 'words');
+const files = fs.readdirSync(wordsDir).filter(f => f.endsWith('.json'));
 
-  const wordsDir = path.join(__dirname, 'words');
-  const files = fs.readdirSync(wordsDir).filter(f => f.endsWith('.json'));
-
+const insertAll = db.transaction(() => {
   let totalWords = 0;
   let totalExamples = 0;
 
   for (const file of files) {
-    const filePath = path.join(wordsDir, file);
-    const data: WordData[] = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    const data: WordData[] = JSON.parse(fs.readFileSync(path.join(wordsDir, file), 'utf-8'));
     console.log(`Processing ${file}: ${data.length} words`);
 
-    const words = [];
-    const examples = [];
-
     for (const item of data) {
-      const { examples: exData, ...wordData } = item;
-      words.push(wordData);
+      const { examples: exData, ...rest } = item;
+      const result = insertWord.run(
+        item.word,
+        item.phoneticUs || null,
+        item.phoneticUk || null,
+        JSON.stringify(item.meanings),
+        item.rootAffix ? JSON.stringify(item.rootAffix) : null,
+        item.derivatives ? JSON.stringify(item.derivatives) : null,
+        item.frequencyRank || null,
+        item.collocations ? JSON.stringify(item.collocations) : null,
+        item.level
+      );
+      totalWords++;
 
       if (exData && exData.length > 0) {
         for (const ex of exData) {
-          examples.push({
-            word: item.word,
-            ...ex,
-          } as any);  // word field is temporary, will resolve after insert
+          insertExample.run(
+            result.lastInsertRowid,
+            ex.sentence,
+            ex.translation,
+            ex.source || null,
+            ex.difficulty || 1
+          );
+          totalExamples++;
         }
-      }
-    }
-
-    // Insert words
-    const insertedWords = await db.collection('words').insertMany(words as any[]);
-    totalWords += insertedWords.insertedCount;
-
-    // Resolve word IDs for examples
-    if (examples.length > 0) {
-      const wordMap = new Map<string, mongoose.Types.ObjectId>();
-      for (let i = 0; i < insertedWords.insertedIds.length; i++) {
-        const word = words[i];
-        wordMap.set(word.word, insertedWords.insertedIds[i] as mongoose.Types.ObjectId);
-      }
-
-      const examplesToInsert = examples.map(ex => {
-        const { word, ...rest } = ex;
-        return { wordId: wordMap.get(word), ...rest };
-      }).filter(ex => ex.wordId);
-
-      if (examplesToInsert.length > 0) {
-        const result = await db.collection('examples').insertMany(examplesToInsert);
-        totalExamples += result.insertedCount;
       }
     }
   }
 
   console.log(`\nSeed complete!`);
-  console.log(`  Words inserted: ${totalWords}`);
-  console.log(`  Examples inserted: ${totalExamples}`);
-
-  // Create indexes
-  await db.collection('words').createIndex({ word: 1 }, { unique: true });
-  await db.collection('words').createIndex({ level: 1 });
-  await db.collection('words').createIndex({ frequencyRank: 1 });
-  await db.collection('words').createIndex({ word: 'text' });
-  await db.collection('examples').createIndex({ wordId: 1 });
-  console.log('Indexes created.');
-
-  await mongoose.disconnect();
-  console.log('Done.');
-}
-
-seed().catch((err) => {
-  console.error('Seed failed:', err);
-  process.exit(1);
+  console.log(`  Words: ${totalWords}`);
+  console.log(`  Examples: ${totalExamples}`);
 });
+
+insertAll();
+
+// Create indexes
+db.exec(`
+  CREATE INDEX IF NOT EXISTS idx_words_level ON words(level);
+  CREATE INDEX IF NOT EXISTS idx_words_freq ON words(frequency_rank);
+  CREATE INDEX IF NOT EXISTS idx_examples_word ON examples(word_id);
+`);
+
+db.close();
+console.log('Done.');

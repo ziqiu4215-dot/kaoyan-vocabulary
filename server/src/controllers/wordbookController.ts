@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import Word from '../models/Word';
+import db from '../config/db';
 import AppError from '../utils/AppError';
 
 const LEVEL_NAMES: Record<string, string> = {
@@ -14,20 +14,14 @@ const LEVEL_NAMES: Record<string, string> = {
 
 export const getWordbooks = async (_req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
-    const stats = await Word.aggregate([
-      {
-        $group: {
-          _id: '$level',
-          total: { $sum: 1 },
-        },
-      },
-      { $sort: { _id: 1 } },
-    ]);
+    const rows = db.prepare(`
+      SELECT level as id, COUNT(*) as total FROM words GROUP BY level ORDER BY level
+    `).all() as { id: string; total: number }[];
 
-    const wordbooks = stats.map((s) => ({
-      id: s._id,
-      name: LEVEL_NAMES[s._id] || s._id,
-      total: s.total,
+    const wordbooks = rows.map((r) => ({
+      id: r.id,
+      name: LEVEL_NAMES[r.id] || r.id,
+      total: r.total,
     }));
 
     res.json({ success: true, data: wordbooks });
@@ -39,19 +33,13 @@ export const getWordbooks = async (_req: Request, res: Response, next: NextFunct
 export const getWordbookProgress = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     const { id } = req.params;
-    const total = await Word.countDocuments({ level: id });
-    if (total === 0) {
+    const row = db.prepare(`SELECT COUNT(*) as total FROM words WHERE level = ?`).get(id) as { total: number };
+    if (!row || row.total === 0) {
       throw new AppError('Wordbook not found', 404);
     }
     res.json({
       success: true,
-      data: {
-        id,
-        name: LEVEL_NAMES[id] || id,
-        total,
-        learned: 0,
-        mastered: 0,
-      },
+      data: { id, name: LEVEL_NAMES[id] || id, total: row.total, learned: 0, mastered: 0 },
     });
   } catch (error) {
     next(error);
@@ -61,22 +49,34 @@ export const getWordbookProgress = async (req: Request, res: Response, next: Nex
 export const searchWords = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     const { q, level, page = '1', limit = '20' } = req.query;
-    const filter: Record<string, unknown> = {};
-    if (level) filter.level = level;
-    if (q) filter.word = { $regex: q, $options: 'i' };
-
     const pageNum = parseInt(page as string, 10);
     const limitNum = Math.min(parseInt(limit as string, 10), 50);
-    const skip = (pageNum - 1) * limitNum;
+    const offset = (pageNum - 1) * limitNum;
 
-    const [words, total] = await Promise.all([
-      Word.find(filter).skip(skip).limit(limitNum).lean(),
-      Word.countDocuments(filter),
-    ]);
+    let query = 'SELECT * FROM words WHERE 1=1';
+    const params: (string | number)[] = [];
+
+    if (level) { query += ' AND level = ?'; params.push(level as string); }
+    if (q) { query += ' AND word LIKE ?'; params.push(`%${q}%`); }
+
+    const countRow = db.prepare(query.replace('SELECT *', 'SELECT COUNT(*) as total')).get(...params) as { total: number };
+    const words = db.prepare(query + ' LIMIT ? OFFSET ?').all(...params, limitNum, offset);
+
+    const parsed = (words as any[]).map(w => ({
+      ...w,
+      id: w.id.toString(),
+      meanings: JSON.parse(w.meanings || '[]'),
+      rootAffix: w.root_affix ? JSON.parse(w.root_affix) : undefined,
+      derivatives: w.derivatives ? JSON.parse(w.derivatives) : undefined,
+      collocations: w.collocations ? JSON.parse(w.collocations) : undefined,
+    }));
 
     res.json({
       success: true,
-      data: { words, pagination: { page: pageNum, limit: limitNum, total, pages: Math.ceil(total / limitNum) } },
+      data: {
+        words: parsed,
+        pagination: { page: pageNum, limit: limitNum, total: countRow.total, pages: Math.ceil(countRow.total / limitNum) },
+      },
     });
   } catch (error) {
     next(error);

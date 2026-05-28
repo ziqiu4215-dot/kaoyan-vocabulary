@@ -1,8 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
-import Word from '../models/Word';
-import Example from '../models/Example';
+import db from '../config/db';
 
-// Generate test questions for a set of words
 export const getTestQuestions = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     const { wordIds: idsParam } = req.query;
@@ -11,69 +9,72 @@ export const getTestQuestions = async (req: Request, res: Response, next: NextFu
       return;
     }
 
-    const wordIds = (idsParam as string).split(',');
-    const words = await Word.find({ _id: { $in: wordIds } }).lean();
-    const allWords = await Word.find({ _id: { $nin: wordIds } }).limit(20).lean();
+    const wordIds = (idsParam as string).split(',').map(Number);
+    const placeholders = wordIds.map(() => '?').join(',');
+
+    const words = db.prepare(
+      `SELECT * FROM words WHERE id IN (${placeholders})`
+    ).all(...wordIds) as any[];
+
+    const allWords = db.prepare(
+      `SELECT * FROM words WHERE id NOT IN (${placeholders}) ORDER BY RANDOM() LIMIT 20`
+    ).all(...wordIds) as any[];
 
     const questions: any[] = [];
 
     for (const word of words) {
-      // 1. Meaning choice question
+      const meanings = JSON.parse(word.meanings || '[]');
+      const mainMeaning = meanings[0]?.defCn || '';
+
+      // 1. Meaning choice
       const distractors = allWords
-        .filter((w) => w._id.toString() !== word._id.toString())
+        .filter((w) => w.id !== word.id)
         .sort(() => Math.random() - 0.5)
-        .slice(0, 3);
+        .slice(0, 3)
+        .map((w) => {
+          const m = JSON.parse(w.meanings || '[]');
+          return m[0]?.defCn || '';
+        })
+        .filter(Boolean);
 
-      questions.push({
-        type: 'meaning-choice',
-        wordId: word._id,
-        prompt: { word: word.word },
-        options: shuffleArray([
-          word.meanings[0]?.defCn || '',
-          ...distractors.map((d) => d.meanings[0]?.defCn || ''),
-        ]),
-        correctAnswer: word.meanings[0]?.defCn || '',
-      });
+      if (mainMeaning && distractors.length >= 2) {
+        questions.push({
+          type: 'meaning-choice',
+          wordId: word.id.toString(),
+          prompt: { word: word.word },
+          options: shuffleArray([mainMeaning, ...distractors]),
+          correctAnswer: mainMeaning,
+        });
+      }
 
-      // 2. Listen and spell (return word with missing letters)
-      if (word.phoneticUs) {
+      // 2. Listen and write
+      if (word.phonetic_us) {
         const letters = word.word.split('');
         const blankIndices: number[] = [];
         const blankCount = Math.max(2, Math.floor(letters.length * 0.4));
         while (blankIndices.length < blankCount) {
           const idx = Math.floor(Math.random() * letters.length);
-          if (!blankIndices.includes(idx) && letters[idx] !== ' ') {
-            blankIndices.push(idx);
-          }
+          if (!blankIndices.includes(idx)) blankIndices.push(idx);
         }
-        const blanked = letters.map((l, i) => (blankIndices.includes(i) ? '_' : l)).join('');
+        const blanked = letters.map((l: string, i: number) => (blankIndices.includes(i) ? '_' : l)).join('');
 
         questions.push({
           type: 'listen-write',
-          wordId: word._id,
-          prompt: {
-            phonetic: word.phoneticUs,
-            hint: blanked,
-          },
+          wordId: word.id.toString(),
+          prompt: { phonetic: word.phonetic_us, hint: blanked },
           correctAnswer: word.word,
         });
       }
 
-      // 3. Fill in blank from examples
-      const examples = await Example.find({ wordId: word._id }).lean();
+      // 3. Fill in blank
+      const examples = db.prepare(`SELECT * FROM examples WHERE word_id = ?`).all(word.id) as any[];
       if (examples.length > 0) {
         const example = examples[Math.floor(Math.random() * examples.length)];
-        const blankedSentence = example.sentence.replace(
-          new RegExp(word.word, 'gi'),
-          '____',
-        );
+        const blankedSentence = example.sentence.replace(new RegExp(word.word, 'gi'), '____');
         questions.push({
           type: 'fill-blank',
-          wordId: word._id,
-          prompt: {
-            sentence: blankedSentence,
-            translation: example.translation,
-          },
+          wordId: word.id.toString(),
+          prompt: { sentence: blankedSentence, translation: example.translation },
           correctAnswer: word.word,
         });
       }
@@ -85,10 +86,9 @@ export const getTestQuestions = async (req: Request, res: Response, next: NextFu
   }
 };
 
-// Submit test answers and update learning records
 export const submitTestAnswers = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
-    const { answers } = req.body; // [{ questionId: wordId, correct: boolean, timeSpentMs: number }]
+    const { answers } = req.body;
     if (!answers || !Array.isArray(answers)) {
       res.status(400).json({ success: false, message: 'answers array required' });
       return;
@@ -98,10 +98,7 @@ export const submitTestAnswers = async (req: Request, res: Response, next: NextF
       total: answers.length,
       correct: answers.filter((a: any) => a.correct).length,
       wrong: answers.filter((a: any) => !a.correct).length,
-      wordResults: answers.map((a: any) => ({
-        wordId: a.wordId,
-        correct: a.correct,
-      })),
+      wordResults: answers.map((a: any) => ({ wordId: a.wordId, correct: a.correct })),
     };
 
     res.json({ success: true, data: results });

@@ -6,7 +6,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import rateLimit from 'express-rate-limit';
-import connectDB from './config/db';
+import './config/db'; // SQLite auto-initializes on import
 import wordbookRoutes from './routes/wordbook';
 import learnRoutes from './routes/learn';
 import testRoutes from './routes/test';
@@ -43,13 +43,9 @@ app.use('/api/test', testRoutes);
 app.use(errorHandler);
 
 // Start server
-const start = async () => {
-  await connectDB();
-  app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
-  });
-};
-
-start();
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`SQLite database initialized`);
+});
 
 export default app;

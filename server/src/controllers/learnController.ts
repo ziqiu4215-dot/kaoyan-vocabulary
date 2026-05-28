@@ -1,88 +1,115 @@
 import { Request, Response, NextFunction } from 'express';
-import Word from '../models/Word';
-import LearningRecord from '../models/LearningRecord';
+import db from '../config/db';
 import AppError from '../utils/AppError';
 
-// Get next word for learning (simplified: random word from level not yet learned)
+const DEMO_USER = 'demo-user';
+
 export const getNextWord = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
-    const { wordbookId } = req.query;
-    const level = wordbookId || 'high-freq';
+    const wordbookId = (req.query.wordbookId as string) || 'high-freq';
 
-    // Find words already learned by this user (placeholder: use a demo userId)
-    const userId = (req as any).userId || 'demo-user';
-    const learnedWordIds = await LearningRecord.find({ userId }).distinct('wordId');
+    // Find learned word IDs
+    const learnedRows = db.prepare(
+      `SELECT word_id FROM learning_records WHERE user_id = ?`
+    ).all(DEMO_USER) as { word_id: number }[];
+    const learnedIds = learnedRows.map(r => r.word_id);
 
-    const word = await Word.findOne({
-      level,
-      _id: { $nin: learnedWordIds },
-    }).lean();
+    let row: any;
+    if (learnedIds.length > 0) {
+      const placeholders = learnedIds.map(() => '?').join(',');
+      row = db.prepare(
+        `SELECT * FROM words WHERE level = ? AND id NOT IN (${placeholders}) ORDER BY frequency_rank LIMIT 1`
+      ).get(wordbookId, ...learnedIds);
+    } else {
+      row = db.prepare(
+        `SELECT * FROM words WHERE level = ? ORDER BY frequency_rank LIMIT 1`
+      ).get(wordbookId);
+    }
 
-    if (!word) {
+    if (!row) {
       res.json({ success: true, data: null, message: 'All words in this wordbook have been learned' });
       return;
     }
 
-    // Get examples for this word
-    const Example = (await import('../models/Example')).default;
-    const examples = await Example.find({ wordId: word._id }).lean();
+    const examples = db.prepare(`SELECT * FROM examples WHERE word_id = ?`).all(row.id);
 
-    res.json({ success: true, data: { ...word, examples } });
+    const word = {
+      _id: row.id.toString(),
+      word: row.word,
+      phoneticUs: row.phonetic_us,
+      phoneticUk: row.phonetic_uk,
+      meanings: JSON.parse(row.meanings || '[]'),
+      rootAffix: row.root_affix ? JSON.parse(row.root_affix) : undefined,
+      derivatives: row.derivatives ? JSON.parse(row.derivatives) : undefined,
+      frequencyRank: row.frequency_rank,
+      collocations: row.collocations ? JSON.parse(row.collocations) : undefined,
+      level: row.level,
+      examples,
+    };
+
+    res.json({ success: true, data: word });
   } catch (error) {
     next(error);
   }
 };
 
-// Submit learning record
 export const submitLearningRecord = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
-    const { wordId, status, easeFactor, quality } = req.body;
-    const userId = (req as any).userId || 'demo-user';
-
+    const { wordId, status, quality } = req.body;
     if (!wordId || !status) {
       throw new AppError('wordId and status are required', 400);
     }
 
-    const word = await Word.findById(wordId);
+    const word = db.prepare(`SELECT id FROM words WHERE id = ?`).get(parseInt(wordId));
     if (!word) {
       throw new AppError('Word not found', 404);
     }
 
-    let record = await LearningRecord.findOne({ userId, wordId });
+    const existing = db.prepare(
+      `SELECT * FROM learning_records WHERE user_id = ? AND word_id = ?`
+    ).get(DEMO_USER, parseInt(wordId)) as any;
 
-    if (!record) {
-      record = new LearningRecord({ userId, wordId, status: 'new' });
-    }
-
-    // SM-2 Algorithm
     const q = quality || (status === 'mastered' ? 4 : 1);
-    let { easeFactor: ef, interval, repetitions } = record;
+    let ef = existing?.ease_factor ?? 2.5;
+    let interval = existing?.interval ?? 0;
+    let repetitions = existing?.repetitions ?? 0;
+    let correctCount = existing?.correct_count ?? 0;
+    let incorrectCount = existing?.incorrect_count ?? 0;
 
     if (q >= 3) {
-      // Correct answer
       if (repetitions === 0) interval = 1;
       else if (repetitions === 1) interval = 3;
       else interval = Math.round(interval * ef);
-
       repetitions += 1;
       ef = Math.max(1.3, ef + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02)));
+      correctCount += 1;
     } else {
-      // Wrong answer
       repetitions = 0;
       interval = 1;
       ef = Math.max(1.3, ef - 0.2);
+      incorrectCount += 1;
     }
 
-    record.status = status;
-    record.easeFactor = ef;
-    record.interval = interval;
-    record.repetitions = repetitions;
-    record.lastReviewAt = new Date();
-    record.nextReviewAt = new Date(Date.now() + interval * 24 * 60 * 60 * 1000);
-    record.correctCount += q >= 3 ? 1 : 0;
-    record.incorrectCount += q < 3 ? 1 : 0;
+    const nextReviewAt = new Date(Date.now() + interval * 24 * 60 * 60 * 1000).toISOString();
+    const now = new Date().toISOString();
 
-    await record.save();
+    if (existing) {
+      db.prepare(`
+        UPDATE learning_records SET status=?, ease_factor=?, interval=?, repetitions=?,
+        last_review_at=?, next_review_at=?, correct_count=?, incorrect_count=?, updated_at=?
+        WHERE user_id=? AND word_id=?
+      `).run(status, ef, interval, repetitions, now, nextReviewAt, correctCount, incorrectCount, now, DEMO_USER, parseInt(wordId));
+    } else {
+      db.prepare(`
+        INSERT INTO learning_records (user_id, word_id, status, ease_factor, interval, repetitions,
+        last_review_at, next_review_at, correct_count, incorrect_count)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      `).run(DEMO_USER, parseInt(wordId), status, ef, interval, repetitions, now, nextReviewAt, correctCount, incorrectCount);
+    }
+
+    const record = db.prepare(
+      `SELECT * FROM learning_records WHERE user_id=? AND word_id=?`
+    ).get(DEMO_USER, parseInt(wordId));
 
     res.json({ success: true, data: record });
   } catch (error) {
@@ -90,18 +117,16 @@ export const submitLearningRecord = async (req: Request, res: Response, next: Ne
   }
 };
 
-// Get learning stats for a wordbook
 export const getLearningStats = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     const { wordbookId } = req.params;
-    const userId = (req as any).userId || 'demo-user';
-
-    const total = await Word.countDocuments({ level: wordbookId });
-    const learned = await LearningRecord.countDocuments({
-      userId,
-      status: { $in: ['learning', 'review', 'mastered'] },
-    });
-    const mastered = await LearningRecord.countDocuments({ userId, status: 'mastered' });
+    const total = (db.prepare(`SELECT COUNT(*) as c FROM words WHERE level = ?`).get(wordbookId) as any).c;
+    const learned = (db.prepare(
+      `SELECT COUNT(*) as c FROM learning_records l JOIN words w ON l.word_id = w.id WHERE l.user_id=? AND w.level=?`
+    ).get(DEMO_USER, wordbookId) as any).c;
+    const mastered = (db.prepare(
+      `SELECT COUNT(*) as c FROM learning_records l JOIN words w ON l.word_id = w.id WHERE l.user_id=? AND w.level=? AND l.status='mastered'`
+    ).get(DEMO_USER, wordbookId) as any).c;
 
     res.json({
       success: true,
