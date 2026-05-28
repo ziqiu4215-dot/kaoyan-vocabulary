@@ -27,10 +27,10 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-3">选择词书</h1>
-        <p className="text-gray-500 text-lg">从真实语境中学习单词，科学记忆，高效备考</p>
+    <div className="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+      <div className="text-center mb-8">
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">选择词书</h1>
+        <p className="text-gray-500">从真实语境中学习单词，科学记忆，高效备考</p>
       </div>
 
       {loading && (
@@ -53,20 +53,20 @@ export default function Home() {
       )}
 
       {!loading && !error && (
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid gap-3 sm:grid-cols-2">
           {wordbooks.map((wb) => (
             <div
               key={wb.id}
               onClick={() => navigate(`/learn?wordbook=${wb.id}`)}
               className="wordbook-card group"
             >
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-3xl">{levelIcons[wb.id] || '📖'}</span>
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-2xl">{levelIcons[wb.id] || '📖'}</span>
                 <span className="text-xs text-gray-400 bg-gray-100 px-2 py-1 rounded-full">
                   {wb.total} 词
                 </span>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 group-hover:text-primary-600 transition-colors">
+              <h3 className="text-base font-semibold text-gray-900 group-hover:text-primary-600 transition-colors">
                 {wb.name}
               </h3>
               <div className="mt-3">
@@ -83,20 +83,6 @@ export default function Home() {
               </div>
             </div>
           ))}
-        </div>
-      )}
-
-      {!loading && !error && wordbooks.length > 0 && (
-        <div className="text-center mt-10">
-          <button
-            onClick={() => {
-              const first = wordbooks[0];
-              if (first) navigate(`/learn?wordbook=${first.id}`);
-            }}
-            className="btn-primary text-lg px-10 py-4"
-          >
-            开始学习
-          </button>
         </div>
       )}
     </div>

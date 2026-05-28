@@ -8,6 +8,8 @@ import morgan from 'morgan';
 import rateLimit from 'express-rate-limit';
 import connectDB from './config/db';
 import wordbookRoutes from './routes/wordbook';
+import learnRoutes from './routes/learn';
+import testRoutes from './routes/test';
 import errorHandler from './middleware/errorHandler';
 
 const app = express();
@@ -34,6 +36,8 @@ app.get('/api/health', (_req, res) => {
 });
 
 app.use('/api/wordbooks', wordbookRoutes);
+app.use('/api/learn', learnRoutes);
+app.use('/api/test', testRoutes);
 
 // Error handler
 app.use(errorHandler);
