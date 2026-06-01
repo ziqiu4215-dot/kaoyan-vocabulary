@@ -30,8 +30,18 @@ export default function LearnPage() {
   const [exampleIdx, setExampleIdx] = useState(0);
   const [xpFloat, setXpFloat] = useState<{ xp: number; label: string } | null>(null);
   const [faved, setFaved] = useState(false);
+  const [wordbookTotal, setWordbookTotal] = useState(20); // 词书总词数
   const { t } = useI18n();
   const sound = useSound();
+
+  // 获取词书总词数
+  useEffect(() => {
+    api.get('/wordbooks').then(res => {
+      const wbs = res.data.data;
+      const wb = wbs?.find((w: any) => w.id === wordbookId);
+      if (wb) setWordbookTotal(wb.total);
+    }).catch(() => {});
+  }, [wordbookId]);
 
   const fetchWord = useCallback(async () => {
     setLoading(true);
@@ -178,9 +188,9 @@ export default function LearnPage() {
         </div>
         <div className="flex items-center gap-3">
           <div className="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
-            <div className="h-full bg-green-500 rounded-full transition-all" style={{ width: `${Math.min((learnedCount / 20) * 100, 100)}%` }} />
+            <div className="h-full bg-green-500 rounded-full transition-all" style={{ width: `${Math.min((learnedCount / wordbookTotal) * 100, 100)}%` }} />
           </div>
-          <span className="text-xs text-gray-400">{learnedCount} 词</span>
+          <span className="text-xs text-gray-400">{learnedCount}/{wordbookTotal}</span>
         </div>
       </div>
 
