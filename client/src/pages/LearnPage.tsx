@@ -199,33 +199,38 @@ export default function LearnPage() {
         </div>
       </div>
 
-      {/* Word + Phonetic */}
-      <div className="text-center mb-6">
-        <h1 className="text-5xl font-bold text-gray-900 tracking-tight mb-3">{word.word}</h1>
-        <div className="flex items-center justify-center gap-4">
-          <span className="text-gray-400">{word.phoneticUs || ''}</span>
-          <button onClick={() => speak(word.word)} className="btn-ghost text-sm">
-            {t('learn.play')}
+      {/* Word Hero — 沉浸式大字 */}
+      <div className="text-center mb-8 pt-4">
+        <p className="text-7xl sm:text-8xl font-extrabold text-gray-900 tracking-tight mb-4 animate-fade-in">
+          {word.word}
+        </p>
+        <div className="flex items-center justify-center gap-3">
+          <span className="text-base text-gray-400 font-light">{word.phoneticUs || ''}</span>
+          <button
+            onClick={() => speak(word.word)}
+            className="w-10 h-10 rounded-full bg-gray-100 hover:bg-brand-50 text-gray-500 hover:text-brand-600 flex items-center justify-center transition-all"
+          >
+            🔊
           </button>
         </div>
       </div>
 
-      {/* Meanings */}
-      <div className="card overflow-hidden mb-4">
-        <div className="text-xs font-medium text-gray-500 px-4 py-2 bg-gray-50 border-b border-gray-100">
+      {/* Meanings — 柔和卡片 */}
+      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-4">
+        <div className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider px-5 py-2.5 bg-gradient-to-r from-gray-50 to-white">
           {t('learn.meanings')}
         </div>
-        <div className="px-4 py-3">
+        <div className="px-5 py-3">
           {word.meanings.map((m, i) => (
-            <div key={i} className="flex gap-3 text-sm py-0.5">
-              <span className={`w-14 shrink-0 ${m.examWeight && m.examWeight >= 4 ? 'text-amber-600 font-medium' : 'text-gray-400'}`}>
+            <div key={i} className="flex gap-3 py-1">
+              <span className={`w-12 shrink-0 text-xs font-medium ${m.examWeight && m.examWeight >= 4 ? 'text-amber-500' : 'text-gray-400'}`}>
                 {m.pos}
               </span>
-              <span className={m.examWeight && m.examWeight >= 4 ? 'text-gray-900 font-semibold' : 'text-gray-500'}>
+              <span className={m.examWeight && m.examWeight >= 4 ? 'text-gray-900 font-semibold' : 'text-gray-600'}>
                 {m.defCn}
               </span>
               {m.examWeight && m.examWeight >= 4 && (
-                <span className="text-amber-600 text-xs font-medium px-1 py-0.5 bg-amber-50 rounded">{t('learn.exam')}</span>
+                <span className="text-amber-500 text-[10px] font-bold px-1.5 py-0.5 bg-amber-50 rounded-md">考点</span>
               )}
             </div>
           ))}
@@ -234,21 +239,21 @@ export default function LearnPage() {
 
       {/* Root & Affix */}
       {word.rootAffix && (
-        <div className="card overflow-hidden mb-4">
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-4">
           <button
             onClick={() => setShowRoot(!showRoot)}
-            className="w-full text-left text-xs font-medium text-gray-500 px-4 py-2 bg-gray-50 border-b border-gray-100 hover:text-gray-700 transition-colors flex justify-between"
+            className="w-full text-left px-5 py-2.5 bg-gradient-to-r from-gray-50 to-white flex justify-between items-center"
           >
-            <span>{t('learn.rootAffix')}</span>
-            <span className="text-brand-600">{showRoot ? '收起' : '展开'}</span>
+            <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider">{t('learn.rootAffix')}</span>
+            <span className="text-brand-500 text-xs">{showRoot ? '收起 ▴' : '展开 ▾'}</span>
           </button>
           {showRoot && (
-            <div className="px-4 py-3 text-sm">
-              <p className="text-gray-900 leading-relaxed mb-2">
-                <span className="text-brand-600">→</span> {word.rootAffix.meaning}
+            <div className="px-5 py-3 border-t border-gray-50">
+              <p className="text-gray-800 leading-relaxed mb-2">
+                {word.rootAffix.meaning}
               </p>
               {word.rootAffix.root && (
-                <p className="text-xs text-green-600">
+                <p className="text-xs text-green-600 font-medium">
                   root: {word.rootAffix.root}
                   {word.rootAffix.rootMeaning ? ` (${word.rootAffix.rootMeaning})` : ''}
                 </p>
@@ -256,7 +261,7 @@ export default function LearnPage() {
               {word.rootAffix.affixes && word.rootAffix.affixes.length > 0 && (
                 <div className="flex gap-2 mt-2 flex-wrap">
                   {word.rootAffix.affixes.map((a, i) => (
-                    <span key={i} className="text-xs text-amber-600 bg-amber-50 px-2 py-0.5 rounded">
+                    <span key={i} className="text-xs text-amber-600 bg-amber-50 px-2 py-1 rounded-lg font-medium">
                       {a.part} = {a.meaning}
                     </span>
                   ))}
@@ -269,36 +274,35 @@ export default function LearnPage() {
 
       {/* Examples */}
       {examples.length > 0 && (
-        <div className="card overflow-hidden mb-4">
-          <div className="text-xs font-medium text-gray-500 px-4 py-2 bg-gray-50 border-b border-gray-100 flex justify-between items-center">
-            <span>{t('learn.example')}{examples.length > 1 ? ` ${exampleIdx + 1}/${examples.length}` : ''}</span>
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-4">
+          <div className="px-5 py-2.5 bg-gradient-to-r from-gray-50 to-white flex justify-between items-center">
+            <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider">
+              {t('learn.example')}{examples.length > 1 ? ` ${exampleIdx + 1}/${examples.length}` : ''}
+            </span>
             <div className="flex items-center gap-2">
               {currentExample?.source && (
-                <span className="text-[10px] px-1.5 py-0.5 rounded bg-gray-100 text-gray-500">{currentExample.source}</span>
+                <span className="text-[10px] px-1.5 py-0.5 rounded-md bg-gray-100 text-gray-500 font-medium">{currentExample.source}</span>
               )}
-              <button onClick={() => speak(currentExample.sentence)} className="text-brand-600 hover:text-brand-700 text-xs">
+              <button onClick={() => speak(currentExample.sentence)} className="w-7 h-7 rounded-full bg-gray-100 hover:bg-brand-50 text-gray-400 hover:text-brand-500 flex items-center justify-center transition-all text-xs">
                 🔊
               </button>
             </div>
           </div>
-          <div className="px-4 py-4">
-            <p className="text-gray-900 leading-relaxed mb-2">{currentExample.sentence}</p>
+          <div className="px-5 py-4 border-t border-gray-50">
+            <p className="text-gray-800 leading-relaxed mb-2 text-[15px]">{currentExample.sentence}</p>
             <p className="text-sm text-gray-400">{currentExample.translation}</p>
           </div>
           {examples.length > 1 && (
-            <div className="flex justify-between items-center px-4 pb-3">
-              <div className="flex gap-2">
-                {examples.map((_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => setExampleIdx(i)}
-                    className={`w-2.5 h-2.5 rounded-full transition-colors ${
-                      i === exampleIdx ? 'bg-brand-600' : 'bg-gray-200 hover:bg-gray-300'
-                    }`}
-                  />
-                ))}
-              </div>
-              <span className="text-[10px] text-gray-400">左右滑动切换</span>
+            <div className="flex gap-1.5 px-5 pb-3">
+              {examples.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setExampleIdx(i)}
+                  className={`h-1 rounded-full transition-all ${
+                    i === exampleIdx ? 'w-5 bg-brand-500' : 'w-1.5 bg-gray-200 hover:bg-gray-300'
+                  }`}
+                />
+              ))}
             </div>
           )}
         </div>
@@ -306,14 +310,14 @@ export default function LearnPage() {
 
       {/* Derivatives */}
       {word.derivatives && word.derivatives.length > 0 && (
-        <div className="card overflow-hidden mb-4">
-          <div className="text-xs font-medium text-gray-500 px-4 py-2 bg-gray-50 border-b border-gray-100">
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-4">
+          <div className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider px-5 py-2.5 bg-gradient-to-r from-gray-50 to-white">
             {t('learn.derivatives')}
           </div>
-          <div className="px-4 py-3">
+          <div className="px-5 py-3 border-t border-gray-50">
             {word.derivatives.map((d, i) => (
-              <div key={i} className="flex gap-2 text-sm py-0.5">
-                <span className="text-green-600 font-medium">{d.word}</span>
+              <div key={i} className="flex gap-2 py-0.5 text-sm">
+                <span className="text-green-600 font-semibold">{d.word}</span>
                 <span className="text-gray-400">{d.pos}</span>
                 <span className="text-gray-500">— {d.defCn}</span>
               </div>
@@ -324,14 +328,14 @@ export default function LearnPage() {
 
       {/* Collocations */}
       {word.collocations && word.collocations.length > 0 && (
-        <div className="card overflow-hidden mb-4">
-          <div className="text-xs font-medium text-gray-500 px-4 py-2 bg-gray-50 border-b border-gray-100">
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-4">
+          <div className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider px-5 py-2.5 bg-gradient-to-r from-gray-50 to-white">
             {t('learn.collocations')}
           </div>
-          <div className="px-4 py-3">
+          <div className="px-5 py-3 border-t border-gray-50">
             {word.collocations.map((c, i) => (
-              <div key={i} className="flex gap-3 text-sm py-0.5">
-                <span className="text-brand-600 font-medium">{c.phrase}</span>
+              <div key={i} className="flex gap-3 py-0.5 text-sm">
+                <span className="text-brand-600 font-semibold">{c.phrase}</span>
                 <span className="text-gray-400">— {c.meaning}</span>
               </div>
             ))}
@@ -340,24 +344,19 @@ export default function LearnPage() {
       )}
 
       {/* Bottom Action Bar */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur border-t border-gray-200 px-4 py-3"
+      <div className="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-xl border-t border-gray-100 px-4 py-3"
         style={{ paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom, 0px))' }}>
-        <div className="max-w-2xl mx-auto flex items-center justify-between gap-3">
-          <button onClick={() => handleResponse('learning')} className="btn-danger flex-1 py-3 text-sm font-semibold rounded-full">
+        <div className="max-w-2xl mx-auto flex items-center gap-3">
+          <button onClick={() => handleResponse('learning')} className="flex-1 py-3.5 text-sm font-semibold rounded-2xl bg-red-50 text-red-600 hover:bg-red-100 active:scale-[0.98] transition-all">
             {t('learn.unknown')}
           </button>
-          <button onClick={handleFavorite} className={`px-4 py-3 text-sm rounded-full transition-all ${faved ? 'bg-amber-500 text-white' : 'btn-warning'}`}>
-            {faved ? '★ 已收藏' : t('learn.fav')}
+          <button onClick={handleFavorite} className={`w-12 h-12 rounded-2xl flex items-center justify-center text-lg transition-all active:scale-[0.95] ${faved ? 'bg-amber-500 text-white shadow-md' : 'bg-amber-50 text-amber-500 hover:bg-amber-100'}`}>
+            {faved ? '★' : '☆'}
           </button>
-          <button onClick={() => handleResponse('mastered')} className="btn-success flex-1 py-3 text-sm font-semibold rounded-full">
+          <button onClick={() => handleResponse('mastered')} className="flex-1 py-3.5 text-sm font-semibold rounded-2xl bg-green-50 text-green-600 hover:bg-green-100 active:scale-[0.98] transition-all">
             {t('learn.known')}
           </button>
         </div>
-        <p className="text-center text-gray-400 text-xs mt-2">
-          <span className="kbd mr-1"><span className="key">←</span></span> {t('learn.unknown')}
-          <span className="mx-2">|</span>
-          <span className="kbd mr-1"><span className="key">→</span></span> {t('learn.known')}
-        </p>
       </div>
 
       {/* XP floating effect */}
