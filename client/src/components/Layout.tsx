@@ -23,8 +23,7 @@ export default function Layout() {
   const navItems = [
     { to: '/', label: t('nav.home'), kb: '1' },
     { to: '/learn', label: t('nav.learn'), kb: '2' },
-    { to: '/review', label: t('nav.review'), kb: '3' },
-    { to: '/wordbook', label: t('nav.wordbook'), kb: 'B' },
+    { to: '/wordbook', label: t('nav.wordbook'), kb: '3' },
     { to: '/search', label: t('nav.search'), kb: 'S' },
     { to: '/leaderboard', label: '排行', kb: 'R' },
     { to: '/stats', label: t('nav.stats'), kb: 'T' },
@@ -34,8 +33,8 @@ export default function Layout() {
     const handler = (e: KeyboardEvent) => {
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
       const keyMap: Record<string, string> = {
-        '1': '/', '2': '/learn', '3': '/review',
-        'b': '/wordbook', 's': '/search', 'r': '/leaderboard', 't': '/stats',
+        '1': '/', '2': '/learn', '3': '/wordbook',
+        'r': '/leaderboard', 't': '/stats',
       };
       const to = keyMap[e.key.toLowerCase()];
       if (to) navigate(to);

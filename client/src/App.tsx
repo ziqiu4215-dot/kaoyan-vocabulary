@@ -1,9 +1,8 @@
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
-import LearnPage from './pages/LearnPage';
+import StudyPage from './pages/StudyPage';
 import TestPage from './pages/TestPage';
-import ReviewPage from './pages/ReviewPage';
 import WordbookPage from './pages/WordbookPage';
 import SearchPage from './pages/SearchPage';
 import StatsPage from './pages/StatsPage';
@@ -20,9 +19,9 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/learn" element={<LearnPage />} />
+          <Route path="/learn" element={<StudyPage />} />
           <Route path="/test" element={<TestPage />} />
-          <Route path="/review" element={<ReviewPage />} />
+          <Route path="/review" element={<StudyPage />} />
           <Route path="/wordbook" element={<WordbookPage />} />
           <Route path="/search" element={<SearchPage />} />
           <Route path="/stats" element={<StatsPage />} />
