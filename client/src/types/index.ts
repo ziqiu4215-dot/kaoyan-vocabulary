@@ -4,6 +4,7 @@ export interface Wordbook {
   total: number;
   learned?: number;
   mastered?: number;
+  due?: number;
 }
 
 export interface Meaning {

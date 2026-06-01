@@ -6,6 +6,7 @@ import { useI18n } from '../i18n';
 import api from '../services/api';
 import { Wordbook } from '../types';
 import LevelRing from '../components/LevelRing';
+import VocabMap from '../components/VocabMap';
 
 interface TodayStats {
   xp: number; level: number; streak: number;
@@ -115,6 +116,9 @@ export default function Home() {
           )}
         </div>
       )}
+
+      {/* Vocabulary Territory Map */}
+      <VocabMap wordbooks={wordbooks} />
 
       {/* Wordbook Cards Grid */}
       <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">

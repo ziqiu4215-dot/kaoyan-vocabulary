@@ -18,12 +18,13 @@ export const getWordbooks = async (req: Request, res: Response, next: NextFuncti
     const rows = db.prepare(`
       SELECT w.level as id, COUNT(*) as total,
         COALESCE(SUM(CASE WHEN lr.id IS NOT NULL THEN 1 ELSE 0 END), 0) as learned,
-        COALESCE(SUM(CASE WHEN lr.status = 'mastered' THEN 1 ELSE 0 END), 0) as mastered
+        COALESCE(SUM(CASE WHEN lr.status = 'mastered' THEN 1 ELSE 0 END), 0) as mastered,
+        COALESCE(SUM(CASE WHEN lr.next_review_at <= datetime('now') THEN 1 ELSE 0 END), 0) as due
       FROM words w
       LEFT JOIN learning_records lr ON lr.word_id = w.id AND lr.user_id = ?
       GROUP BY w.level
       ORDER BY w.level
-    `).all(userId) as { id: string; total: number; learned: number; mastered: number }[];
+    `).all(userId) as { id: string; total: number; learned: number; mastered: number; due: number }[];
 
     const wordbooks = rows.map((r) => ({
       id: r.id,
@@ -31,6 +32,7 @@ export const getWordbooks = async (req: Request, res: Response, next: NextFuncti
       total: r.total,
       learned: r.learned,
       mastered: r.mastered,
+      due: r.due,
     }));
 
     res.json({ success: true, data: wordbooks });
