@@ -2,9 +2,7 @@ import { useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import type { Wordbook } from '../types';
 
-interface Props {
-  wordbooks: Wordbook[];
-}
+interface Props { wordbooks: Wordbook[]; }
 
 const REGION_NAMES: Record<string, string> = {
   core: '核心词', 'high-freq': '高频词', 'mid-freq': '中频词', 'low-freq': '低频词',
@@ -31,54 +29,59 @@ function RegionCanvas({ wb }: { wb: Wordbook }) {
 
     const w = rect.width;
     const h = rect.height;
-    const cols = Math.ceil(Math.sqrt(total));
+    const cols = 50; // 固定50列, 确保每格够宽
     const rows = Math.ceil(total / cols);
     const cw = w / cols;
     const ch = h / rows;
 
-    // Shuffle status array for natural look
+    // Build and shuffle cells
     const cells: number[] = [];
-    const learningCount = learned - mastered;
-    for (let i = 0; i < total; i++) {
-      if (i < mastered) cells.push(2);
-      else if (i < mastered + learningCount) cells.push(1);
-      else if (i < mastered + learningCount + due) cells.push(3);
-      else cells.push(0);
-    }
-    // Fisher-Yates
+    const learningCount = Math.max(0, learned - mastered);
+    const masteredCount = mastered;
+    const dueCount = Math.min(due, total - masteredCount - learningCount);
+    const emptyCount = total - masteredCount - learningCount - dueCount;
+
+    cells.push(...Array(masteredCount).fill(2));
+    cells.push(...Array(learningCount).fill(1));
+    cells.push(...Array(dueCount).fill(3));
+    cells.push(...Array(emptyCount).fill(0));
+    // Fisher-Yates shuffle
     for (let i = cells.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [cells[i], cells[j]] = [cells[j], cells[i]];
     }
 
-    const colors = ['#E5E7EB', '#60A5FA', '#4ADE80', '#F87171']; // gray, blue, green, red
+    const colors = ['#E5E7EB', '#60A5FA', '#4ADE80', '#F87171'];
 
-    for (let i = 0; i < total; i++) {
+    for (let i = 0; i < cells.length; i++) {
       const col = i % cols;
       const row = Math.floor(i / cols);
       ctx.fillStyle = colors[cells[i]];
-      ctx.fillRect(col * cw + 0.5, row * ch + 0.5, Math.max(cw - 1, 0.5), Math.max(ch - 1, 0.5));
+      ctx.fillRect(col * cw + 0.5, row * ch + 0.5, Math.max(cw - 1, 1), Math.max(ch - 1, 1));
     }
   }, [total, mastered, learned, due]);
 
   const pct = Math.round((learned / total) * 100);
+  // Height proportional to row count, ~3px per row minimum
+  const rows = Math.ceil(total / 50);
+  const pixelH = Math.max(rows * 6, 60);
 
   return (
     <button
       onClick={() => navigate(`/learn?wordbook=${wb.id}`)}
-      className="text-left cursor-pointer group"
+      className="text-left cursor-pointer group w-full"
     >
-      <div className="flex items-center justify-between mb-1 px-0.5">
-        <span className="text-[10px] font-semibold text-gray-600 group-hover:text-brand-600 transition-colors">
+      <div className="flex items-center justify-between mb-1">
+        <span className="text-[11px] font-semibold text-gray-700 group-hover:text-brand-600 transition-colors">
           {REGION_NAMES[wb.id] || wb.name}
         </span>
-        <span className="text-[10px] text-gray-400">{pct}%</span>
+        <span className="text-[10px] text-gray-400">{wb.total}词 · {pct}%</span>
       </div>
-      <div className="bg-white border border-gray-100 rounded-lg p-0.5 group-hover:border-brand-200 group-hover:shadow-sm transition-all">
+      <div className="bg-white border border-gray-100 rounded-lg p-0.5 group-hover:border-brand-200 group-hover:shadow-sm transition-all overflow-hidden">
         <canvas
           ref={canvasRef}
-          className="w-full"
-          style={{ aspectRatio: '1', minHeight: '80px' }}
+          className="w-full block"
+          style={{ height: `${pixelH}px` }}
         />
       </div>
     </button>
@@ -102,14 +105,13 @@ export default function VocabMap({ wordbooks }: Props) {
         </div>
       </div>
 
-      {/* 2x2 canvas grid */}
-      <div className="grid grid-cols-2 gap-3">
+      {/* Stacked regions — each spans full width */}
+      <div className="flex flex-col gap-3">
         {wordbooks.map((wb) => (
           <RegionCanvas key={wb.id} wb={wb} />
         ))}
       </div>
 
-      {/* Legend */}
       <div className="flex items-center gap-4 mt-3 pt-2 border-t border-gray-50 text-[10px] text-gray-400">
         <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 rounded-sm bg-green-400" /> 已掌握</span>
         <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 rounded-sm bg-blue-400" /> 学习中</span>
