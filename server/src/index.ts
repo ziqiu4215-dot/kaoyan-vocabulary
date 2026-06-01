@@ -27,12 +27,13 @@ app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json({ limit: '10mb' }));
 
-// Rate limiting
+// Rate limiting — 放宽限制，适合学习场景
 const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000,
-  max: 100,
+  windowMs: 1 * 60 * 1000, // 1 分钟窗口
+  max: 200, // 最多 200 次/分钟
   standardHeaders: true,
   legacyHeaders: false,
+  message: { success: false, message: '请求太频繁，请稍后再试' },
 });
 app.use('/api/', limiter);
 
