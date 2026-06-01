@@ -176,7 +176,12 @@ export default function LearnPage() {
       {/* Header */}
       <div className="mb-6">
         <div className="flex items-center justify-between mb-2">
-          <h1 className="text-xl font-bold text-gray-900">{t('nav.learn')}</h1>
+          <div className="flex items-center gap-3">
+            <button onClick={() => navigate('/')} className="text-gray-400 hover:text-gray-600 transition-colors text-lg" title="返回首页">
+              ←
+            </button>
+            <h1 className="text-xl font-bold text-gray-900">{t('nav.learn')}</h1>
+          </div>
           {learnedCount >= 10 && (
             <button
               onClick={() => navigate(`/test?wordbook=${wordbookId}`)}

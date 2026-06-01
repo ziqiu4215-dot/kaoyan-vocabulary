@@ -205,7 +205,10 @@ export default function TestPage() {
       {/* Progress */}
       <div className="mb-6">
         <div className="flex items-center justify-between mb-2">
-          <h1 className="text-xl font-bold text-gray-900">{t('nav.learn')} · 测试</h1>
+          <div className="flex items-center gap-3">
+            <button onClick={() => navigate('/')} className="text-gray-400 hover:text-gray-600 transition-colors text-lg">←</button>
+            <h1 className="text-xl font-bold text-gray-900">{t('nav.learn')} · 测试</h1>
+          </div>
           {combo >= 2 && (
             <span className="text-sm font-bold text-amber-500 animate-pulse">
               🔥 {combo}连击
