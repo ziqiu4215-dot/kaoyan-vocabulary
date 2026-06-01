@@ -5,7 +5,7 @@ interface Props {
   wordbooks: Wordbook[];
 }
 
-const CELL_SIZE = 20; // words per cell
+const CELL_SIZE = 8; // 每格≈8词, 更细粒度
 const REGION_NAMES: Record<string, string> = {
   core: '核心词',
   'high-freq': '高频词',
@@ -58,11 +58,11 @@ function RegionMap({ wb }: { wb: Wordbook }) {
 
       {/* Cell grid */}
       <div
-        className="bg-white border border-gray-100 rounded-lg p-1.5 group-hover:border-brand-200 group-hover:shadow-sm transition-all"
+        className="bg-white border border-gray-100 rounded-lg p-1 group-hover:border-brand-200 group-hover:shadow-sm transition-all"
         style={{
           display: 'grid',
           gridTemplateColumns: `repeat(${cols}, 1fr)`,
-          gap: '1px',
+          gap: '0.5px',
         }}
       >
         {cells.map((status, i) => (
@@ -77,8 +77,8 @@ function RegionMap({ wb }: { wb: Wordbook }) {
             style={{
               width: '100%',
               aspectRatio: '1',
-              minWidth: '4px',
-              minHeight: '4px',
+              minWidth: '2px',
+              minHeight: '2px',
             }}
             title={
               status === 'mastered' ? '已掌握' :
