@@ -113,16 +113,19 @@ export default function LearnPage() {
       if (e.key === 'ArrowLeft') handleResponse('learning');
       else if (e.key === 'ArrowRight') handleResponse('mastered');
       else if (e.key === 'f') handleFavorite();
-      else if (e.key === 'ArrowUp' && examples.length > 1) {
-        setExampleIdx((i) => (i > 0 ? i - 1 : examples.length - 1));
-      }
-      else if (e.key === 'ArrowDown' && examples.length > 1) {
-        setExampleIdx((i) => (i < examples.length - 1 ? i + 1 : 0));
+      else if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+        const ex = word?.examples;
+        if (ex && ex.length > 1) {
+          setExampleIdx((i) => {
+            if (e.key === 'ArrowUp') return i > 0 ? i - 1 : ex.length - 1;
+            return i < ex.length - 1 ? i + 1 : 0;
+          });
+        }
       }
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, [handleResponse, handleFavorite, examples.length]);
+  }, [handleResponse, handleFavorite, word]);
 
   if (loading) {
     return (
