@@ -29,6 +29,7 @@ export default function LearnPage() {
   const [showRoot, setShowRoot] = useState(false);
   const [exampleIdx, setExampleIdx] = useState(0);
   const [xpFloat, setXpFloat] = useState<{ xp: number; label: string } | null>(null);
+  const [faved, setFaved] = useState(false);
   const { t } = useI18n();
   const sound = useSound();
 
@@ -36,6 +37,7 @@ export default function LearnPage() {
     setLoading(true);
     setShowRoot(false);
     setExampleIdx(0);
+    setFaved(false);
     try {
       const res = await api.get('/learn/next-word', { params: { wordbookId } });
       if (res.data.data) {
@@ -90,8 +92,10 @@ export default function LearnPage() {
     if (!word) return;
     try {
       await addToWordbook(word._id, 'favorite');
+      setFaved(true);
+      sound.playClick();
     } catch { /* ignore */ }
-  }, [word]);
+  }, [word, sound]);
 
   const speak = (text: string) => {
     if ('speechSynthesis' in window) {
@@ -109,10 +113,16 @@ export default function LearnPage() {
       if (e.key === 'ArrowLeft') handleResponse('learning');
       else if (e.key === 'ArrowRight') handleResponse('mastered');
       else if (e.key === 'f') handleFavorite();
+      else if (e.key === 'ArrowUp' && examples.length > 1) {
+        setExampleIdx((i) => (i > 0 ? i - 1 : examples.length - 1));
+      }
+      else if (e.key === 'ArrowDown' && examples.length > 1) {
+        setExampleIdx((i) => (i < examples.length - 1 ? i + 1 : 0));
+      }
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, [handleResponse, handleFavorite]);
+  }, [handleResponse, handleFavorite, examples.length]);
 
   if (loading) {
     return (
@@ -130,9 +140,17 @@ export default function LearnPage() {
           <span className="text-green-600 text-xl">✓</span>
         </div>
         <p className="text-gray-900">{t('learn.allDone')}</p>
-        <button onClick={() => navigate('/')} className="btn-secondary">
-          {t('learn.backToBooks')}
-        </button>
+        <p className="text-sm text-gray-400">已学习 {learnedCount} 个单词</p>
+        <div className="flex gap-3 mt-2">
+          <button onClick={() => navigate('/')} className="btn-secondary">
+            {t('learn.backToBooks')}
+          </button>
+          {learnedCount >= 3 && (
+            <button onClick={() => navigate(`/test?wordbook=${wordbookId}`)} className="btn-primary">
+              去测试巩固 →
+            </button>
+          )}
+        </div>
       </div>
     );
   }
@@ -144,12 +162,22 @@ export default function LearnPage() {
     <div className="px-4 py-6 sm:px-6 pb-36">
       {/* Header */}
       <div className="mb-6">
-        <h1 className="text-xl font-bold text-gray-900">{t('nav.learn')}</h1>
-        <div className="flex items-center gap-3 mt-2">
+        <div className="flex items-center justify-between mb-2">
+          <h1 className="text-xl font-bold text-gray-900">{t('nav.learn')}</h1>
+          {learnedCount >= 10 && (
+            <button
+              onClick={() => navigate(`/test?wordbook=${wordbookId}`)}
+              className="text-xs font-medium text-brand-600 hover:text-brand-700 transition-colors"
+            >
+              去测试 →
+            </button>
+          )}
+        </div>
+        <div className="flex items-center gap-3">
           <div className="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
             <div className="h-full bg-green-500 rounded-full transition-all" style={{ width: `${Math.min((learnedCount / 20) * 100, 100)}%` }} />
           </div>
-          <span className="text-xs text-gray-400">{learnedCount}</span>
+          <span className="text-xs text-gray-400">{learnedCount} 词</span>
         </div>
       </div>
 
@@ -222,35 +250,37 @@ export default function LearnPage() {
       )}
 
       {/* Examples */}
-      {currentExample && (
+      {examples.length > 0 && (
         <div className="card overflow-hidden mb-4">
-          <div className="text-xs font-medium text-gray-500 px-4 py-2 bg-gray-50 border-b border-gray-100 flex justify-between">
+          <div className="text-xs font-medium text-gray-500 px-4 py-2 bg-gray-50 border-b border-gray-100 flex justify-between items-center">
             <span>{t('learn.example')}{examples.length > 1 ? ` ${exampleIdx + 1}/${examples.length}` : ''}</span>
-            <button
-              onClick={() => speak(currentExample.sentence)}
-              className="text-brand-600 hover:text-brand-700 text-xs"
-            >
-              {t('learn.play')}
-            </button>
+            <div className="flex items-center gap-2">
+              {currentExample?.source && (
+                <span className="text-[10px] px-1.5 py-0.5 rounded bg-gray-100 text-gray-500">{currentExample.source}</span>
+              )}
+              <button onClick={() => speak(currentExample.sentence)} className="text-brand-600 hover:text-brand-700 text-xs">
+                🔊
+              </button>
+            </div>
           </div>
           <div className="px-4 py-4">
             <p className="text-gray-900 leading-relaxed mb-2">{currentExample.sentence}</p>
-            <p className="text-sm text-gray-400 mb-1">{currentExample.translation}</p>
-            {currentExample.source && (
-              <p className="text-xs text-gray-400">— {currentExample.source}</p>
-            )}
+            <p className="text-sm text-gray-400">{currentExample.translation}</p>
           </div>
           {examples.length > 1 && (
-            <div className="flex gap-2 px-4 pb-3">
-              {examples.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setExampleIdx(i)}
-                  className={`w-2.5 h-2.5 rounded-full transition-colors ${
-                    i === exampleIdx ? 'bg-brand-600' : 'bg-gray-200 hover:bg-gray-300'
-                  }`}
-                />
-              ))}
+            <div className="flex justify-between items-center px-4 pb-3">
+              <div className="flex gap-2">
+                {examples.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setExampleIdx(i)}
+                    className={`w-2.5 h-2.5 rounded-full transition-colors ${
+                      i === exampleIdx ? 'bg-brand-600' : 'bg-gray-200 hover:bg-gray-300'
+                    }`}
+                  />
+                ))}
+              </div>
+              <span className="text-[10px] text-gray-400">左右滑动切换</span>
             </div>
           )}
         </div>
@@ -298,8 +328,8 @@ export default function LearnPage() {
           <button onClick={() => handleResponse('learning')} className="btn-danger flex-1 py-3 text-sm font-semibold rounded-full">
             {t('learn.unknown')}
           </button>
-          <button onClick={handleFavorite} className="btn-warning px-4 py-3 text-sm rounded-full">
-            {t('learn.fav')}
+          <button onClick={handleFavorite} className={`px-4 py-3 text-sm rounded-full transition-all ${faved ? 'bg-amber-500 text-white' : 'btn-warning'}`}>
+            {faved ? '★ 已收藏' : t('learn.fav')}
           </button>
           <button onClick={() => handleResponse('mastered')} className="btn-success flex-1 py-3 text-sm font-semibold rounded-full">
             {t('learn.known')}
