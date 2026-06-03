@@ -1,5 +1,17 @@
 # 研词 (YanCi) — 考研英语单词学习应用
 
+> **版本**: v1.0.2 | **GitHub**: https://github.com/ziqiu4215-dot/kaoyan-vocabulary | **上次更新**: 2026-06-03
+
+## 快速继续
+
+如果你是新对话，从以下入口继续：
+
+- **开发命令**: `cd server && npm run dev` / `cd client && npm run dev`（启动在后台后执行 `open http://localhost:5173`）
+- **测试**: `cd server && npm test` (19 tests) / `cd client && npm test` (9 tests)
+- **默认登录**: 手机号任意 + 验证码 `123456`（开发模式，需先点"获取验证码"）
+- **继续任务**: App Store 上架待办见文末清单，Capacitor 打包命令见 `docs/APP_STORE_CHECKLIST.md`
+- **后端部署**: 见 `docs/DEPLOYMENT.md`
+
 ## 技术栈
 
 | 层 | 技术 |
@@ -14,25 +26,52 @@
 | 校验 | express-validator (输入消毒 + 邮箱/手机号格式校验) |
 | 短信 | 阿里云 Dysmsapi (生产) / 开发模式固定验证码 123456 |
 | 特效 | canvas-confetti (彩带), Web Audio API (音效) |
+| 原生封装 | Capacitor 7 (iOS + Android), 桥接层 `services/native.ts` |
+| 原生功能 | Push Notifications, Share, IAP 脚手架, StatusBar, SplashScreen, Keyboard |
 | 测试 | Vitest + Supertest (后端), Vitest + Testing Library (前端) |
 | 日志 | 结构化日志 (开发彩色 / 生产 JSON) |
+
+## 响应式布局
+
+| 设备 | 宽度 | 导航 | 内容区 | 词书网格 |
+|------|------|------|--------|----------|
+| 手机 | < 768px | 底部 TabBar | `max-w-2xl` | 1 列 |
+| 平板竖屏 | 768-1024px | 底部 TabBar | `max-w-content-md` | 2 列 |
+| 平板横屏+ | ≥ 1024px | 左侧侧边栏 (200px) | `max-w-content-lg` | 3 列 |
+
+侧边栏组件: `client/src/components/TabletSidebar.tsx`  
+响应式 hook: `client/src/hooks/useResponsive.ts` (返回 `{ device, isPhone, isTablet, isDesktop }`)
 
 ## 项目结构
 
 ```
 kaoyan-vocabulary/
 ├── client/                   # React 前端
+│   ├── resources/            # Capacitor 原生图标源文件 (icon.png, splash.png)
+│   ├── public/               # 静态资源
+│   │   ├── icon.svg          # 品牌图标源
+│   │   ├── icon-*.png        # 多尺寸 PWA 图标 (48-512px)
+│   │   ├── manifest.json     # PWA manifest (含 purpose maskable)
+│   │   ├── sw.js             # Service Worker (缓存优先 + 离线页)
+│   │   └── offline.html      # 离线回退页
 │   └── src/
-│       ├── __tests__/        # 前端测试 (xp.test.ts, components.test.tsx)
-│       ├── components/       # 共享组件 (Layout, VocabMap, LevelRing, XPFloating, Confetti, ErrorBoundary)
+│       ├── __tests__/        # 前端测试 (xp.test.ts, components.test.tsx, setup.ts)
+│       ├── components/       # 共享组件
+│       │   ├── Layout.tsx    # 响应式双布局 (手机底部Tab / 平板侧边栏)
+│       │   ├── TabletSidebar.tsx  # 平板侧边栏导航
+│       │   ├── VocabMap.tsx  # 词汇大陆地图 (响应式列数)
+│       │   ├── LevelRing.tsx # XP 等级环
+│       │   ├── XPFloating.tsx
+│       │   ├── Confetti.tsx
+│       │   └── ErrorBoundary.tsx
 │       ├── contexts/         # React Context (AuthContext, ToastContext)
-│       ├── hooks/            # useSound
+│       ├── hooks/            # useSound, useResponsive
 │       ├── i18n/             # 中英文翻译 (zh.ts, en.ts, context.tsx)
 │       ├── lib/              # xp.ts (等级计算)
-│       ├── pages/            # 页面组件 (Home, StudyPage, LearnPage, TestPage, ReviewPage, ...)
-│       ├── services/         # api.ts (Axios 实例 + 请求/响应拦截器)
+│       ├── pages/            # 页面组件 (12 个页面, 全部 lazy loaded)
+│       ├── services/         # api.ts, native.ts, push.ts, iap.ts
 │       ├── store/            # Zustand store
-│       └── types/            # TypeScript 类型定义
+│       └── types/            # TypeScript 类型定义 + capacitor.d.ts
 ├── server/                   # Express 后端
 │   └── src/
 │       ├── __tests__/        # 后端测试 (api.test.ts, 19 tests)
@@ -43,6 +82,9 @@ kaoyan-vocabulary/
 │       ├── services/         # sms.ts (短信抽象层), codeStore.ts (验证码存储抽象层)
 │       ├── types/            # express.d.ts (req.userId), db.ts (数据库 Row 类型)
 │       └── utils/            # AppError.ts, logger.ts (结构化日志), validation.ts (输入校验)
+├── docs/                     # 文档
+│   ├── APP_STORE_CHECKLIST.md  # iOS/Android 上架清单
+│   └── DEPLOYMENT.md           # 后端部署指南 (阿里云ECS/Nginx/SSL)
 ├── data/                     # 词库数据 + 种子脚本
 │   ├── words/                # JSON 词库文件 (core/high-freq/mid-freq/low-freq)
 │   ├── seed.ts               # 数据库种子脚本
