@@ -2,33 +2,32 @@ import { useEffect, useState } from 'react';
 import { Outlet, NavLink, Link, useNavigate } from 'react-router-dom';
 import { useI18n } from '../i18n';
 import { useAuth } from '../contexts/AuthContext';
+import { useToast } from '../contexts/ToastContext';
+import { useResponsive } from '../hooks/useResponsive';
 import api from '../services/api';
 import LevelRing from './LevelRing';
+import TabletSidebar from './TabletSidebar';
 
-interface UserProgress { xp: number; level: number; streak: number; }
+export interface UserProgress { xp: number; level: number; streak: number; }
 
 export default function Layout() {
   const navigate = useNavigate();
   const { t, lang, setLang } = useI18n();
   const { user, isAuthenticated, logout } = useAuth();
+  const { show: showToast } = useToast();
+  const { isPhone } = useResponsive();
   const [progress, setProgress] = useState<UserProgress | null>(null);
 
   useEffect(() => {
     if (!isAuthenticated) return;
     api.get('/user/progress').then(r => {
       if (r.data.success) setProgress(r.data.data);
-    }).catch(() => {});
-  }, [isAuthenticated]);
+    }).catch(() => {
+      showToast('获取学习进度失败', 'error');
+    });
+  }, [isAuthenticated, showToast]);
 
-  const navItems = [
-    { to: '/', label: t('nav.home'), kb: '1' },
-    { to: '/learn', label: t('nav.learn'), kb: '2' },
-    { to: '/wordbook', label: t('nav.wordbook'), kb: '3' },
-    { to: '/search', label: t('nav.search'), kb: 'S' },
-    { to: '/leaderboard', label: '排行', kb: 'R' },
-    { to: '/stats', label: t('nav.stats'), kb: 'T' },
-  ];
-
+  // Keyboard shortcuts
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
@@ -42,6 +41,30 @@ export default function Layout() {
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
   }, [navigate]);
+
+  // ─── Tablet/Desktop: Sidebar layout ───
+  if (!isPhone) {
+    return (
+      <div className="flex h-screen bg-gray-50 text-gray-900 overflow-hidden">
+        <TabletSidebar progress={progress} />
+        <main className="flex-1 overflow-auto">
+          <div className="max-w-content-lg xl:max-w-content-xl mx-auto px-6 lg:px-8 py-6">
+            <Outlet />
+          </div>
+        </main>
+      </div>
+    );
+  }
+
+  // ─── Phone: Bottom tab layout ───
+  const navItems = [
+    { to: '/', label: t('nav.home'), kb: '1' },
+    { to: '/learn', label: t('nav.learn'), kb: '2' },
+    { to: '/wordbook', label: t('nav.wordbook'), kb: '3' },
+    { to: '/search', label: t('nav.search'), kb: 'S' },
+    { to: '/leaderboard', label: '排行', kb: 'R' },
+    { to: '/stats', label: t('nav.stats'), kb: 'T' },
+  ];
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 flex flex-col">

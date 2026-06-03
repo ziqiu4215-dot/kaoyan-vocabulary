@@ -1,7 +1,9 @@
 import axios from 'axios';
+import { getApiBaseUrl } from './native';
 
-// 生产环境用 Render.com 后端，开发环境用 Vite 代理
-const API_BASE = import.meta.env.VITE_API_URL || '/api';
+// Native: uses configured server URL or emulator localhost mapping
+// Web: uses Vite proxy (/api → localhost:5000) or env variable
+const API_BASE = getApiBaseUrl();
 
 const api = axios.create({
   baseURL: API_BASE,

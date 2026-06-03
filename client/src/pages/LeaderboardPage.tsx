@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import api from '../services/api';
 import { useAuth } from '../contexts/AuthContext';
+import { useToast } from '../contexts/ToastContext';
 import LevelRing from '../components/LevelRing';
 
 interface RankEntry {
@@ -31,14 +32,17 @@ export default function LeaderboardPage() {
   const [myRank, setMyRank] = useState<MyRank | null>(null);
   const [loading, setLoading] = useState(true);
   const { isAuthenticated } = useAuth();
+  const { show: showToast } = useToast();
 
   useEffect(() => {
     setLoading(true);
     const endpoint = tab === 'level' ? '/leaderboard/level' : '/leaderboard/daily';
     api.get(endpoint).then(r => {
       if (r.data.success) setList(r.data.data.list);
-    }).catch(() => {}).finally(() => setLoading(false));
-  }, [tab]);
+    }).catch(() => {
+      showToast('加载排行榜失败，请稍后重试', 'error');
+    }).finally(() => setLoading(false));
+  }, [tab, showToast]);
 
   useEffect(() => {
     if (!isAuthenticated) return;

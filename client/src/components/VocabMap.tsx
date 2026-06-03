@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useResponsive } from '../hooks/useResponsive';
 import type { Wordbook } from '../types';
 
 interface Props { wordbooks: Wordbook[]; }
@@ -14,11 +15,18 @@ const REGION_BG: Record<string, string> = {
   'low-freq': 'bg-amber-50 border-amber-200',
 };
 
-const COLS_PER_REGION: Record<string, number> = {
+const BASE_COLS: Record<string, number> = {
   core: 20, 'high-freq': 36, 'mid-freq': 42, 'low-freq': 32,
 };
 
-function RegionMap({ wb }: { wb: Wordbook }) {
+function useColScale(): number {
+  const { isPhone, isDesktop } = useResponsive();
+  if (isDesktop) return 1.6;
+  if (!isPhone) return 1.3;
+  return 1;
+}
+
+function RegionMap({ wb, colScale }: { wb: Wordbook; colScale: number }) {
   const navigate = useNavigate();
   const mastered = wb.mastered || 0;
   const learned = wb.learned || 0;
@@ -44,7 +52,7 @@ function RegionMap({ wb }: { wb: Wordbook }) {
     return arr;
   }, [total, mastered, learned, due]);
 
-  const cols = COLS_PER_REGION[wb.id] || 30;
+  const cols = Math.round((BASE_COLS[wb.id] || 30) * colScale);
   const pct = Math.round((learned / total) * 100);
   const bgClass = REGION_BG[wb.id] || 'bg-gray-50 border-gray-200';
 
@@ -93,6 +101,7 @@ function RegionMap({ wb }: { wb: Wordbook }) {
 }
 
 export default function VocabMap({ wordbooks }: Props) {
+  const colScale = useColScale();
   if (!wordbooks.length) return null;
   const totalLearned = wordbooks.reduce((s, wb) => s + (wb.learned || 0), 0);
   const totalWords = wordbooks.reduce((s, wb) => s + wb.total, 0);
@@ -116,7 +125,7 @@ export default function VocabMap({ wordbooks }: Props) {
       {/* Regions */}
       <div className="flex flex-col gap-3">
         {wordbooks.map((wb) => (
-          <RegionMap key={wb.id} wb={wb} />
+          <RegionMap key={wb.id} wb={wb} colScale={colScale} />
         ))}
       </div>
 

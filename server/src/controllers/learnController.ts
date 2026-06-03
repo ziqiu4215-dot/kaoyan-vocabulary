@@ -2,6 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 import db from '../config/db';
 import AppError from '../utils/AppError';
 import { addXp } from './userController';
+import type { WordRow, ExampleRow, LearningRecordRow, CountRow } from '../types/db';
 
 export const getNextWord = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
@@ -11,10 +12,10 @@ export const getNextWord = async (req: Request, res: Response, next: NextFunctio
     // Find learned word IDs
     const learnedRows = db.prepare(
       `SELECT word_id FROM learning_records WHERE user_id = ?`
-    ).all(userId) as { word_id: number }[];
+    ).all(userId) as Pick<LearningRecordRow, 'word_id'>[];
     const learnedIds = learnedRows.map(r => r.word_id);
 
-    let row: any;
+    let row: WordRow | undefined;
     if (learnedIds.length > 0) {
       const placeholders = learnedIds.map(() => '?').join(',');
       row = db.prepare(
@@ -31,7 +32,7 @@ export const getNextWord = async (req: Request, res: Response, next: NextFunctio
       return;
     }
 
-    const examples = db.prepare(`SELECT * FROM examples WHERE word_id = ?`).all(row.id);
+    const examples = db.prepare(`SELECT * FROM examples WHERE word_id = ?`).all(row.id) as ExampleRow[];
 
     const word = {
       _id: row.id.toString(),
@@ -68,7 +69,7 @@ export const submitLearningRecord = async (req: Request, res: Response, next: Ne
 
     const existing = db.prepare(
       `SELECT * FROM learning_records WHERE user_id = ? AND word_id = ?`
-    ).get(userId, parseInt(wordId)) as any;
+    ).get(userId, parseInt(wordId)) as LearningRecordRow | undefined;
 
     const q = quality || (status === 'mastered' ? 4 : 1);
     let ef = existing?.ease_factor ?? 2.5;
@@ -125,13 +126,13 @@ export const getLearningStats = async (req: Request, res: Response, next: NextFu
   try {
     const userId = req.userId || 0;
     const { wordbookId } = req.params;
-    const total = (db.prepare(`SELECT COUNT(*) as c FROM words WHERE level = ?`).get(wordbookId) as any).c;
+    const total = (db.prepare(`SELECT COUNT(*) as c FROM words WHERE level = ?`).get(wordbookId) as CountRow).c;
     const learned = (db.prepare(
       `SELECT COUNT(*) as c FROM learning_records l JOIN words w ON l.word_id = w.id WHERE l.user_id=? AND w.level=?`
-    ).get(userId, wordbookId) as any).c;
+    ).get(userId, wordbookId) as CountRow).c;
     const mastered = (db.prepare(
       `SELECT COUNT(*) as c FROM learning_records l JOIN words w ON l.word_id = w.id WHERE l.user_id=? AND w.level=? AND l.status='mastered'`
-    ).get(userId, wordbookId) as any).c;
+    ).get(userId, wordbookId) as CountRow).c;
 
     res.json({
       success: true,

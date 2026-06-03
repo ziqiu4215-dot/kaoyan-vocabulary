@@ -1,6 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import db from '../config/db';
 import { addXp } from './userController';
+import type { WordRow, LearningRecordRow, CountRow } from '../types/db';
 
 
 export const getTodayReview = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
@@ -18,16 +19,16 @@ export const getTodayReview = async (req: Request, res: Response, next: NextFunc
       WHERE lr.user_id = ? AND lr.next_review_at <= datetime('now')
       ORDER BY lr.next_review_at ASC
       LIMIT 30
-    `).all(userId) as any[];
+    `).all(userId) as (WordRow & LearningRecordRow)[];
 
     // Count stats
     const dueTotal = (db.prepare(
       `SELECT COUNT(*) as c FROM learning_records WHERE user_id = ? AND next_review_at <= datetime('now')`
-    ).get(userId) as any).c;
+    ).get(userId) as CountRow).c;
 
     const todayLearned = (db.prepare(
       `SELECT COUNT(*) as c FROM learning_records WHERE user_id = ? AND date(last_review_at) = ?`
-    ).get(userId, today) as any).c;
+    ).get(userId, today) as CountRow).c;
 
     const words = rows.map((r) => ({
       _id: r.id.toString(),
@@ -72,7 +73,7 @@ export const submitReviewRating = async (req: Request, res: Response, next: Next
 
     const existing = db.prepare(
       `SELECT * FROM learning_records WHERE user_id = ? AND word_id = ?`
-    ).get(userId, parseInt(wordId)) as any;
+    ).get(userId, parseInt(wordId)) as LearningRecordRow | undefined;
 
     if (!existing) {
       res.status(404).json({ success: false, message: 'Learning record not found' });

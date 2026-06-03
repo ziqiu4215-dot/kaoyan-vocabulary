@@ -17,6 +17,7 @@ import userRoutes from './routes/user';
 import leaderboardRoutes from './routes/leaderboard';
 import { optionalAuth } from './middleware/auth';
 import errorHandler from './middleware/errorHandler';
+import logger from './utils/logger';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -24,7 +25,12 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(helmet());
 app.use(cors());
-app.use(morgan('dev'));
+// Request logging: 'dev' format in dev, 'combined' with health skip in production
+const isTest = process.env.NODE_ENV === 'test' || process.env.VITEST === 'true';
+const isProd = process.env.NODE_ENV === 'production';
+app.use(morgan(isProd ? 'combined' : 'dev', {
+  skip: (_req, _res) => isTest || (isProd && _req.url === '/api/health'),
+}));
 app.use(express.json({ limit: '10mb' }));
 
 // Rate limiting — 放宽限制，适合学习场景
@@ -55,10 +61,26 @@ app.use('/api/leaderboard', leaderboardRoutes);
 // Error handler
 app.use(errorHandler);
 
-// Start server
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-  console.log(`SQLite database initialized`);
-});
+// Start server (only when run directly, not during tests)
+if (!isTest) {
+  app.listen(PORT, () => {
+    logger.info(`Server running on http://localhost:${PORT}`);
+    logger.info('SQLite database initialized');
+
+    // Warn about missing OAuth/SMS configuration
+    const warnings: string[] = [];
+    if (!process.env.QQ_APP_ID) warnings.push('QQ_APP_ID not set — QQ OAuth login disabled');
+    if (!process.env.WX_APP_ID) warnings.push('WX_APP_ID not set — WeChat OAuth login disabled');
+    if (process.env.NODE_ENV === 'production' && !process.env.SMS_ACCESS_KEY_ID) {
+      warnings.push('SMS_ACCESS_KEY_ID not set — SMS will use dev mode');
+    }
+    for (const w of warnings) {
+      logger.warn(w);
+    }
+    if (warnings.length > 0) {
+      logger.info('Copy server/.env.example to server/.env and fill in the values');
+    }
+  });
+}
 
 export default app;

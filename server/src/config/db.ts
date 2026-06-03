@@ -2,11 +2,17 @@ import Database, { Database as DatabaseType } from 'better-sqlite3';
 import fs from 'fs';
 import path from 'path';
 
-const DB_PATH = process.env.DB_PATH || path.resolve(__dirname, '../../../data/kaoyan.db');
+const isTest = process.env.NODE_ENV === 'test' || process.env.VITEST === 'true';
 
-// Ensure the directory exists
-const dir = path.dirname(DB_PATH);
-if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+const DB_PATH = isTest
+  ? ':memory:'
+  : (process.env.DB_PATH || path.resolve(__dirname, '../../../data/kaoyan.db'));
+
+// Ensure the directory exists (skip for in-memory)
+if (!isTest) {
+  const dir = path.dirname(DB_PATH);
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+}
 
 const db: DatabaseType = new Database(DB_PATH);
 

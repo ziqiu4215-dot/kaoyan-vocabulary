@@ -2,6 +2,7 @@ import { useEffect, useState, useCallback, useRef } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import api from '../services/api';
 import { useI18n } from '../i18n';
+import { useToast } from '../contexts/ToastContext';
 import XPFloating from '../components/XPFloating';
 import { fireConfetti } from '../components/Confetti';
 import { useSound } from '../hooks/useSound';
@@ -30,6 +31,7 @@ export default function TestPage() {
   const [combo, setCombo] = useState(0);
   const [xpFloat, setXpFloat] = useState<{ xp: number; label: string } | null>(null);
   const { t } = useI18n();
+  const { show: showToast } = useToast();
   const sound = useSound();
 
   const resultsRef = useRef<{ wordId: string; correct: boolean }[]>([]);
@@ -61,11 +63,12 @@ export default function TestPage() {
         setPhase('done');
       }
     } catch {
+      showToast('加载测试题目失败，请稍后重试', 'error');
       setPhase('done');
     } finally {
       setLoading(false);
     }
-  }, [wordbookId]);
+  }, [wordbookId, showToast]);
 
   useEffect(() => {
     fetchQuestions();
@@ -110,14 +113,18 @@ export default function TestPage() {
         if (data?.newAchievements?.length > 0) {
           setTimeout(() => fireConfetti('full'), 300);
         }
-      }).catch(() => {});
+      }).catch(() => {
+        showToast('提交测试结果失败', 'error');
+      });
 
       answers.forEach((a) => {
         api.post('/learn/record', {
           wordId: a.wordId,
           status: a.correct ? 'mastered' : 'learning',
           quality: a.correct ? 4 : 1,
-        }).catch(() => {});
+        }).catch(() => {
+          showToast('保存学习记录失败', 'error');
+        });
       });
       setPhase('done');
     }

@@ -124,7 +124,7 @@ export default function Home() {
       <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
         {t('home.heading')}
       </h2>
-      <div className="grid gap-3">
+      <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
         {wordbooks.map((wb) => {
           const learned = wb.learned || 0;
           const pct = Math.round((learned / wb.total) * 100);

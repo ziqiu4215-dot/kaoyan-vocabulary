@@ -1,5 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import db from '../config/db';
+import type { UserRow, CountRow } from '../types/db';
 
 // XP → Level calculation (mirrors client-side lib/xp.ts)
 const LEVEL_XP: number[] = [];
@@ -18,7 +19,7 @@ function calcLevel(xp: number): number {
 
 export function addXp(userId: number, amount: number) {
   if (userId === 0) return { xp: 0, level: 1, leveledUp: false }; // 未登录用户跳过
-  const user = db.prepare('SELECT xp, level FROM users WHERE id = ?').get(userId) as any;
+  const user = db.prepare('SELECT xp, level, streak, last_study_date FROM users WHERE id = ?').get(userId) as Pick<UserRow, 'xp' | 'level' | 'streak' | 'last_study_date'> | undefined;
   if (!user) return { xp: 0, level: 1, leveledUp: false };
 
   const newXp = (user.xp || 0) + amount;
@@ -64,7 +65,7 @@ const ACHIEVEMENTS = [
 function checkAchievements(userId: number, streak: number) {
   const totalLearned = (db.prepare(
     'SELECT COUNT(*) as c FROM learning_records WHERE user_id = ?'
-  ).get(userId) as any).c;
+  ).get(userId) as CountRow).c;
 
   const data = { totalLearned, streak };
   for (const a of ACHIEVEMENTS) {
@@ -103,12 +104,12 @@ export const getUserProgress = async (req: Request, res: Response, next: NextFun
       return;
     }
 
-    const user = db.prepare('SELECT xp, level, streak FROM users WHERE id = ?').get(userId) as any;
+    const user = db.prepare('SELECT xp, level, streak FROM users WHERE id = ?').get(userId) as Pick<UserRow, 'xp' | 'level' | 'streak'> | undefined;
     const achievements = db.prepare(
       "SELECT badge_key, unlocked_at FROM achievements WHERE user_id = ? ORDER BY unlocked_at DESC"
-    ).all(userId);
+    ).all(userId) as { badge_key: string; unlocked_at: string }[];
 
-    const achievementDetails = (achievements as any[]).map((a: any) => {
+    const achievementDetails = achievements.map((a) => {
       const def = ACHIEVEMENTS.find(d => d.key === a.badge_key);
       return def ? { ...def, unlockedAt: a.unlocked_at } : null;
     }).filter(Boolean);

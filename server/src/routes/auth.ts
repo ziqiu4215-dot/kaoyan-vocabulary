@@ -4,31 +4,30 @@ import crypto from 'crypto';
 import db from '../config/db';
 import { authMiddleware, signToken } from '../middleware/auth';
 import AppError from '../utils/AppError';
+import { sendVerificationCode } from '../services/sms';
+import { getCodeStore } from '../services/codeStore';
+import {
+  registerRules, loginRules, sendSmsRules, loginByPhoneRules,
+} from '../utils/validation';
+import type { UserRow } from '../types/db';
 
 const router = Router();
 
-// ─── 短信验证码（开发模式：固定 123456）───
+// ─── 短信验证码 ───
 
-// 内存存储验证码（生产环境应改用 Redis）
-const smsCodes = new Map<string, { code: string; expires: number }>();
-
-router.post('/send-sms', (req: Request, res: Response, next: NextFunction) => {
+router.post('/send-sms', sendSmsRules, async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { phone } = req.body;
-    if (!phone) throw new AppError('请输入手机号', 400);
 
-    // 开发模式：固定验证码 123456
-    const code = process.env.NODE_ENV === 'production'
-      ? String(Math.floor(100000 + Math.random() * 900000))
-      : '123456';
+    const { success, code } = await sendVerificationCode(phone);
+    if (!success) throw new AppError('短信发送失败，请稍后重试', 500);
 
-    smsCodes.set(phone, { code, expires: Date.now() + 5 * 60 * 1000 });
+    getCodeStore().set(phone, code, 5); // 5 minutes TTL
 
-    if (process.env.NODE_ENV !== 'production') {
-      res.json({ success: true, message: '验证码已发送', data: { code } }); // 开发模式返回验证码
+    const isDev = process.env.NODE_ENV !== 'production';
+    if (isDev) {
+      res.json({ success: true, message: '验证码已发送', data: { code } });
     } else {
-      // TODO: 接入阿里云/腾讯云短信服务
-      console.log(`[SMS] ${phone} → ${code}`);
       res.json({ success: true, message: '验证码已发送' });
     }
   } catch (error) {
@@ -37,21 +36,14 @@ router.post('/send-sms', (req: Request, res: Response, next: NextFunction) => {
 });
 
 function verifySmsCode(phone: string, code: string): boolean {
-  const record = smsCodes.get(phone);
-  if (!record) return false;
-  if (Date.now() > record.expires) { smsCodes.delete(phone); return false; }
-  if (record.code !== code) return false;
-  smsCodes.delete(phone);
-  return true;
+  return getCodeStore().verify(phone, code);
 }
 
 // ─── 用户名/邮箱 + 密码注册 ───
 
-router.post('/register', async (req: Request, res: Response, next: NextFunction) => {
+router.post('/register', registerRules, async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { username, email, password } = req.body;
-    if (!username || !email || !password) throw new AppError('用户名、邮箱和密码为必填项', 400);
-    if (password.length < 6) throw new AppError('密码至少 6 位', 400);
 
     const existing = db.prepare('SELECT id FROM users WHERE username = ? OR email = ?').get(username, email);
     if (existing) throw new AppError('用户名或邮箱已被注册', 409);
@@ -72,14 +64,13 @@ router.post('/register', async (req: Request, res: Response, next: NextFunction)
 
 // ─── 密码登录 ───
 
-router.post('/login', async (req: Request, res: Response, next: NextFunction) => {
+router.post('/login', loginRules, async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { username, password } = req.body;
-    if (!username || !password) throw new AppError('请输入用户名和密码', 400);
 
     const user = db.prepare(
       'SELECT * FROM users WHERE username = ? OR email = ?'
-    ).get(username, username) as any;
+    ).get(username, username) as UserRow | undefined;
     if (!user) throw new AppError('用户名或密码错误', 401);
 
     const valid = await bcrypt.compare(password, user.password_hash || '');
@@ -97,16 +88,15 @@ router.post('/login', async (req: Request, res: Response, next: NextFunction) =>
 
 // ─── 手机号 + 验证码登录（自动注册）───
 
-router.post('/login-by-phone', async (req: Request, res: Response, next: NextFunction) => {
+router.post('/login-by-phone', loginByPhoneRules, async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { phone, code } = req.body;
-    if (!phone || !code) throw new AppError('请输入手机号和验证码', 400);
 
     if (!verifySmsCode(phone, code)) {
       throw new AppError('验证码错误或已过期', 400);
     }
 
-    let user = db.prepare('SELECT * FROM users WHERE phone = ?').get(phone) as any;
+    let user = db.prepare('SELECT * FROM users WHERE phone = ?').get(phone) as UserRow | undefined;
 
     if (!user) {
       // 自动注册
@@ -195,7 +185,7 @@ router.get('/qq/callback', async (req: Request, res: Response, next: NextFunctio
 
     let user = db.prepare(
       'SELECT * FROM users WHERE oauth_provider = ? AND oauth_id = ?'
-    ).get('qq', openid) as any;
+    ).get('qq', openid) as UserRow | undefined;
 
     if (!user) {
       const username = generateUsername(nickname);
@@ -253,7 +243,7 @@ router.get('/wechat/callback', async (req: Request, res: Response, next: NextFun
 
     let user = db.prepare(
       'SELECT * FROM users WHERE oauth_provider = ? AND oauth_id = ?'
-    ).get('wechat', unionid || openid) as any;
+    ).get('wechat', unionid || openid) as UserRow | undefined;
 
     if (!user) {
       const username = generateUsername(nickname);
@@ -264,8 +254,8 @@ router.get('/wechat/callback', async (req: Request, res: Response, next: NextFun
       user = { id: result.lastInsertRowid as number, username, email, avatar };
     }
 
-    const token = signToken(user.id);
-    res.redirect(`/auth/callback?token=${token}`);
+    const jwtToken = signToken(user.id);
+    res.redirect(`${FRONTEND_URL}/#/auth/callback?token=${jwtToken}`);
   } catch (error) {
     next(error);
   }
@@ -277,7 +267,7 @@ router.get('/me', authMiddleware, (req: Request, res: Response, next: NextFuncti
   try {
     const user = db.prepare(
       'SELECT id, username, email, phone, avatar, oauth_provider, created_at FROM users WHERE id = ?'
-    ).get(req.userId!) as any;
+    ).get(req.userId!) as Pick<UserRow, 'id' | 'username' | 'email' | 'phone' | 'avatar' | 'oauth_provider' | 'created_at'> | undefined;
 
     if (!user) throw new AppError('用户不存在', 404);
     res.json({ success: true, data: formatUser(user) });
@@ -288,7 +278,17 @@ router.get('/me', authMiddleware, (req: Request, res: Response, next: NextFuncti
 
 // ─── 工具函数 ───
 
-function formatUser(u: any) {
+interface FormattableUser {
+  id: number;
+  username: string;
+  email: string;
+  phone?: string | null;
+  avatar?: string | null;
+  oauth_provider?: string | null;
+  created_at?: string | null;
+}
+
+function formatUser(u: FormattableUser) {
   return {
     id: u.id,
     username: u.username,
