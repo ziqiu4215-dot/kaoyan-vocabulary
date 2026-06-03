@@ -13,7 +13,7 @@ const LoginPage = lazy(() => import('./pages/LoginPage'));
 const RegisterPage = lazy(() => import('./pages/RegisterPage'));
 const AuthCallbackPage = lazy(() => import('./pages/AuthCallbackPage'));
 const LeaderboardPage = lazy(() => import('./pages/LeaderboardPage'));
-const SettingsPage = lazy(() => import('./pages/SettingsPage'));
+const ProfilePage = lazy(() => import('./pages/ProfilePage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 function PageLoader() {
@@ -40,7 +40,7 @@ export default function App() {
           <Route path="/register" element={<Suspense fallback={<PageLoader />}><RegisterPage /></Suspense>} />
           <Route path="/auth/callback" element={<Suspense fallback={<PageLoader />}><AuthCallbackPage /></Suspense>} />
           <Route path="/leaderboard" element={<Suspense fallback={<PageLoader />}><LeaderboardPage /></Suspense>} />
-          <Route path="/settings" element={<Suspense fallback={<PageLoader />}><SettingsPage /></Suspense>} />
+          <Route path="/settings" element={<Suspense fallback={<PageLoader />}><ProfilePage /></Suspense>} />
           <Route path="*" element={<Suspense fallback={<PageLoader />}><NotFoundPage /></Suspense>} />
         </Route>
       </Routes>

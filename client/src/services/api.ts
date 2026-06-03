@@ -75,3 +75,15 @@ export const searchWords = (q: string) =>
 
 // Stats
 export const getStats = () => api.get('/stats').then((r) => r.data);
+
+// User Profile
+export const getUserProfile = () => api.get('/user/profile').then((r) => r.data);
+export const updateUserProfile = (data: { username?: string; email?: string; avatar?: string }) =>
+  api.put('/user/profile', data).then((r) => r.data);
+export const changePassword = (data: { currentPassword: string; newPassword: string }) =>
+  api.put('/user/password', data).then((r) => r.data);
+
+// Leaderboard
+export const getMyRank = () => api.get('/leaderboard/me').then((r) => r.data);
+export const getLevelLeaderboard = (limit = 3) =>
+  api.get('/leaderboard/level', { params: { limit } }).then((r) => r.data);

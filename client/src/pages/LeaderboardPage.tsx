@@ -121,7 +121,7 @@ export default function LeaderboardPage() {
               key={entry.userId}
               className={`px-4 py-3 flex items-center gap-3 ${
                 i < list.length - 1 ? 'border-b border-gray-100' : ''
-              } ${myRank && entry.userId === (myRank as any)?.userId__ ? 'bg-brand-50/50' : ''}`}
+              } ${myRank && entry.userId === (myRank as any)?.userId__ ? 'bg-brand-50' : ''}`}
             >
               {/* Rank */}
               <div className={`w-8 text-center font-bold text-lg ${rankColors(entry.rank)}`}>

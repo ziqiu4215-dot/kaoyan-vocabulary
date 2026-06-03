@@ -36,8 +36,8 @@
 | 设备 | 宽度 | 导航 | 内容区 | 词书网格 |
 |------|------|------|--------|----------|
 | 手机 | < 768px | 底部 TabBar | `max-w-2xl` | 1 列 |
-| 平板竖屏 | 768-1024px | 底部 TabBar | `max-w-content-md` | 2 列 |
-| 平板横屏+ | ≥ 1024px | 左侧侧边栏 (200px) | `max-w-content-lg` | 3 列 |
+| 平板 | 768-1279px | 底部 TabBar | `max-w-content-md` | 2 列 |
+| 桌面 | ≥ 1280px | 左侧侧边栏 (200px) | `max-w-content-lg` | 3 列 |
 
 侧边栏组件: `client/src/components/TabletSidebar.tsx`  
 响应式 hook: `client/src/hooks/useResponsive.ts` (返回 `{ device, isPhone, isTablet, isDesktop }`)

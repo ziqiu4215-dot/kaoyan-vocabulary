@@ -225,6 +225,100 @@ describe('Review API', () => {
   });
 });
 
+// ─── User Profile ───
+
+describe('User Profile API', () => {
+  let token = '';
+
+  beforeAll(async () => {
+    const res = await request(app).post('/api/auth/register').send({
+      username: 'profileuser',
+      email: 'profile@example.com',
+      password: '123456',
+    });
+    token = res.body.data.token;
+  });
+
+  it('GET /api/user/profile returns profile data', async () => {
+    const res = await request(app)
+      .get('/api/user/profile')
+      .set('Authorization', `Bearer ${token}`);
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(res.body.data.username).toBe('profileuser');
+    expect(res.body.data.email).toBe('profile@example.com');
+    expect(res.body.data.xp).toBe(0);
+    expect(res.body.data.level).toBe(1);
+    expect(res.body.data.streak).toBe(0);
+    expect(res.body.data.achievements).toBeDefined();
+  });
+
+  it('GET /api/user/profile without token returns 401', async () => {
+    const res = await request(app).get('/api/user/profile');
+    expect(res.status).toBe(401);
+  });
+
+  it('PUT /api/user/profile updates username', async () => {
+    const res = await request(app)
+      .put('/api/user/profile')
+      .set('Authorization', `Bearer ${token}`)
+      .send({ username: 'updateduser' });
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(res.body.data.username).toBe('updateduser');
+  });
+
+  it('PUT /api/user/profile updates email', async () => {
+    const res = await request(app)
+      .put('/api/user/profile')
+      .set('Authorization', `Bearer ${token}`)
+      .send({ email: 'updated@example.com' });
+    expect(res.status).toBe(200);
+    expect(res.body.data.email).toBe('updated@example.com');
+  });
+
+  it('PUT /api/user/profile rejects duplicate username', async () => {
+    // First create another user
+    await request(app).post('/api/auth/register').send({
+      username: 'otheruser',
+      email: 'other@example.com',
+      password: '123456',
+    });
+
+    const res = await request(app)
+      .put('/api/user/profile')
+      .set('Authorization', `Bearer ${token}`)
+      .send({ username: 'otheruser' });
+    expect(res.status).toBe(409);
+    expect(res.body.success).toBe(false);
+  });
+
+  it('PUT /api/user/password changes password', async () => {
+    const res = await request(app)
+      .put('/api/user/password')
+      .set('Authorization', `Bearer ${token}`)
+      .send({ currentPassword: '123456', newPassword: 'newpass123' });
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+  });
+
+  it('PUT /api/user/password with wrong current password returns 401', async () => {
+    const res = await request(app)
+      .put('/api/user/password')
+      .set('Authorization', `Bearer ${token}`)
+      .send({ currentPassword: 'wrongpassword', newPassword: 'another123' });
+    expect(res.status).toBe(401);
+  });
+
+  it('PUT /api/user/password with short new password returns 400', async () => {
+    const res = await request(app)
+      .put('/api/user/password')
+      .set('Authorization', `Bearer ${token}`)
+      .send({ currentPassword: 'newpass123', newPassword: '123' });
+    expect(res.status).toBe(400);
+  });
+});
+
 // ─── Rate Limiting ───
 
 describe('Rate Limiting', () => {

@@ -14,8 +14,7 @@ const navItems = [
   { to: '/test', label: 'nav.learn', icon: '✏️', suffix: '· 测试' },
   { to: '/wordbook', label: 'nav.wordbook', icon: '📝' },
   { to: '/search', label: 'nav.search', icon: '🔍' },
-  { to: '/leaderboard', label: '排行榜', icon: '🏆' },
-  { to: '/stats', label: 'nav.stats', icon: '📊' },
+  { to: '/settings', label: 'settings.title', icon: '👤' },
 ];
 
 export default function TabletSidebar({ progress }: Props) {
@@ -59,7 +58,7 @@ export default function TabletSidebar({ progress }: Props) {
             }
           >
             <span className="text-lg">{icon}</span>
-            <span className="truncate">{label in t ? t(label as any) : label}{suffix || ''}</span>
+            <span className="truncate">{t(label as any)}{suffix || ''}</span>
           </NavLink>
         ))}
       </nav>

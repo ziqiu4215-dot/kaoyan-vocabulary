@@ -13,9 +13,9 @@ export interface UserProgress { xp: number; level: number; streak: number; }
 export default function Layout() {
   const navigate = useNavigate();
   const { t, lang, setLang } = useI18n();
-  const { user, isAuthenticated, logout } = useAuth();
+  const { user, isAuthenticated } = useAuth();
   const { show: showToast } = useToast();
-  const { isPhone } = useResponsive();
+  const { isDesktop } = useResponsive();
   const [progress, setProgress] = useState<UserProgress | null>(null);
 
   useEffect(() => {
@@ -32,8 +32,7 @@ export default function Layout() {
     const handler = (e: KeyboardEvent) => {
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
       const keyMap: Record<string, string> = {
-        '1': '/', '2': '/learn', '3': '/wordbook',
-        'r': '/leaderboard', 't': '/stats',
+        '1': '/', '2': '/learn', '3': '/wordbook', '4': '/settings',
       };
       const to = keyMap[e.key.toLowerCase()];
       if (to) navigate(to);
@@ -42,8 +41,8 @@ export default function Layout() {
     return () => window.removeEventListener('keydown', handler);
   }, [navigate]);
 
-  // ─── Tablet/Desktop: Sidebar layout ───
-  if (!isPhone) {
+  // ─── Desktop (≥1280px): Sidebar layout ───
+  if (isDesktop) {
     return (
       <div className="flex h-screen bg-gray-50 text-gray-900 overflow-hidden">
         <TabletSidebar progress={progress} />
@@ -61,13 +60,11 @@ export default function Layout() {
     { to: '/', label: t('nav.home'), kb: '1' },
     { to: '/learn', label: t('nav.learn'), kb: '2' },
     { to: '/wordbook', label: t('nav.wordbook'), kb: '3' },
-    { to: '/search', label: t('nav.search'), kb: 'S' },
-    { to: '/leaderboard', label: '排行', kb: 'R' },
-    { to: '/stats', label: t('nav.stats'), kb: 'T' },
+    { to: '/settings', label: t('settings.title'), kb: '4' },
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900 flex flex-col">
+    <div className="h-screen bg-gray-50 text-gray-900 flex flex-col overflow-hidden">
       {/* Header */}
       <header className="border-b border-gray-200 bg-white px-4 sm:px-6 py-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
@@ -86,24 +83,20 @@ export default function Layout() {
               )}
             </div>
           )}
-          {isAuthenticated ? (
+          {isAuthenticated && (
             <div className="flex items-center gap-2">
               <span className="text-sm text-gray-700 hidden sm:inline">{user?.username}</span>
-              <button
-                onClick={logout}
-                className="text-xs text-gray-400 hover:text-red-600 transition-colors cursor-pointer"
-              >
-                退出
-              </button>
             </div>
-          ) : (
-            <Link
-              to="/login"
-              className="text-xs font-medium text-brand-600 hover:text-brand-700 transition-colors"
-            >
-              登录
-            </Link>
           )}
+          <Link
+            to="/search"
+            className="text-gray-400 hover:text-gray-600 transition-colors p-1"
+            aria-label={t('nav.search')}
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </Link>
           <button
             onClick={() => setLang(lang === 'zh' ? 'en' : 'zh')}
             className="text-xs font-medium px-2 py-1 rounded-md border border-gray-200 text-gray-500 hover:text-gray-700 hover:bg-gray-50 transition-colors cursor-pointer"
@@ -141,8 +134,8 @@ export default function Layout() {
           ))}
         </div>
 
-        {/* Keyboard shortcut hints */}
-        <div className="flex justify-center gap-3 mt-2 max-w-2xl mx-auto">
+        {/* Keyboard shortcut hints (tablet+ only) */}
+        <div className="hidden sm:flex justify-center gap-3 mt-2 max-w-2xl mx-auto">
           {navItems.map(({ to, kb }) => (
             <span key={to} className="kbd">
               <span className="key">⌘{kb}</span>

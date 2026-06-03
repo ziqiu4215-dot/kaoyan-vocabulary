@@ -1,5 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
+import bcrypt from 'bcryptjs';
 import db from '../config/db';
+import AppError from '../utils/AppError';
 import type { UserRow, CountRow } from '../types/db';
 
 // XP → Level calculation (mirrors client-side lib/xp.ts)
@@ -123,6 +125,137 @@ export const getUserProgress = async (req: Request, res: Response, next: NextFun
         achievements: achievementDetails,
       },
     });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// GET /api/user/profile — full profile + stats + achievements
+export const getUserProfile = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  try {
+    const userId = req.userId!;
+
+    const user = db.prepare(
+      'SELECT id, username, email, phone, avatar, oauth_provider, xp, level, streak, last_study_date, created_at FROM users WHERE id = ?'
+    ).get(userId) as Pick<UserRow, 'id' | 'username' | 'email' | 'phone' | 'avatar' | 'oauth_provider' | 'xp' | 'level' | 'streak' | 'last_study_date' | 'created_at'> | undefined;
+
+    if (!user) throw new AppError('用户不存在', 404);
+
+    const achievements = db.prepare(
+      "SELECT badge_key, unlocked_at FROM achievements WHERE user_id = ? ORDER BY unlocked_at DESC"
+    ).all(userId) as { badge_key: string; unlocked_at: string }[];
+
+    const achievementDetails = achievements.map((a) => {
+      const def = ACHIEVEMENTS.find(d => d.key === a.badge_key);
+      return def ? { ...def, unlockedAt: a.unlocked_at } : null;
+    }).filter(Boolean);
+
+    const displayLevel = user.level || calcLevel(user.xp || 0);
+
+    res.json({
+      success: true,
+      data: {
+        id: user.id,
+        username: user.username,
+        email: user.email,
+        phone: user.phone || undefined,
+        avatar: user.avatar || '',
+        oauthProvider: user.oauth_provider || undefined,
+        createdAt: user.created_at,
+        xp: user.xp || 0,
+        level: displayLevel,
+        streak: user.streak || 0,
+        achievements: achievementDetails,
+      },
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// PUT /api/user/profile — update username/email/avatar
+export const updateUserProfile = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  try {
+    const userId = req.userId!;
+    const { username, email, avatar } = req.body;
+
+    // Check uniqueness for username
+    if (username) {
+      const existing = db.prepare('SELECT id FROM users WHERE username = ? AND id != ?').get(username, userId);
+      if (existing) throw new AppError('用户名已被使用', 409);
+    }
+
+    // Check uniqueness for email
+    if (email) {
+      const existing = db.prepare('SELECT id FROM users WHERE email = ? AND id != ?').get(email, userId);
+      if (existing) throw new AppError('邮箱已被使用', 409);
+    }
+
+    // Build dynamic UPDATE
+    const sets: string[] = [];
+    const params: any[] = [];
+
+    if (username !== undefined) {
+      sets.push('username = ?');
+      params.push(username);
+    }
+    if (email !== undefined) {
+      sets.push('email = ?');
+      params.push(email);
+    }
+    if (avatar !== undefined) {
+      sets.push('avatar = ?');
+      params.push(avatar);
+    }
+
+    if (sets.length > 0) {
+      sets.push("updated_at = datetime('now')");
+      params.push(userId);
+      db.prepare(`UPDATE users SET ${sets.join(', ')} WHERE id = ?`).run(...params);
+    }
+
+    // Return updated user
+    const user = db.prepare(
+      'SELECT id, username, email, phone, avatar, oauth_provider, created_at FROM users WHERE id = ?'
+    ).get(userId) as Pick<UserRow, 'id' | 'username' | 'email' | 'phone' | 'avatar' | 'oauth_provider' | 'created_at'> | undefined;
+
+    res.json({
+      success: true,
+      data: {
+        id: user!.id,
+        username: user!.username,
+        email: user!.email,
+        phone: user!.phone || undefined,
+        avatar: user!.avatar || '',
+        oauthProvider: user!.oauth_provider || undefined,
+        createdAt: user!.created_at,
+      },
+      message: '资料已更新',
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// PUT /api/user/password — change password
+export const changePassword = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  try {
+    const userId = req.userId!;
+    const { currentPassword, newPassword } = req.body;
+
+    const user = db.prepare('SELECT password_hash FROM users WHERE id = ?').get(userId) as Pick<UserRow, 'password_hash'> | undefined;
+    if (!user) throw new AppError('用户不存在', 404);
+
+    // OAuth users with no password can set their first password without current password
+    if (user.password_hash) {
+      const valid = await bcrypt.compare(currentPassword, user.password_hash);
+      if (!valid) throw new AppError('当前密码错误', 401);
+    }
+
+    const hash = await bcrypt.hash(newPassword, 10);
+    db.prepare("UPDATE users SET password_hash = ?, updated_at = datetime('now') WHERE id = ?").run(hash, userId);
+
+    res.json({ success: true, message: '密码修改成功' });
   } catch (error) {
     next(error);
   }

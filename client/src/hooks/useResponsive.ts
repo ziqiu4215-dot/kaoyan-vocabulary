@@ -6,7 +6,7 @@ export function useResponsive(): { device: Device; isPhone: boolean; isTablet: b
   const [device, setDevice] = useState<Device>(() => {
     if (typeof window === 'undefined') return 'phone';
     const w = window.innerWidth;
-    if (w >= 1024) return 'desktop';
+    if (w >= 1280) return 'desktop';
     if (w >= 768) return 'tablet';
     return 'phone';
   });
@@ -14,7 +14,7 @@ export function useResponsive(): { device: Device; isPhone: boolean; isTablet: b
   useEffect(() => {
     const handler = () => {
       const w = window.innerWidth;
-      if (w >= 1024) setDevice('desktop');
+      if (w >= 1280) setDevice('desktop');
       else if (w >= 768) setDevice('tablet');
       else setDevice('phone');
     };

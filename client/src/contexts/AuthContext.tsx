@@ -1,11 +1,13 @@
 import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from 'react';
 import api from '../services/api';
 
-interface User {
+export interface User {
   id: number;
   username: string;
   email: string;
+  phone?: string;
   avatar?: string;
+  oauthProvider?: string;
   createdAt?: string;
 }
 
@@ -17,6 +19,7 @@ interface AuthState {
   login: (username: string, password: string) => Promise<void>;
   register: (username: string, email: string, password: string) => Promise<void>;
   logout: () => void;
+  updateUser: (updates: Partial<User>) => void;
 }
 
 const AuthContext = createContext<AuthState | null>(null);
@@ -86,6 +89,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setUser(null);
   }, []);
 
+  const updateUser = useCallback((updates: Partial<User>) => {
+    setUser((prev) => prev ? { ...prev, ...updates } : null);
+  }, []);
+
   return (
     <AuthContext.Provider
       value={{
@@ -96,6 +103,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         login,
         register,
         logout,
+        updateUser,
       }}
     >
       {children}

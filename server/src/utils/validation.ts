@@ -46,3 +46,30 @@ export const loginRules = [
 export const sendSmsRules = [phoneRule, validate];
 export const loginByPhoneRules = [phoneRule, codeRule, validate];
 export const bindPhoneRules = [phoneRule, codeRule, validate];
+
+// ─── User profile ───
+
+const optionalUsernameRule = body('username')
+  .optional()
+  .trim()
+  .isLength({ min: 2, max: 20 }).withMessage('用户名 2-20 个字符')
+  .matches(/^[\w一-龥-]+$/).withMessage('用户名只能包含字母、数字、中文、下划线和连字符');
+
+const optionalEmailRule = body('email')
+  .optional()
+  .trim()
+  .isEmail().withMessage('邮箱格式不正确')
+  .normalizeEmail();
+
+const optionalAvatarRule = body('avatar')
+  .optional()
+  .trim()
+  .isURL().withMessage('头像链接格式不正确');
+
+export const updateProfileRules = [optionalUsernameRule, optionalEmailRule, optionalAvatarRule, validate];
+
+export const changePasswordRules = [
+  body('currentPassword').notEmpty().withMessage('请输入当前密码'),
+  body('newPassword').isLength({ min: 6, max: 128 }).withMessage('新密码 6-128 位'),
+  validate,
+];
