@@ -28,5 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 );
 
 // Hide native splash screen once React mounts
-hideSplashScreen();
+if (isNative()) {
+  hideSplashScreen().catch(() => {});
+}
 
