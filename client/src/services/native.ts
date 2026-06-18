@@ -28,10 +28,12 @@ export function isNative(): boolean {
  * - Web/PWA: uses relative '/api' path (handled by Vite proxy or Nginx)
  */
 export function getApiBaseUrl(): string {
+  // Use env variable if set (for production/deployed builds)
+  if (import.meta.env.VITE_API_URL) {
+    return import.meta.env.VITE_API_URL;
+  }
   if (isNative()) {
-    // Capacitor: point to your production API server
-    // In dev (emulator), localhost maps to the host machine
-    return import.meta.env.VITE_API_URL || 'http://10.0.2.2:5000';
+    return 'http://10.0.2.2:5000';
   }
   return '/api';
 }

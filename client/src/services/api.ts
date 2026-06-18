@@ -11,7 +11,7 @@ const api = axios.create({
   headers: { 'Content-Type': 'application/json' },
 });
 
-// Request interceptor — attach JWT token
+// Request interceptor — attach JWT token + bypass localtunnel interstitial
 api.interceptors.request.use((config) => {
   try {
     const token = localStorage.getItem('kaoyan-token');
@@ -19,6 +19,9 @@ api.interceptors.request.use((config) => {
       config.headers.Authorization = `Bearer ${token}`;
     }
   } catch { /* ignore */ }
+  if (config.baseURL?.includes('loca.lt')) {
+    config.headers['Bypass-Tunnel-Reminder'] = 'true';
+  }
   return config;
 });
 

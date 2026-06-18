@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#2563EB" />
+  <title>离线 — 研词</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif;
+      display: flex; align-items: center; justify-content: center;
+      min-height: 100vh; background: linear-gradient(135deg, #2563EB, #7C3AED);
+      color: white; text-align: center; padding: 2rem;
+    }
+    .card {
+      background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);
+      border-radius: 20px; padding: 3rem 2rem; max-width: 360px; width: 100%;
+    }
+    .icon { font-size: 4rem; margin-bottom: 1rem; }
+    h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    p { opacity: 0.85; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; }
+    button {
+      background: white; color: #2563EB; border: none; border-radius: 12px;
+      padding: 12px 32px; font-size: 1rem; font-weight: 600; cursor: pointer;
+      transition: transform 0.15s;
+    }
+    button:active { transform: scale(0.96); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">📡</div>
+    <h1>网络连接断开</h1>
+    <p>请检查网络后重试。<br/>已学过的单词可在离线模式下继续复习。</p>
+    <button onclick="location.reload()">重新连接</button>
+  </div>
+</body>
+</html>
